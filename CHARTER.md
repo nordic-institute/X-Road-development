@@ -41,6 +41,8 @@ A roadmap is a plan that outlines the flow of new features needed to satisfy the
 The roadmap helps reach a consensus about future developments and it provides a framework to help plan and
 coordinate upcoming releases. The X-Road roadmap takes into consideration scoped functionality and X-Road
 production compatibility. 
+
+![](IMG/Charter01.PNG)
  
 Diagram 1. Business roadmap management.
 
@@ -49,6 +51,8 @@ and managed by the Steering Committee and is updated through the scoping process
 Roadmap must go through the standard approval process through the Steering Committee and scheduled for a release,
 regardless of issue type (core, extension). The technical roadmap is managed by the head architect, and
 it contains fine grained technical items derived from the business roadmap items.  
+
+![](IMG/Charter02.PNG)
  
 Diagram 2. Technical roadmap management.
 
