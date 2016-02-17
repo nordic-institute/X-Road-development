@@ -129,11 +129,11 @@ Additionally JRuby may be used for web interfaces.
 
 3.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) must not issue any
 errors with the configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>
+<https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>.
 
 3.2.2 PMD (<http://pmd.sourceforge.net/>) must not issue any errors with the
 configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/build.gradle>
+<https://github.com/vrk-kpa/xroad-public/blob/master/src/build.gradle>.
 
 3.2.3 All libraries needed for the operation of application must be
 located in /lib directory of the same application.
@@ -160,7 +160,7 @@ errors or warnings in ruby/jruby functions with the default
 configuration (rubocop --fail-level warning).
 Rubocop (<https://github.com/bbatsov/rubocop>) must not issue any errors
 with the configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/check_ruby_source.sh>
+<https://github.com/vrk-kpa/xroad-public/blob/master/src/check_ruby_source.sh>.
 
 ### JavaScript
 
@@ -235,7 +235,7 @@ and “\_”. DEB package name must include the project name, version, build
 time, and architecture (for example
 xroad-proxy\_6.8.3-0-201510281010\_all.deb). RPM package name must
 include the project name, version, and build time (for example
-xroad-proxy\_6.8.3-1-201510281010.rpm)
+xroad-proxy\_6.8.3-1-201510281010.rpm).
 
 Note: Current X-Road implementation is not yet compatible with
 requirement 5.2.3.
