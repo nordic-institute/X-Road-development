@@ -15,9 +15,9 @@ X-Road NFR will be proposed, discussed, and agreed on using github issues.
 References
 ----------
 
-ARC-G - X-Road architecture document
+[ARC-G] X-Road architecture document
 
-SPEC-AL - X-Road audit log events document
+[SPEC-AL] X-Road audit log events document
 
 Scope
 -----
@@ -129,12 +129,10 @@ Additionally JRuby may be used for web interfaces.
 
 3.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) must not issue any
 errors with the configuration defined in
-
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>
 
 3.2.2 PMD (<http://pmd.sourceforge.net/>) must not issue any errors with the
 configuration defined in
-
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/build.gradle>
 
 3.2.3 All libraries needed for the operation of application must be
@@ -162,7 +160,6 @@ errors or warnings in ruby/jruby functions with the default
 configuration (rubocop --fail-level warning).
 Rubocop (<https://github.com/bbatsov/rubocop>) must not issue any errors
 with the configuration defined in
-
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/check_ruby_source.sh>
 
 ### JavaScript
