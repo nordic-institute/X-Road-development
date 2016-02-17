@@ -130,7 +130,7 @@ Additionally JRuby may be used for web interfaces.
 3.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) must not issue any
 errors with the configuration defined in
 
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle-ria.xml>
+<https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>
 
 3.2.2 PMD (<http://pmd.sourceforge.net/>) must not issue any errors with the
 configuration defined in
