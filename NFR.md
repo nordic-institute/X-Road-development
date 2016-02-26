@@ -32,9 +32,6 @@ A term “component” in this document is used to describe the software
 components of X-Road as defined in X-Road architecture document \[ARC-G\].
 For example Central Server and Security Server are X-Road components.
 
-A term “subcomponent” in this document is used to describe subcomponents of
-X-Road components. For example Proxy and Signer are subcomponents of X-Road.
-
 A term “third party component” in this document is used to describe libaries
 and programs that X-Road application depend on.
 
