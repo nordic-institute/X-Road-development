@@ -5,8 +5,7 @@ Introduction
 ------------
 
 This document reflects the X-Road agreements on X-Road Non-Functional
-Requirements (X-Road NFR), which define the concepts of a "good
-software".
+Requirements (X-Road NFR), which define the concepts of "good software".
 
 This X-Road NFR document is released in the public github repository
 <https://github.com/vrk-kpa/xroad-joint-development> and all changes to
@@ -32,12 +31,12 @@ A term “component” in this document is used to describe the software
 components of X-Road as defined in X-Road architecture document \[ARC-G\].
 For example Central Server and Security Server are X-Road components.
 
-A term “third party component” in this document is used to describe libaries
-and programs that X-Road application depend on.
+A term “third party component” in this document is used to describe libraries
+and programs that X-Road application depends on.
 
 The scope of changes to application must be defined in procurement
 documents. Only the added or changed portions of the software must
-comply to the following requirements unless specified otherwise.
+comply with the following requirements unless specified otherwise.
 
 Architecture
 ------------
@@ -52,7 +51,7 @@ Central Server.
 
 1.3 Application and databases must use UTF-8 encoding.
 
-1.4 Application must be able to handle timezones correctly.
+1.4 Application must be able to handle time zones correctly.
 
 1.5 Application must be implemented for both Ubuntu LTS 14.04 and Redhat
 RHEL 7 platform.
@@ -85,7 +84,7 @@ Note: Current X-Road implementation is not yet compatible with
 requirement 2.1.
 
 2.2 It is obligatory to use Foreign Keys for referencing data from one
-table to an other.
+table to another.
 
 2.3 All Foreign Keys must be indexed.
 
@@ -179,12 +178,12 @@ Note: Current X-Road implementation had not yet been checked for
 compatibility with web interfaces requirements.
 
 4.1 The styles that application uses must be located in separate CSS
-files, that means HTML style elements and style attributes can not be
+files, that means HTML style elements and style attributes cannot be
 used.
 
-4.2 The system must use deeplinking. Each page should have a unique,
+4.2 The system must use deep linking. Each page should have a unique,
 automatically generated and human-readable web address (URL), and it
-should not be linked to a users session or a users sensitive personal
+should not be linked to a user's session or a user's sensitive personal
 data.
 
 4.3 The system must replace the default error page, while preserving the
@@ -200,7 +199,7 @@ browser), EdgeHTML (tested with Edge browser), Trident (tested with
 Internet Explorer 10 and 11) and WebKit (tested with Safari for OS X 8
 and 9). Testing of this requirement is performed using browser versions
 that were latest stable at some point of development phase. Developer
-may chose any operating system for testing of cross-platform engines.
+may choose any operating system for testing of cross-platform engines.
 
 4.6 If the interface is not compatible with the browser used, the user
 should be notified.
@@ -211,7 +210,7 @@ Management
 ### General
 
 5.1.1 The component is allowed to directly alter the system (modify
-environmental variables, create files in the local file system, etc)
+environmental variables, create files in the local file system, etc.)
 containing that component only if functional requirements state so.
 All such alterations must be fully documented. The secondary effects to
 the system such as logs written by SLF4J are allowed.
@@ -293,7 +292,7 @@ application layers. Session length must not be infinite.
 
 6.4 Exiting the system must be made in a secure manner, explicitly and
 comprehensibly to the user. The user can exit the system in two ways:
-his sessions length is longer than the set values (separately definable
+his session's length is longer than the set values (separately definable
 limits for the session length and the period of inactivity) or user
 terminates the session on his own initiative.
 
@@ -302,7 +301,7 @@ lead to financial or legal consequences must be logged in the separately
 configurable audit log. List of these events can be found in X-Road
 audit log events document \[SPEC-AL\].
 
-6.6 All outputs must be sanitised not to include system operation information
+6.6 All outputs must be sanitized not to include system operation information
 such as full names of files, stack traces, etc.
 
 6.7 In web interfaces session management must be based on session cookies.
