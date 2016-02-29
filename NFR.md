@@ -321,8 +321,8 @@ MUST be configurable by administrator, not developer.
 session.
 
 6.10 Application MUST use strong encryption algorithms. All algorithms MUST
-be approved by some cryptographic research. For example: [Estonian cryptographic
-algorithms research 2015](https://www.ria.ee/public/RIA/Kruptograafiliste_algoritmide_uuring_2015.pdf) 
+be approved by cryptographic research. For example: [Estonian cryptographic
+algorithms research 2015](https://www.ria.ee/public/RIA/Kruptograafiliste_algoritmide_uuring_2015.pdf).
 
 
 Standards
