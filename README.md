@@ -5,6 +5,7 @@ This repository is used to store the originals of X-Road joint development work 
 - [Charter](CHARTER.md)
 - [Workflow](WORKFLOW.md)
 - [NFR (Non-functional requirements)](NFR.md)
+- [Backlog](BACKLOG.md)
 
 ### How do the documents relate to each other?
 Sketch of the 'Big Picture':
