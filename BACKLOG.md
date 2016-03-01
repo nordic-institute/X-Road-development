@@ -7,14 +7,10 @@ SS ACL export/import
 Security server must support exporting and importing of access rights of
 the services.
 
-----SS visualize meta-services in management UI
+Shell scripts for executing meta-services
 -----------------------------------------------
 
-Visualize listMethods and allowedMethods queries in security server’s
-management web interface.
-
-Might be a better idea to create a simple command line script to execute
-management services.
+Create a simple command line scripts to execute management services.
 
 Cost effective trust service consumption
 ----------------------------------------
@@ -29,28 +25,11 @@ Create a better documentation of signature format used by X-Road and
 provide that with examples. Documentation must be sufficient to build
 external validators.
 
-----Notification framework (related to environmental monitoring)
-----------------------------------------------------------------
-
-Every monitoring solution is already configurable to send notifications.
-
-----Metaservice to output all producers
----------------------------------------
-
-There is no central repository, so this might not be useful to query SS
-one by one.
-
 SS Hi-Availability
 ------------------
 
 Create a new Hi-availability solution for clustering security servers
 (needs researching first).
-
-----WSDL upload to security server in file form
------------------------------------------------
-
-In addition to adding WSDL via URL create an option to upload a WSDL
-file (Might not be simple. Currently SS does not store WSDL).
 
 RIA JIRA
 ========
@@ -63,14 +42,13 @@ It must be possible to save in X-Road center the preference for CSR
 Generation of CSR in security server must automatically select the
 correct format (XTE-187).
 
-----Management services monitoring
+Management services monitoring
 ----------------------------------
 
 It must be possible to monitor whether management services are working
-(XTE-183).
-
-The only good way to monitor would be to execute the real service. But
-that will fill the logs with test queries.
+(XTE-183). The main purpose is to monitor whether central server is
+fulfilling its SLA (service level agreement) without overwhelming the
+logs with test requests.
 
 Subsystem full name
 -------------------
