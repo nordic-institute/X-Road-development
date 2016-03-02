@@ -31,6 +31,11 @@ SS Hi-Availability
 Create a new Hi-availability solution for clustering security servers
 (needs researching first).
 
+Log security
+------------------
+
+Log records need to be chained and timestamped.
+
 RIA JIRA
 ========
 
@@ -42,27 +47,12 @@ It must be possible to save in X-Road center the preference for CSR
 Generation of CSR in security server must automatically select the
 correct format (XTE-187).
 
-Management services monitoring
-----------------------------------
-
-It must be possible to monitor whether management services are working
-(XTE-183). The main purpose is to monitor whether central server is
-fulfilling its SLA (service level agreement) without overwhelming the
-logs with test requests.
-
 Subsystem full name
 -------------------
 
 Make it possible to add full name to subsystem. Full name should be
 visible not only in the web interface of security and central servers,
 but also in metaservices (XTE-149).
-
-Metaservice listClients extra field isProducer
-----------------------------------------------
-
-Metaservice listClients should output an extra field isProducer that
-indicates whether member or subsystem is offering some services
-(XTE-150).
 
 NFR
 ===
