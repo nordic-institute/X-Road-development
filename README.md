@@ -12,6 +12,10 @@ X-Road Joint Development 'Big Picture':
 
 ![](IMG/X-Road.Joint.Development.png)
 
+### X-Road Open Community
+
+More information about X-Road Open Community can be found [here](https://github.com/jointxroad/About).
+
 ### How to contribute?
 Submit a pull request or raise an issue. Changes to the documents are reviewed in EE-FI workgroup meetings and/or e-mail and/or issue comments in this repository. 
 
