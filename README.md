@@ -7,7 +7,8 @@ This repository is used to store the originals of X-Road joint development work 
 - [NFR (Non-functional requirements)](NFR.md)
 
 ### How do the documents relate to each other?
-Sketch of the 'Big Picture':
+
+X-Road Joint Development 'Big Picture':
 
 ![](IMG/X-Road.Joint.Development.png)
 
