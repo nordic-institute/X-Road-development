@@ -9,7 +9,7 @@ This repository is used to store the originals of X-Road joint development work 
 ### How do the documents relate to each other?
 Sketch of the 'Big Picture':
 
-![](IMG/IMG_0368.JPG)
+![](IMG/X-Road.Joint.Development.png)
 
 ### How to contribute?
 Submit a pull request or raise an issue. Changes to the documents are reviewed in EE-FI workgroup meetings and/or e-mail and/or issue comments in this repository. 
