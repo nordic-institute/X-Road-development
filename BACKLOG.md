@@ -1,5 +1,7 @@
 ## General
 
+General requirements.
+
 #### SS ACL export/import
 --------------------
 
@@ -37,6 +39,8 @@ Log records need to be chained and timestamped.
 
 ## RIA JIRA
 
+Requirements from RIA's JIRA.
+
 #### CSR format of trust service provider
 ------------------------------------
 
@@ -53,6 +57,8 @@ visible not only in the web interface of security and central servers,
 but also in metaservices (XTE-149).
 
 ## NFR
+
+Non-functional requirements.
 
 #### Database users
 --------------
