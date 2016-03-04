@@ -56,6 +56,25 @@ Make it possible to add full name to subsystem. Full name should be
 visible not only in the web interface of security and central servers,
 but also in metaservices (XTE-149).
 
+## VRK JIRA
+
+Requirements from VRK's JIRA.
+
+#### Signer Scalability
+-------------------
+
+The signer component must support parallel signing if multiple cores are available (PVAYLADEV-330).
+
+#### Global configuration access
+-------------------
+
+The global configuration files distributed by the central server must be available for the proxy component through Security Server's in-memory cache.
+
+#### Serverconf
+-------------------
+
+Service related configuration (e.g. access rights) must be fetched from the database once per request at the maximum. 
+
 ## NFR
 
 Non-functional requirements.
