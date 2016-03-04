@@ -75,6 +75,11 @@ The global configuration files distributed by the central server must be availab
 
 Service related configuration (e.g. access rights) must be fetched from the database once per request at the maximum (PVAYLADEV-351). 
 
+#### OCSP Response Verification
+-------------------
+
+Signing and authentication certificate's status must be verified once per request (PVAYLADEV-352).
+
 ## NFR
 
 Non-functional requirements.
