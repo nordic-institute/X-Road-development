@@ -68,12 +68,12 @@ The signer component must support parallel signing if multiple cores are availab
 #### Global configuration access
 -------------------
 
-The global configuration files distributed by the central server must be available for the proxy component through Security Server's in-memory cache.
+The global configuration files distributed by the central server must be available for the proxy component through Security Server's in-memory cache (PVAYLADEV-350).
 
 #### Serverconf
 -------------------
 
-Service related configuration (e.g. access rights) must be fetched from the database once per request at the maximum. 
+Service related configuration (e.g. access rights) must be fetched from the database once per request at the maximum (PVAYLADEV-351). 
 
 ## NFR
 
