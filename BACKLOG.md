@@ -1,5 +1,4 @@
 ## General
-=======
 
 #### SS ACL export/import
 --------------------
@@ -37,7 +36,6 @@ Create a new Hi-availability solution for clustering security servers
 Log records need to be chained and timestamped.
 
 ## RIA JIRA
-========
 
 #### CSR format of trust service provider
 ------------------------------------
@@ -55,7 +53,6 @@ visible not only in the web interface of security and central servers,
 but also in metaservices (XTE-149).
 
 ## NFR
-===
 
 #### Database users
 --------------
