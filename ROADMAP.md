@@ -16,7 +16,7 @@ Current document postulates the major changes that are identified and about for 
 | Central Server notifications | The X-Road center needs to receive notifications from the central server when a new request that must be approved is received.  | FI/pkivimäki | 2016
 | Security server performance improvements 2 | Improving the scale-out performance of security server, e.g. support for external load balancers.  | FI/pkivimäki | 2017
 | REST support | REST Gateway extension that provides automated SOAP-REST conversion. The configuration of the extension can be done through security server UI. | FI/pkivimäki | 2017
-| Security server clustering | When the same service is published through multiple security servers, the service configuration must be replicated to all the instances, e.g. when access rights are updated, the change must automatically be replicated to all the instances of the service. | FI/pkivimäki | 2017
+| Security server clustering | When the same service is published on multiple security servers, the service configuration must be replicated to all the instances, e.g. when access rights are updated, the change must automatically be replicated to all the instances of the service. | FI/pkivimäki | 2017
 | RHEL support for central server | It must be possible to run central server on RHEL platform. | FI/pkivimäki | 2017
 | Member management management services | Members need that memeber management tasks are efficient and troubleless. Management services that would support usage of external case systems for convenient membership and seamless access controll of services. | EE/hvainsalu | A
 | Service deployment with quelity assurance | Center needs all deployed services to be compliant and well described | EE/hvainsalu | A
