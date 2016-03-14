@@ -132,7 +132,9 @@ c)	VRK creates repository `XO` and initialises it by committing X-Road v6.0 Secu
 9.4	Manager of `XO` periodically updates `XO` with new content from `XM`.
 
 9.5	Good quality and useful results of open source development can be integrated into `XM`. Exact procedure is out of scope of this document. 
+
 9.6 In cases of justified need, developers can request for up o 2 week 'code freeze' in develop branch of XM from Head Architect.
+
 9.7 Up to 4 weeks 'code freeze' period can be applied to master branch of XM by approval of Head Architect.
 
 
