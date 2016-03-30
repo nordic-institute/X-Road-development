@@ -111,6 +111,8 @@ Procedure:
 
 8.7 If the acceptance criteria are satisfied, then Head Architect pulls in and merges the work into `XM/develop`.
 
+8.8 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
+
 ## 9	Release preparation
 
 9.1	New production release is prepared on `release` branch.
