@@ -20,7 +20,6 @@ Current document postulates the major changes that are identified and about for 
 | ----| ---- | ---- | ---- | ---- | ----
 | Service monitoring | Agreed  | Member needs availability statistics and characteristics for processed messages. Center collects service statstics from members.  | EE/hvainsalu | RIA/tmolder | 2016
 | X-Road protocol stack standard | Specified  | For transparency X-Road ecosystem governance needs X-Road Protocol to be clearly defined. | EE/hvainsalu | RIA/? | 2016 
-| Service repository | Proposed | Central service that harvests services and service descriptions from security servers, and publishes the information as X-Road service that's available for all the members. | FI/pkivimäki | FI/? | 2016
 | Centralized log management | Proposed | Centralized log management system where all the environmental and service monitoring information is stored. Includes the component that harvests the logs from secyrity servers. | FI/pkivimäki | FI/? | 2016
 | Security server performance improvements | Proposed | Improving the scale-up performance of security server, e.g. signer scalability, caching.  | FI/pkivimäki |  ? | 2016
 | Central Server notifications | Proposed | The X-Road center needs to receive notifications from the central server when a new request that must be approved is received.  | FI/pkivimäki | ? | 2016
