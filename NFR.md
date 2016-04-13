@@ -145,8 +145,9 @@ errors with the configuration defined in
 configuration defined in
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/build.gradle>.
 
-3.2.3 All libraries needed for the operation of the component MUST be
-located in /lib directory of the same component.
+3.2.3 All libraries needed for the operation of the component MUST be either
+packaged with the same component or component's installation package MUST
+depend on appropriate library packages.
 
 3.2.4 Each release of application MUST contain only the necessary libraries
 and there MUST be only one version of each library. All library dependencies

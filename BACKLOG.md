@@ -60,6 +60,10 @@ but also in metaservices (XTE-149).
 
 Requirements from VRK's JIRA.
 
+#### Ignore nextUpdate attribute on OCSP response validation
+
+It must be possible to turn off ```nextUpdate``` attribute check on OCSP response validation and let ```ocspFreshnessSeconds``` parameter alone define the time period when OCSP response is considered valid. According to [RFC 6960](https://tools.ietf.org/html/rfc6960) it must be checked that nextUpdate value is in the future, otherwise the OCSP response is invalid. This may create problems if multiple CAs are used in the same X-Road instance or OCSP service is not available for period longer than ```ocspFreshnessSeconds```. (PVAYLADEV-364)
+
 #### Signer Scalability
 -------------------
 
