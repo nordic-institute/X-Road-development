@@ -34,4 +34,4 @@ Current document postulates the major changes that are identified and about for 
 | Global Group API | Proposed | Members need to allow service usage to certain set of members - jet they do not govern this set by themselves nor does X-Road center. | EE/hvainsalu | ? | B
 | X-Road Center Hi-Av Support | Proposed | Members need central ecosystem availability (nor availability of Trust Federation) not be jeopardized with non-temporary damage to central components. | EE/hvainsalu | ? | C
 | X-Road debug utils | Proposed | Members need support when debuging technological issues with X-Road components | EE/hvainsalu | ? | C
-
+| Reusage of existing certificates for member | Proposed | Member must be able to use security tokens on a signing device that are complient to X-Road requirement | EE/vainsalu | ? | A
