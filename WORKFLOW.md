@@ -3,54 +3,93 @@
 X-Road Joint Development
 # Workflow Policy
 
-DRAFT v0.7
+v1.0
 
 ##1	General
 
-1.1	This document establishes workflow policy for collaborative and open source software development of X-Road software. Workflow Policy strives to serve as a handbook or charter for all practical aspects of development.
+1.1	This document establishes workflow policy for joint development of X-Road software. Workflow Policy strives to serve as a handbook for all practical aspects of development.
 
 1.2	Workflow is understood as systematic arrangement of work, a complex of processes, practices, roles and responsibilities, communication patterns, and artefacts.
 
-1.3	Goals of the workflow policy are to: establish productive and secure collaborative open source working environment; assure production of high quality software; avoid duplication of effort, facilitate re-use of software; transparency and openness; broader community of developers; use of software development best practice; clear communication among Partners as well as other stakeholders in the X-Road development process; innovation.
+1.3	Goals of the workflow policy are to
+- establish productive and secure collaborative open source working environment
+- assure production of high quality software
+- avoid duplication of effort, facilitate re-use of software
+- transparency and openness
+- broader community of developers
+- use of software development best practice
+- clear communication among Partners as well as other stakeholders in the X-Road development process
+- innovation.
 
-1.4	Workflow implements the higher-level agreements of "X-Road Change Management Process" [Change Management Process].
+1.4 This policy uses terminology of [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md).
 
-1.5	X-Road development uses a collaborative model based on Git distributed version control system [Git].
+1.5 Adherence to this policy are made legally binding to Vendors by inclusion of appropriate stipulations in contracts between between Partners and Vendors. Vendor in context of this policy is a firm or other organisation performing development work by assigment of a Partner.
 
-##2	Repositories
+1.6 Partners and Developers implement this policy in good faith and in the context of sustainable, good software development practice.
 
-2.1	Master Repository - short name: `XM`; hosted by: RIA; purpose: release of X-Road software; access: Head Architect has write access; read access is given to development and maintenance personnel assigned by Partners.
+1.7 Projects may have their own workflow arrangements as far as these do not contradict this policy.
 
-2.2	Open Source Repository - short name: `XO`; hosted at: GitHub; purpose: open access publication of select parts of X-Road software; administered by: VRK; access: Head Architect has write access; everybody has read access.
+##2 Related documents
 
-2.3	Vendor repositories - purpose: development work carried out by Vendor; administered by: Vendor.
+2.1 Workflow policy is related to other X-Road joint development policy and regulations:
+- workflow policy implements the higher-level agreements of [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md)
+- developments are co-ordinated by [X-Road Joint Development Roadmap](https://github.com/vrk-kpa/xroad-joint-development/blob/master/ROADMAP.md)
+- technical consistency of X-Road software is maintained with help of [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md).
+ 
+See also other documentation in [X-Road Joint Development](https://github.com/vrk-kpa/xroad-joint-development) repository.
 
-2.4	Partners can establish their own, additional repositories, for backup, software distribution or other purposes.
+##3 Development model
 
-## 3	Branching pattern
+3.1	X-Road development uses the collaborative model based on [Git](https://git-scm.com/) distributed version control system.
 
-3.1	Branching pattern follows the Gitflow model [Gitflow] [Driessen]. Two perpetual branches – `master` and `develop` – together with three additional branches – `feature`, `release` and `hotfix` – are used.
+##4	Repositories
 
-3.2	`master` branch is used to release X-Road software into production. `develop` branch is used to accumulate features for the next big release. `feature` branches are used to work on features (or closely related sets of features) to enhance X-Road core software. New production release is prepared on `release` branch. Patches are prepared on `hotfix` branches.
+4.1	The following code and documentation repositories are used:
+- Master Repository - short name: `XM`; hosted by: RIA (BitBucket); purpose: release of X-Road software; access: Head Architect has write access; read access is given to development and maintenance personnel assigned by Partners.
+- Open Source Repository - short name: `XO`; hosted at: GitHub; purpose: open access publication of select parts of X-Road software; administered by: VRK; access: Head Architect has write access; everybody has read access.
+- Vendor repositories - purpose: development work carried out by Vendor; administered by: Vendor.
 
-## 4	Feature development and integration
+4.2	Partners can establish their own, additional repositories, for backup, software distribution or other purposes.
 
-4.1	Partners co-ordinate development by X-Road Roadmap (see [Change Management Process]).
+## 5	Branching pattern
 
-4.2	Vendors develop software in their repositories, on `feature` branches.
+5.1	Branching pattern follows the Gitflow model [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` and `develop` – together with three additional branches – `feature`, `release` and `hotfix` – are used.
+
+- `master` branch is used to release X-Road software into production
+- `develop` branch is used to accumulate features for the next big release
+- `feature` branches are used to work on features (or closely related sets of features) to enhance X-Road core software
+- new production release is prepared on `release` branch
+- patches are prepared on `hotfix` branches.
+
+##6 Work initiation
+
+6.1 New development is initiated by preparing an enhancement proposal. The proposal is submitted for review and approval to X-Road Joint Development Steering Committee, according to the procedure in [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), section "Scoping Process".
+
+6.2 Partners co-ordinate development by [X-Road Roadmap](https://github.com/vrk-kpa/xroad-joint-development/blob/master/ROADMAP.md). Approved proposal will be entered into [Roadmap](https://github.com/vrk-kpa/xroad-joint-development/blob/master/ROADMAP.md). Dependencies and effects to other components of the X-Road software and other projects must be analysed in preparing of proposals.
+
+6.3	Vendors develop software in their repositories, on `feature` branches.
 
 ![Feature Development](IMG/FeatureDevelopment.PNG)
 
-4.3	Procedure:
+Procedure:
+- Vendor creates `feature` branch in vendor repository by branching from `XM/develop`;
 
-a)	Vendor creates `feature` branch in vendor repository by branching from `XM/develop`;
+6.4 **Vendor version numbering.** To distinguish vendor-specific work, vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
 
-b)	Upon completion of feature development, Vendor sends a pull request to `XM/develop`.
+##7	Performing work
 
-c)	Head Architect reviews the pull request according to acceptance criteria:
+7.1 Vendor is required periodically fetch updates from `XM/develop` and integrate into Vendor's branch. The purpose of this is to facilitate merging of Vendor's work into `XM/develop`.
+
+7.2 It is the responsibility of the Contracting Partner to notify the Vendor about new development added to Roadmap that might affect Vendor's development responsibilities.
+
+##8 Submitting and accepting work
+
+8.1 Upon completion of feature development, Vendor submits a pull request to `XM/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `XM/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
+
+8.2	Head Architect reviews the pull request according to acceptance criteria:
 
 - Are the features OK to be accepted to the core (Feature analysis)?
-- Does the code conform to the X-Road non-functional requirements(see [Non-Functional Requirements])?
+- Does the code conform to the X-Road non-functional requirements(see [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md))?
 - Is the version number correct (as agreed on the roadmap)?
 - Have the changelogs been updated?
 - Does the build and the test cases work? (CI build)
@@ -60,117 +99,95 @@ c)	Head Architect reviews the pull request according to acceptance criteria:
 - Are the JavaDocs OK?
 - Is the code licensing OK?
 - Has the documentation been updated?
-- Does it include the reference to the 'backlog' item?
+- Does it include the reference to the Roadmap and - if applicable - to 'backlog' item?
 - Does it have a correct version number (according to Charter)?
+- No merge conflicts?
 
-d)  When the acceptance criteria is satisfied the Head Architect pulls in from Vendor repository into `XM/develop`.
+8.3 Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
 
-## 5	Release preparation
+8.4 If acceptance criteria are not met, then Vendor is requested to bring submitted work up to acceptance requirements.
 
-5.1	New production release is prepared on `release` branch.
+8.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
+
+8.6 In cases of justified need, developers can request for up o 2 week 'code freeze' in develop branch of XM from Head Architect.
+
+8.7 If the acceptance criteria are satisfied, then Head Architect pulls in and merges the work into `XM/develop`.
+
+8.8 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
+
+## 9	Release preparation
+
+9.1	New production release is prepared on `release` branch.
 
 ![Release preparation](IMG/ReleasePreparation.PNG)
 
-5.2	Jointly developed X-Road software is released by the procedure:
+9.2	Jointly developed X-Road software is released by the procedure:
 
-a)	Head Architect creates a `release` branch from `XM/develop`.
+-	Head Architect creates a `release` branch from `XM/develop`.
+- both Partners thoroughly review the software to be released.
+- Steering Committee decides to release, including the version number (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Release sequence” and “Version compatibility”).
+- Head Architect pushes software from `XM/release` into `XM/master` and tags the commit with version number.
+- Head Architect also updates `XM/develop` with changes made on `release` branch.
 
-b)	both Partners thoroughly review the software to be released.
+9.3	New release also will be updated into X-Road Open Source repository (`XO`).	 
 
-c)	Steering Committee decides to release, including the version number (see [Change Management Process], sections “Release sequence” and “Version compatibility”).
+## 10	Deployment
 
-d)	Head Architect pushes software from `XM/release` into `XM/master` and tags the commit with version number.
+10.1	Partners can fetch released software into Partner repositories. Partner repositories serve as distribution points for Partner country organisations.
 
-e)	Head Architect also updates `XM/develop` with changes made on `release` branch.
+## 11	Hotfix
 
-5.3	New release also will be updated into X-Road Open Source repository (`XO`).	 
+11.1	Critical bug in production version is handled by preparation and release of a patch. 
 
-## 6	Deployment
-
-6.1	Partners can fetch released software into Partner repositories. Partner repositories serve as distribution points for Partner country organisations.
-
-## 7	Hotfix
-
-7.1	Critical bug in production version is handled by preparation and release of a patch. 
-
-7.2	Patch is prepared on `hotfix` branch.
+11.2	Patch is prepared on `hotfix` branch.
 
 ![Hotfix](IMG/Hotfix.PNG)
 
-7.3	Hotfix procedure:
+11.3	Hotfix procedure:
 
-a)	Head Architect creates a `XM/hotfix` branch from `XM/master`.
+- Head Architect creates a `XM/hotfix` branch from `XM/master`.
+- A Partner is assigned to prepare a patch (see [Change Management Process], section “Warranty”).
+- Partner, possibly using a Vendor, prepares the patch and commits it to `XM/hotfix`.
+- Head Architect reviews the patch.
+- Head Architect merges `XM/hotfix` into `XM/master` and tags the commit with version number.
+- Head Architect merges changes made into `XM/hotfix` into `XM/develop`.	 
 
-b)	A Partner is assigned to prepare a patch (see [Change Management Process], section “Warranty”).
+##12	Setting up repositories	
 
-c)	Partner, possibly using a Vendor, prepares the patch and commits it to `XM/hotfix`.
+12.1	Repositories are set up according to the process:
 
-d)	Head Architect reviews the patch.
+- Head Architect sets up the Master Repository `XM`. Repository is initialised by committing X-Road v6.0 software into the `master` branch.
+- Head Architect creates `develop` branch in `XM`.
+- VRK creates repository `XO` and initialises it by committing X-Road v6.0 Security Server software and documentation into the repository.
 
-e)	Head Architect merges `XM/hotfix` into `XM/master` and tags the commit with version number.
+## 13	Open source development
 
-f)	Head Architect merges changes made into `XM/hotfix` into `XM/develop`.	 
+13.1	Open source development and Partner development are only loosely coupled. Open source repository `XO` is open to everybody for forking. VRK administers the open source repository `XO`, in consultation with RIA and X-Road Developer Community.
 
-## 8	Setting up repositories	
+13.2	New branches are created in `XO` by Manager of `XO` as needed.
 
-8.1	Repositories are set up according to the process:
+13.3	Pull requests into `XO` are reviewed and accepted by Manager of `XO`.
 
-a)	Head Architect sets up the Master Repository `XM`. Repository is initialised by committing X-Road v6.0 software into the `master` branch.
+13.4	Manager of `XO` periodically updates `XO` with new content from `XM`.
 
-b)	Head Architect creates `develop` branch in `XM`.
+13.5	Good quality and useful results of open source development can be integrated into `XM`. Exact procedure is out of scope of this document. 
 
-c)	VRK creates repository `XO` and initialises it by committing X-Road v6.0 Security Server software and documentation into the repository.
+## 14	Documentation policy
 
-## 9	Open source development
+14.1	X-Road joint documentation is produced in English. Partners are free to translate documentation into national languages.
 
-9.1	Open source development and Partner development are only loosely coupled. Open source repository `XO` is open to everybody for forking. VRK administers the open source repository `XO`, in consultation with RIA and X-Road Developer Community.
+14.2	Production format for documentation is [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
-9.2	New branches are created in `XO` by Manager of `XO` as needed.
+14.3	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
 
-9.3	Pull requests into `XO` are reviewed and accepted by Manager of `XO`.
+## 15	Approval, publication and amendment
 
-9.4	Manager of `XO` periodically updates `XO` with new content from `XM`.
+15.1	Workflow will be amended as needed. Amendments are guided by the goal of having efficient and flexible workflow.
 
-9.5	Good quality and useful results of open source development can be integrated into `XM`. Exact procedure is out of scope of this document. 
+15.2  All participants of the development can propose to amend Workflow Policy. Amendment proposal can be submitted by raising an issue or submitting a pull request in GitHub.
 
-9.6 In cases of justified need, developers can request for up o 2 week 'code freeze' in develop branch of XM from Head Architect.
+15.3	Head Architect, upon consultation with Partners, when appropriate, accepts or rejects the proposal.
 
-9.7 Up to 4 weeks 'code freeze' period can be applied to master branch of XM by approval of Head Architect.
+15.4	Current version of Workflow Policy is made public in GitHub, https://github.com/vrk-kpa/xroad-joint-development/blob/master/WORKFLOW.md. 
 
 
-## 10	Documentation policy
-
-10.1	X-Road joint documentation is produced in English. Partners are free to translate documentation into national languages.
-
-10.2	Production format for documentation is GitHub Flavoured Markdown [Markdown].
-
-10.3	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
-
-## 11	Approval, publication and amendment
-
-11.1	Workflow Policy is approved by the Partners on the basis of consensus.
-
-11.2	Current version of Workflow Policy is made public in GitHub, https://github.com/e-gov/Workflow. 
-
-11.3	Workflow will be amended as needed. All participants of the development can propose to amend Workflow Policy. Amendment proposal can be submitted by raising an issue or submitting a pull request in GitHub.
-
-11.4	Head Architect brings proposal to Partner Steering Committee who decides to accept or reject the proposal. 
-
-## 12	References
-[BitBucket] BitBucket Server. Controlling access to code. https://confluence.atlassian.com/bitbucketserver/controlling-access-to-code-776639770.html.
-
-[Change Management Process] X-Road Change Management Process. v0.92, 6.10.2015.
-
-[Git] Git distributed version control system, https://git-scm.com/. 
-
-[Gitflow] Atlassian, Comparing workflows, Gitflow workflow, https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow.
-
-[GitHub Organization] Github.com, Introducing Organisations, https://github.com/blog/674-introducing-organizations. 
-
-[Driessen] Driessen V (2010) A successful Git branching model, http://nvie.com/posts/a-successful-git-branching-model/.
-
-[Markdown] GitHub.com, GitHub Flavored Markdown, https://help.github.com/articles/github-flavored-markdown/. 
-
-[Stash] Atlassian.com, Code, Manage, Collaborate, https://www.atlassian.com/software/bitbucket. 
-
-[Non-Functional Requirements] X-Road Non-Functional Requirements
