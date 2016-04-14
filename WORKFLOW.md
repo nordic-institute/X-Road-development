@@ -72,7 +72,8 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 ![Feature Development](IMG/FeatureDevelopment.PNG)
 
 Procedure:
-- Vendor creates `feature` branch in vendor repository by branching from `XM/develop`;
+- Vendor creates its vendor repository by forking `XM`.
+- Vendor creates `feature` branch in vendor repository by branching from `XM/develop`.
 
 6.4 **Vendor version numbering.** To distinguish vendor-specific work, vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
 
