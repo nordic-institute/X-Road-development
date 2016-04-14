@@ -37,6 +37,32 @@ Create a new Hi-availability solution for clustering security servers
 
 Log records need to be chained and timestamped.
 
+#### Secure connection session timeout
+------------------
+
+Security servers currently cache secure connection sessions with other security servers.
+This approach disables load balancing when a service is offered by multiple Security Servers.
+It must be possible to configure security servers to periodically close sessions,
+and try to establish new connection with a faster (less loaded) Security Server.
+
+#### Automatic backup of configuration
+------------------
+
+Security and Central servers must be configured by default to periodically backup their configuration.
+
+#### Message identifier unique check
+------------------
+
+There must be a background job that checks and notifies security server administrator
+if message identifiers are not unique.
+
+#### Automated joining with test X-road
+------------------
+
+It must be possible to configure (mainly for test environments) X-Road instance
+to automatically accept new members, security servers, and subsystems without manual
+insertion of these into central server.
+
 ## RIA JIRA
 
 Requirements from RIA's JIRA.
