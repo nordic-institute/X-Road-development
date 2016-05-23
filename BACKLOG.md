@@ -30,34 +30,3 @@ Current document describes how backlog items are to be handled.
     * Added reference to commit.
     * The commit must have a reference to the backlog.
 * Relevant information is kept in the backlog issue description.
-
---------------------
-# Old stuff
-
-## VRK JIRA
-
-Requirements from VRK's JIRA.
-
-#### Ignore nextUpdate attribute on OCSP response validation
-
-It must be possible to turn off ```nextUpdate``` attribute check on OCSP response validation and let ```ocspFreshnessSeconds``` parameter alone define the time period when OCSP response is considered valid. According to [RFC 6960](https://tools.ietf.org/html/rfc6960) it must be checked that nextUpdate value is in the future, otherwise the OCSP response is invalid. This may create problems if multiple CAs are used in the same X-Road instance or OCSP service is not available for period longer than ```ocspFreshnessSeconds```. (PVAYLADEV-364)
-
-#### Signer Scalability
--------------------
-
-The signer component must support parallel signing if multiple cores are available (PVAYLADEV-330).
-
-#### Global configuration access
--------------------
-
-The global configuration files distributed by the central server must be available for the proxy component through Security Server's in-memory cache (PVAYLADEV-350).
-
-#### Serverconf
--------------------
-
-Service related configuration (e.g. access rights) must be fetched from the database once per request at the maximum (PVAYLADEV-351). 
-
-#### OCSP Response Verification
--------------------
-
-Signing and authentication certificate's status must be verified once per request (PVAYLADEV-352).
