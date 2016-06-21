@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.0
+v1.1
 
 ##1	General
 
@@ -94,6 +94,7 @@ Procedure:
 - Is the version number correct (as agreed on the roadmap)?
 - Have the changelogs been updated?
 - Does the build and the test cases work? (CI build)
+- Does the packaging work (Ubuntu & RHEL)?
 - Is there enough test coverage?
 - Have the X-Road coding conventions been used?
 - Is the code commented well enough?
@@ -103,6 +104,8 @@ Procedure:
 - Does it include the reference to the Roadmap and - if applicable - to 'backlog' item?
 - Does it have a correct version number (according to Charter)?
 - No merge conflicts?
+- Can the software be installed on a clean system (Ubuntu & RHEL)?
+- Can the software version be upgraded from a previous version?
 
 8.3 Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
 
