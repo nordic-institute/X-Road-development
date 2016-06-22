@@ -90,6 +90,7 @@ Procedure:
 8.2	Head Architect reviews the pull request according to acceptance criteria:
 
 - Are the features OK to be accepted to the core (Feature analysis)?
+- Is the source code for the software and its dependencies available?
 - Does the code conform to the X-Road non-functional requirements(see [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md))?
 - Is the version number correct (as agreed on the roadmap)?
 - Have the changelogs been updated?
