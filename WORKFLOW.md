@@ -97,6 +97,7 @@ Procedure:
 - Does the build and the test cases work? (CI build)
 - Does the packaging work (Ubuntu & RHEL)?
 - Is there enough test coverage?
+- Are the static analysis results ok?
 - Have the X-Road coding conventions been used?
 - Is the code commented well enough?
 - Are the JavaDocs OK?
