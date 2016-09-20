@@ -10,6 +10,7 @@
 | 0.92	| Updated version numbering and SC tasks	| 6.10.15 / OK
 | 0.93	| Changed document name to Charter, removed details described in the Workflow document, refences section added	|  22.12.15 / PK
 | 0.94  | Conversion to Markdown, moved to xroad-joint-development repo | 25.01.16 / PP
+| 0.95  | Vendor suffix principles added to versioning | 05.04.16 / OK
 
 The purpose of this document is to describe the change management process of the X-Road software. The process
 must ensure the quality of the source code, the application of best practices and the ability to manage software
@@ -93,6 +94,8 @@ At times the release sequence may jump multiple minor versions at a time to indi
 added, but are not enough to warrant incrementing a major version number. 
 See Non Functional Requirements [X-Road Non-Functional Requirements] document for more detailed information on version
 numbering.
+
+To distinguish vendor-specific work, vendors can label its products by attaching vendor suffix and vendor version number to X-Road semantic version number (mailnly in 'develop' branch). Example: `6.8.0.Qwerty.3` denotes software developed by Qwerty Corporation, version 3.
 
 ## 5 Version Compatibility
 Major versions of X-Road are intended to be longlived versions of the software which consist of numerous minor versions.
