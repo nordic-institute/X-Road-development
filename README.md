@@ -18,6 +18,10 @@ X-Road Joint Development 'Big Picture':
 More information about X-Road Open Community can be found [here](https://github.com/jointxroad/About).
 
 ### How to contribute?
-Submit a pull request or raise an issue. Changes to the documents are reviewed in EE-FI workgroup meetings and/or e-mail and/or issue comments in this repository. 
+Submit a pull request or raise an issue. Changes to the documents are reviewed in EE-FI workgroup meetings and/or e-mail and/or issue comments in this repository.
+
+### Source code
+
+The source code of the X-Road software [is published here](https://github.com/vrk-kpa/xroad-public).
 
 Head Architect decides on submitted changes.
