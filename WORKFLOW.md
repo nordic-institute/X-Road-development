@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.0
+v1.1
 
 ##1	General
 
@@ -87,22 +87,50 @@ Procedure:
 
 8.1 Upon completion of feature development, Vendor submits a pull request to `XM/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `XM/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
 
-8.2	Head Architect reviews the pull request according to acceptance criteria:
+8.2	Head Architect reviews the pull request according to the following acceptance criteria.
 
-- Are the features OK to be accepted to the core (Feature analysis)?
+8.2.1 Feature analysis
+
+- Are the features OK to be accepted to the core?
+- The feature should come through the change management process and be accepted by one of the product owners.
+
+8.2.2 Source code
+
+- Is the source code for the software and its dependencies available?
+
+8.2.3 Non-functional requirements
+
 - Does the code conform to the X-Road non-functional requirements(see [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md))?
+
+8.2.4 Version number
+
+- Is the version number format correct (see https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md)?
 - Is the version number correct (as agreed on the roadmap)?
-- Have the changelogs been updated?
-- Does the build and the test cases work? (CI build)
-- Is there enough test coverage?
-- Have the X-Road coding conventions been used?
-- Is the code commented well enough?
-- Are the JavaDocs OK?
-- Is the code licensing OK?
-- Has the documentation been updated?
-- Does it include the reference to the Roadmap and - if applicable - to 'backlog' item?
-- Does it have a correct version number (according to Charter)?
+
+8.2.5 CI build & tests
+
 - No merge conflicts?
+- Does the build and the test cases work?
+- Does the packaging work (Ubuntu & RHEL)?
+- Can the software be installed on a clean system (Ubuntu & RHEL)?
+- Can the software version be upgraded from a previous version?
+
+8.2.6 Static analysis
+
+- Is there enough test coverage (not below 35%)?
+- Are the SonarQube static analysis results ok?
+
+8.2.7 Changelogs
+
+- Have the changelogs been updated and include the changes made?
+
+8.2.8 Licensing
+
+- Is the code licensing OK?
+
+8.2.9 Documentation
+
+- Has the documentation been updated?
 
 8.3 Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
 
