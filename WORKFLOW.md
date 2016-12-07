@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.1
+v1.2
 
 ##1	General
 
@@ -87,7 +87,7 @@ Procedure:
 
 8.1 Upon completion of feature development, Vendor submits a pull request to `XM/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `XM/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
 
-8.2	Head Architect reviews the pull request according to the following acceptance criteria.
+8.2	Head Architect reviews the pull request according to the acceptance criteria that was in effect when the work on this changeset started.
 
 8.2.1 Feature analysis
 
@@ -113,16 +113,17 @@ Procedure:
 - Does the build and the test cases work?
 - Does the packaging work (Ubuntu & RHEL)?
 - Can the software be installed on a clean system (Ubuntu & RHEL)?
-- Can the software version be upgraded from a previous version?
+- Can the software version be upgraded from the previous XM/source/master version?
 
-8.2.6 Static analysis
+8.2.6 SonarQube (LTS) static analysis
 
-- Is there enough test coverage (not below 35%)?
-- Are the SonarQube static analysis results ok?
+- Is there enough test coverage? The test coverage should be equal or higher than in the previous version.
+- SonarQube shows no bugs or code smells of severity blocker or critical? The developer has a chance to comment the issues before accept/reject action.
 
 8.2.7 Changelogs
 
 - Have the changelogs been updated and include the changes made?
+- The changelog items contain reference to the backlog item where applicable?
 
 8.2.8 Licensing
 
@@ -131,6 +132,7 @@ Procedure:
 8.2.9 Documentation
 
 - Has the documentation been updated?
+- Is the documentation in correct format?
 
 8.3 Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
 
