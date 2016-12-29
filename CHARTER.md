@@ -11,6 +11,7 @@
 | 0.93	| Changed document name to Charter, removed details described in the Workflow document, refences section added	|  22.12.15 / PK
 | 0.94  | Conversion to Markdown, moved to xroad-joint-development repo | 25.01.16 / PP
 | 0.95  | Vendor suffix principles added to versioning | 05.04.16 / OK
+| 1.0  | Working Group role added | 14.12.16 / OK
 
 The purpose of this document is to describe the change management process of the X-Road software. The process
 must ensure the quality of the source code, the application of best practices and the ability to manage software
@@ -32,10 +33,15 @@ The change management process includes the following roles and responsibilities:
   -	Maintains the master repository
   -	Reviews and accepts / rejects contributions
 *	Partner
-  -	Nominates representatives to the Steering Committee
+  -	Nominates representatives to the Steering Committee and Working Group
   -	Submits enhancement proposals
   -	Submits code contributions including required documentation 
   -	Produces bug fixes and security bug fixes
+*	Working Group
+  -	Submits enhancement proposals to [Workflow](https://github.com/vrk-kpa/xroad-joint-development/blob/master/WORKFLOW.md)
+  -	Maintains technical [Backlog](https://github.com/vrk-kpa/xroad-joint-development/issues)
+  -	Maintains [Non Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)
+  - Coordinates daily work
 
 ## 2 Roadmap Management
 A roadmap is a plan that outlines the flow of new features needed to satisfy the needs of X-Road partners.
