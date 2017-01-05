@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.2
+v1.3
 
 ##1	General
 
@@ -87,7 +87,7 @@ Procedure:
 
 8.1 Upon completion of feature development, Vendor submits a pull request to `XM/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `XM/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
 
-8.2	Head Architect reviews the pull request according to the acceptance criteria that was in effect when the work on this changeset started.
+8.2	The pull request is reviewed by Head Architect and selected representative of each Partner. Additional reviewers can be added as necessary. The pull request is reviewed according to the acceptance criteria that was in effect when the work on this changeset started.
 
 8.2.1 Feature analysis
 
@@ -140,11 +140,7 @@ Procedure:
 
 8.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
 
-8.6 In cases of justified need, developers can request for up o 2 week 'code freeze' in develop branch of XM from Head Architect.
-
-8.7 If the acceptance criteria are satisfied, then Head Architect pulls in and merges the work into `XM/develop`.
-
-8.8 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
+8.6 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`.
 
 ## 9	Release preparation
 
