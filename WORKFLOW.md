@@ -224,7 +224,7 @@ Procedure:
 
 ## 16 Testing
 
-16.1	All test scripts and software is bulished in TM
+16.1	All test scripts and software is published in TM
 
 16.2 The branching pattern and workflow with TM is the same as with XM
 
