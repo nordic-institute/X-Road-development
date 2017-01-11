@@ -140,7 +140,11 @@ Procedure:
 
 8.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
 
-8.6 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`.
+8.6 In cases of justified need, developers can request for up to 2 week 'code freeze' in develop branch of XM from Head Architect.
+
+8.7 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
+
+8.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`.
 
 ## 9	Release preparation
 
