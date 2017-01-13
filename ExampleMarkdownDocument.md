@@ -1,12 +1,13 @@
 # Example Markdown Document
 
-Version: 1.0.0  
+Version: 1.0.1  
 13.01.2017  
 Doc. ID: UG-EXAMPLEMD  
 
 | Date       | Version     | Description                                     | Author             |
 |------------|-------------|-------------------------------------------------|--------------------|
 | 13.01.2017 | 1.0.0       | Initial version                                 | Vitali Stupin      |
+| 13.01.2017 | 1.0.1       | Fixed some typos                                | Vitali Stupin      |
 
 ## Table of Contents
 
@@ -18,12 +19,12 @@ Doc. ID: UG-EXAMPLEMD
 [2 Examples](#2-examples)  
 [Annex A Example XML](#annex-a-example-xml)  
 
-## <a name="license"></a>License
+## License
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 
-## <a name="1-introduction"></a>1 Introduction
+## 1 Introduction
 
 This is an example GitHub Flavored Markdown document \[[GITHUBMD](#Ref_GITHUBMD)\] used to illustrate X-Road joint developement
 "Formatting & Style Guide" \[[STYLEGUIDE](#Ref_STYLEGUIDE)\].
@@ -34,7 +35,7 @@ and MAY use this example as a template for new documents.
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL"
 in this document (in uppercase, as shown) are to be interpreted as described in \[[RFC2119](#Ref_RFC2119)\].
 
-### <a name="11-terms-and-abbreviations"></a>1.1 Terms and Abbreviations
+### 1.1 Terms and Abbreviations
 
 - **X-Road member** – natural or legal person who uses functionality offered by X-Road.
 
@@ -46,14 +47,14 @@ and that can be used by other X-Road members or subsystems.
 
 - **XML** - stands for eXtensible Markup Language.
 
-### <a name="12-references"></a>1.2 References
+### 1.2 References
 
 <a id="Ref_STYLEGUIDE"></a>\[STYLEGUIDE\] X-Road joint developement Formatting & Style Guide, 2016,  
 [FormattingStyleGuide.md](FormattingStyleGuide.md)
 
-<a name="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels, Internet Engineering Task Force, 1997.
+<a id="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels, Internet Engineering Task Force, 1997.
 
-<a name="Ref_GITHUBMD"></a>\[GITHUBMD\] GitHub Flavored Markdown,  
+<a id="Ref_GITHUBMD"></a>\[GITHUBMD\] GitHub Flavored Markdown,  
 https://guides.github.com/features/mastering-markdown/.
 
 ## 2 Examples
