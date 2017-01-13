@@ -5,7 +5,7 @@ This document provides formatting and style conventions for publishing documents
 
 ## General
 - Use [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-- If the workflow prescribes the document to go into BitBucket repository first, then you may find [BitBucket Markdown Syntax Guide](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html) useful.
+- Example document following this guide: [ExampleMarkdownDocument.md](ExampleMarkdownDocument.md)
 
 ## Title & headings
 - Use # (h1) for document title.
@@ -20,22 +20,32 @@ This document provides formatting and style conventions for publishing documents
 
 ## Table of contents
 - Provide table of contents for longer documents.
-- Use links in the table of contents. Use [GitHub heading anchors](https://gist.github.com/asabaylus/3071099). For example,
-```
-  [Table of contents](StyleManual.md#table-of-contents) 
-```
-links to this section.
+- Use links in the table of contents. Use [GitHub heading anchors](https://gist.github.com/asabaylus/3071099).
+  For example the following code links to this section:
+
+  ```
+  [Table of contents](#table-of-contents) 
+  ```
 
 ## Licence
 - Use Creative Commons Attribution-ShareAlike 3.0 Unported License.
 - Create separate chapter for licence and add the following licence text to this chapter:
 
-`This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/`
+  ```
+  This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/
+  ```
 
 - Licence chapter must be the very first chapter in markdown document (first one after the table of contents).
 
 ## Linking
 - Use [relative linking](https://github.com/blog/1395-relative-links-in-markup-files) to link to image files and other documents in the same repository.
+- Use anchors to create references:
+
+  ```
+  <a id="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels,
+  Internet Engineering Task Force, 1997.
+  ```
 
 ## Code
 - Use backticks to mark inline code, URLs a.o. constant values.
@@ -54,4 +64,3 @@ links to this section.
 ## References
 [GitHub Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
-[BitBucket Markdown Syntax Guide](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html) 
