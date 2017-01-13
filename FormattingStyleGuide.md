@@ -5,7 +5,7 @@ This document provides formatting and style conventions for publishing documents
 
 ## General
 - Use [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-- Example document following this guide: [ExampleMarkdownDocument.md](ExampleMarkdownDocument.md)
+- Example document following this guide: [ExampleMarkdownDocument.md](ExampleMarkdownDocument.md).
 
 ## Title & headings
 - Use # (h1) for document title.
