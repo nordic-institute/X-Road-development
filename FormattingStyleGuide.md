@@ -27,16 +27,16 @@ This document provides formatting and style conventions for publishing documents
   [Table of contents](#table-of-contents) 
   ```
 
-## Licence
+## License
 - Use Creative Commons Attribution-ShareAlike 3.0 Unported License.
-- Create separate chapter for licence and add the following licence text to this chapter:
+- Create separate chapter for license and add the following license text to this chapter:
 
   ```
   This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
   To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/
   ```
 
-- Licence chapter must be the very first chapter in markdown document (first one after the table of contents).
+- License chapter must be the very first chapter in markdown document (first one after the table of contents).
 
 ## Linking
 - Use [relative linking](https://github.com/blog/1395-relative-links-in-markup-files) to link to image files and other documents in the same repository.
