@@ -52,10 +52,11 @@ and that can be used by other X-Road members or subsystems.
 <a id="Ref_STYLEGUIDE"></a>\[STYLEGUIDE\] X-Road joint development Formatting & Style Guide, 2016,  
 [FormattingStyleGuide.md](FormattingStyleGuide.md)
 
-<a id="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels, Internet Engineering Task Force, 1997.
+<a id="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels, Internet Engineering Task Force, 1997,  
+https://www.ietf.org/rfc/rfc2119.txt
 
 <a id="Ref_GITHUBMD"></a>\[GITHUBMD\] GitHub Flavored Markdown,  
-https://guides.github.com/features/mastering-markdown/.
+https://guides.github.com/features/mastering-markdown/
 
 ## 2 Examples
 
