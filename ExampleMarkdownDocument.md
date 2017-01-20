@@ -1,4 +1,4 @@
-# Example Markdown Document
+# X-Road: Example Markdown Document
 
 Version: 1.0.2  
 Doc. ID: UG-EXAMPLEMD  
@@ -7,7 +7,7 @@ Doc. ID: UG-EXAMPLEMD
 |------------|-------------|-------------------------------------------------|--------------------|
 | 13.01.2017 | 1.0.0       | Initial version                                 | Vitali Stupin      |
 | 13.01.2017 | 1.0.1       | Fixed some typos                                | Vitali Stupin      |
-| 20.01.2017 | 1.0.2       | Fixed some typos                                | Vitali Stupin      |
+| 20.01.2017 | 1.0.2       | Fixed some more typos                           | Vitali Stupin      |
 
 ## Table of Contents
 
