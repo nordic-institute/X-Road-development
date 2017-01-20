@@ -61,14 +61,14 @@ https://guides.github.com/features/mastering-markdown/.
 
 Note that GutHub will automatically detect fully qualified links. So the following lines of code will produce the same result:
 ```
-https://guides.github.com/features/mastering-markdown/
+https://guides.github.com/
 ```
-https://guides.github.com/features/mastering-markdown/
+https://guides.github.com/
 
 ```
-[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+[https://guides.github.com/](https://guides.github.com/)
 ```
-[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+[https://guides.github.com/](https://guides.github.com/)
 
 Be careful with long lines in code blocks. Triple backticks (\`\`\`) disable wrapping:
 ```
