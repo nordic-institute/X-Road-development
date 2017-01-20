@@ -1,13 +1,13 @@
 # Example Markdown Document
 
 Version: 1.0.1  
-13.01.2017  
 Doc. ID: UG-EXAMPLEMD  
 
 | Date       | Version     | Description                                     | Author             |
 |------------|-------------|-------------------------------------------------|--------------------|
 | 13.01.2017 | 1.0.0       | Initial version                                 | Vitali Stupin      |
 | 13.01.2017 | 1.0.1       | Fixed some typos                                | Vitali Stupin      |
+| 20.01.2017 | 1.0.2       | Fixed some typos                                | Vitali Stupin      |
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/
 
 ## 1 Introduction
 
-This is an example GitHub Flavored Markdown document \[[GITHUBMD](#Ref_GITHUBMD)\] used to illustrate X-Road joint developement
+This is an example GitHub Flavored Markdown document \[[GITHUBMD](#Ref_GITHUBMD)\] used to illustrate X-Road joint development
 "Formatting & Style Guide" \[[STYLEGUIDE](#Ref_STYLEGUIDE)\].
 
 Document creators SHOULD view this example markdown before writing any X-Road documentation
@@ -49,7 +49,7 @@ and that can be used by other X-Road members or subsystems.
 
 ### 1.2 References
 
-<a id="Ref_STYLEGUIDE"></a>\[STYLEGUIDE\] X-Road joint developement Formatting & Style Guide, 2016,  
+<a id="Ref_STYLEGUIDE"></a>\[STYLEGUIDE\] X-Road joint development Formatting & Style Guide, 2016,  
 [FormattingStyleGuide.md](FormattingStyleGuide.md)
 
 <a id="Ref_RFC2119"></a>\[RFC2119\] Key words for use in RFCs to Indicate Requirement Levels, Internet Engineering Task Force, 1997.
@@ -70,7 +70,7 @@ https://guides.github.com/features/mastering-markdown/
 ```
 [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
-Be carefull with long lines in code blocks. Tripple backticks (\`\`\`) disable wrapping:
+Be careful with long lines in code blocks. Triple back ticks (\`\`\`) disable wrapping:
 ```
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 ```
