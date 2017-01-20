@@ -1,6 +1,6 @@
 # Example Markdown Document
 
-Version: 1.0.1  
+Version: 1.0.2  
 Doc. ID: UG-EXAMPLEMD  
 
 | Date       | Version     | Description                                     | Author             |
