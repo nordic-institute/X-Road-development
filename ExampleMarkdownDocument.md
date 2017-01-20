@@ -70,7 +70,7 @@ https://guides.github.com/features/mastering-markdown/
 ```
 [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
-Be careful with long lines in code blocks. Triple back ticks (\`\`\`) disable wrapping:
+Be careful with long lines in code blocks. Triple backticks (\`\`\`) disable wrapping:
 ```
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 ```
