@@ -56,7 +56,7 @@ This document provides formatting and style conventions for publishing documents
 
 ## Conversion
 - Use programmer's editor (e.g. [Sublime Text](https://www.sublimetext.com/)), or just Notepad to convert documents from Word, Confluence, PDF a.o. formats to Markdown.
-- Specialised converter software (e.g. [Pandoc](http://pandoc.org/)) can be used, but will rarely justify the learning effort.
+- Specialized converter software (e.g. [Pandoc](http://pandoc.org/)) can be used, but will rarely justify the learning effort.
 
 ## For more sophisticated publishing
 - For more sophisticated presentation needs, consider using [Hugo](https://gohugo.io/), [Jekyll](https://jekyllrb.com/) or some other website generation tool that accepts Markdown.
