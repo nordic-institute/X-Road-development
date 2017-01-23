@@ -26,6 +26,7 @@ This document provides formatting and style conventions for publishing documents
   ```
   [Table of contents](#table-of-contents) 
   ```
+- Table of contents can be generated using a appropriate tool, for example, https://www.npmjs.com/package/markdown-toc or vim-markdown-toc.
 
 ## License
 - Use Creative Commons Attribution-ShareAlike 3.0 Unported License.
