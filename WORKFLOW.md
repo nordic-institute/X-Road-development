@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.3
+v1.4
 
 ##1	General
 
@@ -145,7 +145,7 @@ Procedure:
 
 8.7 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
 
-8.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`.
+8.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`. The commit is then tagged with version number.
 
 ## 9	Release preparation
 
