@@ -24,6 +24,6 @@ Submit a pull request or raise an issue. Changes to the documents are reviewed i
 
 The source code of the X-Road software [is published here](https://github.com/vrk-kpa/xroad-public).
 
-X-road development repository [(XM) is here](https://github.com/ria-ee/XM). X-road related tests [(XTM) are here](https://github.com/ria-ee/XTM).
+X-road development repository [(X-Road) is here](https://github.com/ria-ee/X-Road). X-road related tests [(X-Road-tests) are here](https://github.com/ria-ee/X-Road-tests).
 
 Head Architect decides on submitted changes.
