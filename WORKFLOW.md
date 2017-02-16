@@ -202,7 +202,7 @@ Procedure:
 
 13.4	Manager of `XO` periodically updates `XO` with new content from `X-Road`.
 
-13.5	Good quality and useful results of open source development can be integrated into `XM`. Exact procedure is out of scope of this document. 
+13.5	Good quality and useful results of open source development can be integrated into `X-Road`. Exact procedure is out of scope of this document. 
 
 ## 14	Documentation policy
 
