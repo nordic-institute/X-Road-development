@@ -45,8 +45,8 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 ##4	Repositories
 
 4.1	The following code and documentation repositories are used:
-- Master Repository - short name: `XM`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road software; access: Head Architect has write access; read access: ALL.
-- Master Test Repository - short name: `TM`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road automated tests; access: Head Architect has write access; read access: ALL.
+- Master Repository - short name: `X-Road`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road software; access: Head Architect has write access; read access: ALL.
+- Master Test Repository - short name: `X-Road-tests`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road automated tests; access: Head Architect has write access; read access: ALL.
 - Open Source Repository - short name: `XO`; hosted at: GitHub; purpose: open access publication of select parts of X-Road software; administered by: VRK; access: Head Architect has write access; everybody has read access.
 - Vendor repositories - purpose: development work carried out by Vendor; administered by: Vendor.
 
@@ -73,20 +73,20 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 ![Feature Development](IMG/FeatureDevelopment.PNG)
 
 Procedure:
-- Vendor creates its vendor repository by forking `XM`.
-- Vendor creates `feature` branch in vendor repository by branching from `XM/develop`.
+- Vendor creates its vendor repository by forking `X-Road`.
+- Vendor creates `feature` branch in vendor repository by branching from `X-Road/develop`.
 
 6.4 **Vendor version numbering.** To distinguish vendor-specific work, vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
 
 ##7	Performing work
 
-7.1 Vendor is required periodically fetch updates from `XM/develop` and integrate into Vendor's branch. The purpose of this is to facilitate merging of Vendor's work into `XM/develop`.
+7.1 Vendor is required periodically fetch updates from `X-Road/develop` and integrate into Vendor's branch. The purpose of this is to facilitate merging of Vendor's work into `X-Road/develop`.
 
 7.2 It is the responsibility of the Contracting Partner to notify the Vendor about new development added to Roadmap that might affect Vendor's development responsibilities.
 
 ##8 Submitting and accepting work
 
-8.1 Upon completion of feature development, Vendor submits a pull request to `XM/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `XM/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
+8.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
 
 8.2	The pull request is reviewed by Head Architect and selected representative of each Partner. Additional reviewers can be added as necessary. The pull request is reviewed according to the acceptance criteria that was in effect when the work on this changeset started.
 
@@ -114,7 +114,7 @@ Procedure:
 - Does the build and the test cases work?
 - Does the packaging work (Ubuntu & RHEL)?
 - Can the software be installed on a clean system (Ubuntu & RHEL)?
-- Can the software version be upgraded from the previous XM/source/master version?
+- Can the software version be upgraded from the previous X-Road/source/master version?
 
 8.2.6 SonarQube (LTS) static analysis
 
@@ -141,11 +141,11 @@ Procedure:
 
 8.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
 
-8.6 In cases of justified need, developers can request for up to 2 week 'code freeze' in develop branch of XM from Head Architect.
+8.6 In cases of justified need, developers can request for up to 2 week 'code freeze' in develop branch of X-Road from Head Architect.
 
-8.7 Up to 4 week 'code freeze' period can be applied to `XM/master` by approval of Head Architect.
+8.7 Up to 4 week 'code freeze' period can be applied to `X-Road/master` by approval of Head Architect.
 
-8.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `XM/develop`. The commit is then tagged with version number.
+8.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `X-Road/develop`. The commit is then tagged with version number.
 
 ## 9	Release preparation
 
@@ -155,11 +155,11 @@ Procedure:
 
 9.2	Jointly developed X-Road software is released by the procedure:
 
--	Head Architect creates a `release` branch from `XM/develop`.
+-	Head Architect creates a `release` branch from `X-Road/develop`.
 - both Partners thoroughly review the software to be released.
 - Steering Committee decides to release, including the version number (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Release sequence” and “Version compatibility”).
-- Head Architect pushes software from `XM/release` into `XM/master` and tags the commit with version number.
-- Head Architect also updates `XM/develop` with changes made on `release` branch.
+- Head Architect pushes software from `X-Road/release` into `X-Road/master` and tags the commit with version number.
+- Head Architect also updates `X-Road/develop` with changes made on `release` branch.
 
 9.3	New release also will be updated into X-Road Open Source repository (`XO`).	 
 
@@ -177,19 +177,19 @@ Procedure:
 
 11.3	Hotfix procedure:
 
-- Head Architect creates a `XM/hotfix` branch from `XM/master`.
+- Head Architect creates a `X-Road/hotfix` branch from `X-Road/master`.
 - A Partner is assigned to prepare a patch (see [Change Management Process], section “Warranty”).
-- Partner, possibly using a Vendor, prepares the patch and commits it to `XM/hotfix`.
+- Partner, possibly using a Vendor, prepares the patch and commits it to `X-Road/hotfix`.
 - Head Architect reviews the patch.
-- Head Architect merges `XM/hotfix` into `XM/master` and tags the commit with version number.
-- Head Architect merges changes made into `XM/hotfix` into `XM/develop`.	 
+- Head Architect merges `X-Road/hotfix` into `X-Road/master` and tags the commit with version number.
+- Head Architect merges changes made into `X-Road/hotfix` into `X-Road/develop`.	 
 
 ##12	Setting up repositories	
 
 12.1	Repositories are set up according to the process:
 
-- Head Architect sets up the Master Repository `XM`. Repository is initialised by committing X-Road v6.0 software into the `master` branch.
-- Head Architect creates `develop` branch in `XM`.
+- Head Architect sets up the Master Repository `X-Road`. Repository is initialised by committing X-Road v6.0 software into the `master` branch.
+- Head Architect creates `develop` branch in `X-Road`.
 - VRK creates repository `XO` and initialises it by committing X-Road v6.0 Security Server software and documentation into the repository.
 
 ## 13	Open source development
@@ -200,9 +200,9 @@ Procedure:
 
 13.3	Pull requests into `XO` are reviewed and accepted by Manager of `XO`.
 
-13.4	Manager of `XO` periodically updates `XO` with new content from `XM`.
+13.4	Manager of `XO` periodically updates `XO` with new content from `X-Road`.
 
-13.5	Good quality and useful results of open source development can be integrated into `XM`. Exact procedure is out of scope of this document. 
+13.5	Good quality and useful results of open source development can be integrated into `X-Road`. Exact procedure is out of scope of this document. 
 
 ## 14	Documentation policy
 
@@ -224,8 +224,8 @@ Procedure:
 
 ## 16 Testing
 
-16.1	All test scripts and software is published in TM
+16.1	All test scripts and software is published in X-Road-tests
 
-16.2 The branching pattern and workflow with TM is the same as with XM
+16.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road
 
-16.3 For clarity TM is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. national folders are dedicated for national implementation only tests.
+16.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. national folders are dedicated for national implementation only tests.
