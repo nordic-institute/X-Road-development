@@ -8,16 +8,20 @@ Doc. ID: UG-EXAMPLEMD
 | 13.01.2017 | 1.0.0       | Initial version                                 | Vitali Stupin      |
 | 13.01.2017 | 1.0.1       | Fixed some typos                                | Vitali Stupin      |
 | 20.01.2017 | 1.0.2       | Fixed some more typos                           | Vitali Stupin      |
+| 02.03.2017 | 1.0.3       | Toc is generated using markdown-toc             | Vitali Stupin      |
 
 ## Table of Contents
 
-[Table of Contents](#table-of-contents)  
-[License](#license)  
-[1 Introduction](#1-introduction)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Terms and Abbreviations](#11-terms-and-abbreviations)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 References](#12-references)  
-[2 Examples](#2-examples)  
-[Annex A Example XML](#annex-a-example-xml)  
+<!-- toc -->
+
+- [License](#license)
+- [1 Introduction](#1-introduction)
+  * [1.1 Terms and Abbreviations](#11-terms-and-abbreviations)
+  * [1.2 References](#12-references)
+- [2 Examples](#2-examples)
+- [Annex A Example XML](#annex-a-example-xml)
+
+<!-- tocstop -->
 
 ## License
 
