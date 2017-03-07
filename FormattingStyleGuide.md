@@ -48,6 +48,12 @@ This document provides formatting and style conventions for publishing documents
   Internet Engineering Task Force, 1997.
   ```
 
+- When linking or referencing X-Road documents use document abbreviation:
+
+  ```
+  [\[ARC-G\] X-Road Architecture](Architecture/arc-g_x-road_arhitecture.md)  
+  ```
+
 ## Code
 - Use backticks to mark inline code, URLs a.o. constant values.
 - Use GitHub Markdown code fencing to format blocks of code.
