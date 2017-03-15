@@ -28,7 +28,6 @@ Current document postulates the major changes that are identified and about for 
 | Improve management in central server | Specified | #117, #124 | EE/hvainsalu | EE/pelm | Q2 2017
 | Compliance to NFR | Specified | Solve backlog items #39, #41, #43 + output of security testing | EE/hvainsalu | EE/pelm | Q4 2017
 | Service Developer Trainings | Specified | Public Estonian and English materials for service developer class trainings | EE/hvainsalu | EE/pelm | Q3 2017
-
 | Security Server Installation training | Specified | Hands-on Security Server installation workshop for Finnish organizations. End of Q1. | FI/hanhaka | FI | 2017
 | Centralized log management | Proposed | Centralized log management system where all the environmental and service monitoring information is stored. Includes the component that harvests the logs from secyrity servers. | FI/pkivimäki | FI/? | 2016
 | Security server performance improvements | Agreed | Improving the scale-up performance of security server, e.g. signer scalability, caching.  | FI/pkivimäki |  FI | 2016
