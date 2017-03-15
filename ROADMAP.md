@@ -28,24 +28,24 @@ Current document postulates the major changes that are identified and about for 
 | Improve management in central server | Specified | #117, #124 | EE/hvainsalu | EE/pelm | Q2 2017
 | Compliance to NFR | Specified | Solve backlog items #39, #41, #43 + output of security testing | EE/hvainsalu | EE/pelm | Q4 2017
 | Service Developer Trainings | Specified | Public Estonian and English materials for service developer class trainings | EE/hvainsalu | EE/pelm | Q3 2017
-| Security Server Installation training | Specified | Hands-on Security Server installation workshop for Finnish organizations. End of Q1. | FI/hanhaka | FI | 2017
+| Security Server operational and maintenance training | Agreed | Hands-on Security Server operational and maintenance workshop for Finnish organizations | FI/hanhaka | FI | Q2 2017
 | Centralized log management | Proposed | Centralized log management system where all the environmental and service monitoring information is stored. Includes the component that harvests the logs from secyrity servers. | FI/pkivimäki | FI/? | 2016
 | Security server performance improvements | Agreed | Improving the scale-up performance of security server, e.g. signer scalability, caching.  | FI/pkivimäki |  FI | 2016
 | Central Server notifications | Proposed | The X-Road center needs to receive notifications from the central server when a new request that must be approved is received.  | FI/pkivimäki | ? | 2017
 | Security server performance improvements 2 | Agreed | Improving the scale-out performance of security server, e.g. support for external load balancers.  | FI/pkivimäki | FI | 2017
-| REST support | Proposed | REST Gateway extension that provides automated SOAP-REST conversion. The configuration of the extension can be done through security server UI. | FI/pkivimäki | ? | 2017
+| REST support | Specified | REST Gateway extension that provides automated SOAP-REST conversion. The configuration of the extension can be done through security server UI. | FI/pkivimäki/hanhaka | FI | Q3 2017
 | Security server clustering | Proposed | When the same service is published on multiple security servers, the service configuration must be replicated to all the instances, e.g. when access rights are updated, the change must automatically be replicated to all the instances of the service. | FI/pkivimäki | ? | 2017
-| RHEL support for central server | Proposed | It must be possible to run central server on RHEL platform. | FI/pkivimäki | FI/? | 2017
+| RHEL support for central server | Postponed | It must be possible to run central server on RHEL platform. | FI/pkivimäki | NIIS? | 2018
 | Ubuntu 18.04 LTS support | Specified | Support for Ubuntu 18.04 LTS (both Security Server and Central Server). | FI/hanhaka | NIIS? | 2018
-| Read only user support | Specified | Read only user support for Security Server UI. This user cannot necessarily see all the settings and is not be able to change anything | FI/hanhaka | FI | 2017
-| REST Gateway support and packaging | Proposed | REST Gateway DEB and RPM packages as a part of X-Road | FI/hanhaka | FI | 2017
-| Messagelog database performance boost | Agreed | Messagelog database performance analysis and improvements to boost database related transactions and functionalities. | FI/hanhaka | FI | 2017
-| Messagelog analysis tool | Proposed | Possibility to fetch all organisation specific messages to a file from Messagelog database by using command line tool. | FI/hanhaka | FI | 2017
-| Internal load balancing enhancement | Agreed | 'Fastest wins' load balancing principle is improved so that the connection to a service in the subsystem will be established faster. | FI/hanhaka | FI | 2017
-| Software update available notification | Proposed | If new software update is available, Security Server UI shows notification on top banner. | FI/hanhaka | FI | 2017
-| Environment monitoring data harvesting | Proposed | Environment monitoring harvester collector module is implemented and taken into production. | FI/hanhaka | FI | 2017
-| Code quality improvements (exceptions) | Proposed | Generic exceptions should be designed and implemented so that they are application specific exceptions not just using default & generic exception model. | FI/hanhaka | ? | 2017
-| Improving the transfer of big attachment files via X-Road | Proposed | Boosting performance of big file transfer via X-Road. | FI/hanhaka | FI | 2017
+| Read only user support | Agreed | Read only user support for Security Server UI. This user cannot necessarily see all the settings and is not be able to change anything | FI/hanhaka | FI | Q2 2017
+| REST Gateway support and packaging | Specified | REST Gateway DEB and RPM packages as a part of X-Road | FI/hanhaka | FI | Q2 2017
+| Messagelog database performance boost | Agreed | Messagelog database performance analysis and improvements to boost database related transactions and functionalities. | FI/hanhaka | FI | Q2 2017
+| Messagelog analysis tool | Specified | Possibility to fetch all organisation specific messages to a file from Messagelog database by using command line tool or some other tool. | FI/hanhaka | FI | H2 2017
+| Internal load balancing enhancement | Agreed | 'Fastest wins' load balancing principle is improved so that the connection to a service in the subsystem will be established faster. | FI/hanhaka | FI | H2 2017
+| Software update available notification | Specified | Automatic mechanism to notify on UI when new software update is available. | FI/hanhaka | FI | H2 2017
+| Environment monitoring data harvesting | Agreed | Environment monitoring harvester collector module is implemented and taken into production. | FI/hanhaka | FI | Q2 2017
+| Code quality improvements (exceptions) | Agreed | Generic exceptions should be designed and implemented so that they are application specific exceptions not just using default & generic exception model. | FI/hanhaka | FI & EE | Q3 2017
+| Improving the transfer of big attachment files via X-Road | Specified | Boosting performance of big file transfer via X-Road. | FI/hanhaka | FI | H2 2017
 | X-Road approach to eDelivery | Proposed | Find unified approach how an X-Road ecosystem relates to eDelivery platform (translation, security etc | EE/hvainsalu | ? | A
 | Reusage of existing certificates for member | Proposed | Member must be able to use security tokens on a signing device that are complient to X-Road requirement | EE/vainsalu | ? | A
 | Member management management services | Proposed | Members need that memeber management tasks are efficient and troubleless. Management services that would support usage of external case systems for convenient membership and seamless access controll of services. | EE/hvainsalu | ? | ?
