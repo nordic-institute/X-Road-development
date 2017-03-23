@@ -1,8 +1,6 @@
-X-Road Non-Functional Requirements v1.1
-========================================
+# X-Road Non-Functional Requirements v1.1
 
-Introduction
-------------
+## Introduction
 
 This document reflects the X-Road agreements on X-Road Non-Functional
 Requirements (X-Road NFR), which define the concepts of "good software".
@@ -13,28 +11,26 @@ X-Road NFR MUST be proposed, discussed, and agreed on using GitHub issues.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
 "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL"
-in this document are to be interpreted as described in [RFC 2119].
+in this document are to be interpreted as described in \[[RFC 2119](#Ref_RFC-2119)\].
 
-References
-----------
+## References
 
-[ARC-G] X-Road architecture document.
+1. <a id="Ref_ARC-G" class="anchor"></a>\[ARC-G\] X-Road architecture document, <https://github.com/ria-ee/X-Road/blob/develop/doc/Architecture/arc-g_x-road_arhitecture.md>.
 
-[SPEC-AL] X-Road audit log events document.
+2. <a id="Ref_SPEC-AL" class="anchor"></a>\[SPEC-AL\] X-Road audit log events document, <https://github.com/ria-ee/X-Road/blob/develop/doc/Architecture/spec-al_x-road_audit_log_events_1.7_Y-883-17.docx>.
 
-[RFC 2119] Key words for use in RFCs to Indicate Requirement Levels.
+3. <a id="Ref_RFC-2119" class="anchor"></a>\[RFC 2119\] Key words for use in RFCs to Indicate Requirement Levels, <https://www.ietf.org/rfc/rfc2119.txt>.
 
-Scope
------
+## Scope
 
 The following requirements are intended for X-Road core functionality
-that is specified in X-Road architecture document \[ARC-G\].
+that is specified in X-Road architecture document \[[ARC-G](#Ref_ARC-G)\].
 
 A term “application” in this document is used to describe the whole X-Road
 core software being developed or improved.
 
 A term “component” in this document is used to describe the software
-components of X-Road as defined in X-Road architecture document \[ARC-G\].
+components of X-Road as defined in X-Road architecture document \[[ARC-G](#Ref_ARC-G)\].
 For example Central Server and Security Server are X-Road components.
 
 A term “third party component” in this document is used to describe libraries
@@ -44,8 +40,7 @@ The scope of changes to application MUST be defined in procurement
 documents. Only the added or changed portions of the software MUST
 comply with the following requirements unless specified otherwise.
 
-Architecture
-------------
+## 1 Architecture
 
 1.1 Application interfaces MUST be implemented in a secure way so that
 faults of external systems could affect only directly related use cases.
@@ -71,8 +66,7 @@ distribution with MIT license.
 1.8 Third party components used MUST NOT result in financial obligations
 for X-Road users.
 
-Relational database
--------------------
+## 2 Relational database
 
 2.1 A component that uses the database MUST have at least two users
 in the database:
@@ -119,10 +113,9 @@ allowed to use capital characters.
 2.10 The components MUST be agnostic to table partitioning
 (<http://en.wikipedia.org/wiki/Partition_%28database%29>).
 
-Source code
------------
+## 3 Source code
 
-### General
+### 3.1 General
 
 3.1.1 Application MUST be equipped with the unit tests.
 
@@ -135,7 +128,7 @@ MIT license rules. Copyright MUST be clearly defined.
 3.1.4 New X-Road components MUST be created using Java 8 SE.
 Additionally JRuby MAY be used for web interfaces.
 
-### Java
+### 3.2 Java
 
 3.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) MUST NOT issue any
 errors with the configuration defined in
@@ -158,13 +151,13 @@ dependencies description is not permitted.
 then it is REQUIRED to update whole application to use that newer
 library version.
 
-### Changelog
+### 3.3 Changelog
 
 3.3.1 The developer MUST supply a human readable commit message with
 every commit. Commit messages MUST describe in human readable form
 functionality changes.
 
-### JRuby
+### 3.4 JRuby
 
 3.4.1 Rubocop (<https://github.com/bbatsov/rubocop>) MUST NOT issue any
 errors or warnings in ruby/jruby functions with the default
@@ -173,13 +166,12 @@ Rubocop (<https://github.com/bbatsov/rubocop>) MUST NOT issue any errors
 with the configuration defined in
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/check_ruby_source.sh>.
 
-### JavaScript
+### 3.5 JavaScript
 
 3.5.1 JavaScript code MUST comply to Google JavaScript style guide
 (<https://google.github.io/styleguide/javascriptguide.xml>).
 
-Web interfaces
---------------
+## 4 Web interfaces
 
 Note: Current X-Road implementation had not yet been checked for
 compatibility with web interfaces requirements.
@@ -211,10 +203,9 @@ MAY choose any operating system for testing of cross-platform engines.
 4.6 If the interface is not compatible with the browser used, the user
 MUST be notified.
 
-Management
-----------
+# 5 Management
 
-### General
+### 5.1 General
 
 5.1.1 The component is allowed to directly alter the system (modify
 environmental variables, create files in the local file system, etc.)
@@ -229,7 +220,7 @@ external mail agent (for example, postfix).
 both deb and rpm files. Source code MUST be supplemented with scripts
 required for building deb and rpm packages.
 
-### Installation and settings
+### 5.2 Installation and settings
 
 5.2.1 The component MUST NOT use unconfigured (hard-coded) references
 to files or external systems.
@@ -255,14 +246,14 @@ requirement 5.2.3.
 5.2.4 Component installation MUST NOT require different database users
 then these described in section 2.1.
 
-### Monitoring
+### 5.3 Monitoring
 
 5.3.1 Application Logging MUST be organized using standard tools in a
 way that allows the application administrator to define and modify the
 logs output (at least the file, database, syslogd), logging levels, and
 logging format.
 
-5.3.2 Java components MUST use SLF4J framework (see http://www.slf4j.org).
+5.3.2 Java components MUST use SLF4J framework (see <http://www.slf4j.org>).
 
 5.3.3 Every component of the system that has web interface MUST report in
 machine-readable form its name, version number, status of essential
@@ -282,8 +273,7 @@ format.
 5.3.6 Calling methods of other components MUST result in debug level
 logging of all input parameters and return values.
 
-Information Security
---------------------
+## 6 Information Security
 
 6.1 Application MUST confirm to Security Requirements document.
 
@@ -306,7 +296,7 @@ terminates the session on his own initiative.
 6.5 Events critical from security point of view and activities that can
 lead to financial or legal consequences MUST be logged in the separately
 configurable audit log. List of these events can be found in X-Road
-audit log events document \[SPEC-AL\].
+audit log events document \[[SPEC-AL](#Ref_SPEC-AL)\].
 
 6.6 All outputs MUST be sanitized not to include system operation information
 such as full names of files, stack traces, etc.
@@ -326,8 +316,7 @@ be approved by cryptographic research. For example: [Estonian cryptographic
 algorithms research 2015](https://www.ria.ee/public/RIA/Kruptograafiliste_algoritmide_uuring_2015.pdf).
 
 
-Standards
----------
+# 7 Standards
 
 7.1 The processing of the date, combined date and time, time, duration,
 and the time interval in the text form MUST be based on the
