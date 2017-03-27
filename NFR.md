@@ -203,7 +203,7 @@ MAY choose any operating system for testing of cross-platform engines.
 4.6 If the interface is not compatible with the browser used, the user
 MUST be notified.
 
-# 5 Management
+## 5 Management
 
 ### 5.1 General
 
@@ -316,7 +316,7 @@ be approved by cryptographic research. For example: [Estonian cryptographic
 algorithms research 2015](https://www.ria.ee/public/RIA/Kruptograafiliste_algoritmide_uuring_2015.pdf).
 
 
-# 7 Standards
+## 7 Standards
 
 7.1 The processing of the date, combined date and time, time, duration,
 and the time interval in the text form MUST be based on the
