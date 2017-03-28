@@ -5,7 +5,7 @@ X-Road Joint Development
 
 v1.4
 
-##1	General
+## 1	General
 
 1.1	This document establishes workflow policy for joint development of X-Road software. Workflow Policy strives to serve as a handbook for all practical aspects of development.
 
@@ -29,7 +29,7 @@ v1.4
 
 1.7 Projects may have their own workflow arrangements as far as these do not contradict this policy.
 
-##2 Related documents
+## 2 Related documents
 
 2.1 Workflow policy is related to other X-Road joint development policy and regulations:
 - workflow policy implements the higher-level agreements of [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md)
@@ -38,11 +38,11 @@ v1.4
  
 See also other documentation in [X-Road Joint Development](https://github.com/vrk-kpa/xroad-joint-development) repository.
 
-##3 Development model
+## 3 Development model
 
 3.1	X-Road development uses the collaborative model based on [Git](https://git-scm.com/) distributed version control system.
 
-##4	Repositories
+## 4	Repositories
 
 4.1	The following code and documentation repositories are used:
 - Master Repository - short name: `X-Road`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road software; access: Head Architect has write access; read access: ALL.
@@ -62,7 +62,7 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 - new production release is prepared on `release` branch
 - patches are prepared on `hotfix` branches.
 
-##6 Work initiation
+## 6 Work initiation
 
 6.1 New development is initiated by preparing an enhancement proposal. The proposal is submitted for review and approval to X-Road Joint Development Steering Committee, according to the procedure in [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), section "Scoping Process".
 
@@ -78,13 +78,13 @@ Procedure:
 
 6.4 **Vendor version numbering.** To distinguish vendor-specific work, vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
 
-##7	Performing work
+## 7	Performing work
 
 7.1 Vendor is required periodically fetch updates from `X-Road/develop` and integrate into Vendor's branch. The purpose of this is to facilitate merging of Vendor's work into `X-Road/develop`.
 
 7.2 It is the responsibility of the Contracting Partner to notify the Vendor about new development added to Roadmap that might affect Vendor's development responsibilities.
 
-##8 Submitting and accepting work
+## 8 Submitting and accepting work
 
 8.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
 
@@ -101,7 +101,7 @@ Procedure:
 
 8.2.3 Non-functional requirements
 
-- Does the code conform to the X-Road non-functional requirements(see [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md))?
+- Does the code conform to the X-Road non-functional requirements (see [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md))?
 
 8.2.4 Version number
 
@@ -184,7 +184,7 @@ Procedure:
 - Head Architect merges `X-Road/hotfix` into `X-Road/master` and tags the commit with version number.
 - Head Architect merges changes made into `X-Road/hotfix` into `X-Road/develop`.	 
 
-##12	Setting up repositories	
+## 12	Setting up repositories	
 
 12.1	Repositories are set up according to the process:
 
@@ -224,8 +224,8 @@ Procedure:
 
 ## 16 Testing
 
-16.1	All test scripts and software is published in X-Road-tests
+16.1	All test scripts and software is published in X-Road-tests.
 
-16.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road
+16.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road.
 
-16.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. national folders are dedicated for national implementation only tests.
+16.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national implementation only tests.
