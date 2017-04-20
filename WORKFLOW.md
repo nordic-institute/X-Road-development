@@ -3,7 +3,7 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.4
+v1.5
 
 ## 1	General
 
@@ -47,7 +47,6 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 4.1	The following code and documentation repositories are used:
 - Master Repository - short name: `X-Road`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road software; access: Head Architect has write access; read access: ALL.
 - Master Test Repository - short name: `X-Road-tests`; hosted by: GitHub; managed by: RIA; purpose: release of X-Road automated tests; access: Head Architect has write access; read access: ALL.
-- Open Source Repository - short name: `XO`; hosted at: GitHub; purpose: open access publication of select parts of X-Road software; administered by: VRK; access: Head Architect has write access; everybody has read access.
 - Vendor repositories - purpose: development work carried out by Vendor; administered by: Vendor.
 
 4.2	Partners can establish their own, additional repositories, for backup, software distribution or other purposes.
@@ -87,6 +86,15 @@ Procedure:
 ## 8 Submitting and accepting work
 
 8.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). 
+
+8.1.1 Pull request formatting
+
+To ease the review work and to make clearer what changes are done, the following guidelines are required:
+
+- Separate commits MUST be made for every bug fix included to pull request
+- Separate commits SHOULD be made for every feature included to pull request 
+
+One pull request can contain several bug fix or feature commits. However, pull requests containing critical production related bug fixes should be keep simple to make reviewing easier.
 
 8.2	The pull request is reviewed by Head Architect and selected representative of each Partner. Additional reviewers can be added as necessary. The pull request is reviewed according to the acceptance criteria that was in effect when the work on this changeset started.
 
@@ -160,8 +168,7 @@ Procedure:
 - Steering Committee decides to release, including the version number (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Release sequence” and “Version compatibility”).
 - Head Architect pushes software from `X-Road/release` into `X-Road/master` and tags the commit with version number.
 - Head Architect also updates `X-Road/develop` with changes made on `release` branch.
-
-9.3	New release also will be updated into X-Road Open Source repository (`XO`).	 
+	 
 
 ## 10	Deployment
 
@@ -190,19 +197,16 @@ Procedure:
 
 - Head Architect sets up the Master Repository `X-Road`. Repository is initialised by committing X-Road v6.0 software into the `master` branch.
 - Head Architect creates `develop` branch in `X-Road`.
-- VRK creates repository `XO` and initialises it by committing X-Road v6.0 Security Server software and documentation into the repository.
 
 ## 13	Open source development
 
-13.1	Open source development and Partner development are only loosely coupled. Open source repository `XO` is open to everybody for forking. VRK administers the open source repository `XO`, in consultation with RIA and X-Road Developer Community.
+13.1	Open source development and Partner development are only loosely coupled. Master Repository `X-Road` is open to everybody for forking. RIA administers the Master Repository `X-Road`, in consultation with VRK.
 
-13.2	New branches are created in `XO` by Manager of `XO` as needed.
+13.2	New branches are created in `X-Road` by Manager of `X-Road` as needed.
 
-13.3	Pull requests into `XO` are reviewed and accepted by Manager of `XO`.
+13.3	Pull requests into `X-Road` are reviewed and accepted by Manager of `X-Road`.
 
-13.4	Manager of `XO` periodically updates `XO` with new content from `X-Road`.
-
-13.5	Good quality and useful results of open source development can be integrated into `X-Road`. Exact procedure is out of scope of this document. 
+13.4	Good quality and useful results of open source development can be integrated into `X-Road`. Exact procedure is out of scope of this document. 
 
 ## 14	Documentation policy
 
