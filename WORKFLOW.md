@@ -40,7 +40,7 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 
 ## 3 Development model
 
-3.1	X-Road uses [Github](https://github.com/) and [Git](https://git-scm.com/) based version management. In general the workflow policy follows Atlassian [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) scheme but instead of working directly in the ria-ee/X-Road main repository the development is done in forked repositories. The main forks at the time being are vrk-kpa/X-Road and cybernetica-xroad/X-Road. Semantic versioning scheme is used for software versions.
+3.1	X-Road uses [Github](https://github.com/) and [Git](https://git-scm.com/) based version management. In general the workflow policy follows Atlassian [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) scheme but instead of working directly in the ria-ee/X-Road main repository the development is done in forked repositories. The main forks at the time being are vrk-kpa/X-Road and cybernetica-xroad/X-Road. [Semantic versioning](http://semver.org/) scheme is used for software versions.
 
 ## 4	Repositories
 
@@ -63,11 +63,11 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 
 ## 6 Tagging
 
-6.1 The versions merged to X-Road master branch are tagged with annotated tags. E.g.
+6.1 The versions merged to X-Road `master` branch are tagged with annotated tags. E.g.
 
 `git tag -a 6.7.12 -m "X-Road 6.7.12"`
 
-The versions merged to main repository's develop branch are not tagged.
+The versions merged to `X-Road/develop` branch are not tagged.
 
 ## 7 Package naming
 
@@ -118,15 +118,15 @@ xroad (6.14.0-0) trusty; urgency=medium
 
 ## 9 Pull requests
 
-9.1 Pull requests made against the main repository's develop branch MUST follow these conventions
-- Pull request name format is country-version-sequence e.g. Finnish-6.15.0-3
+9.1 Pull requests made against the `X-Road/develop` branch MUST follow these conventions
+- Pull request name format is `country-version-sequence` e.g. Finnish-6.15.0-3
   - Country=origin of the pull request
   - Version=version of the software this pull request is intended for
   - Sequence=sequence number of the pull request. There can be multiple pull requests aiming for the same release and the sequence distinguishes between these.
 - Description field must contain at least the changelist. Any relevant additional information should also be provided here.
 
-Release and hotfix pull requests made against master branch must follow these conventions
-- Pull request name format is just version e.g. 6.15.0
+Release and hotfix pull requests made against `master` branch must follow these conventions
+- Pull request name format is just `version` e.g. 6.15.0
 - Description field must contain at least the changelist. Any relevant additional information should also be provided here.
 
 9.2 To ease the review work and to make clearer what changes are done, the following guidelines are required:
@@ -148,23 +148,21 @@ One pull request can contain several bug fix or feature commits. However, pull r
 
 10.3	Vendors develop software in their repositories, on `feature` branches.
 
-![Feature Development](IMG/FeatureDevelopment.PNG)
-
 Procedure:
 - Vendor creates its vendor repository by forking `X-Road`.
-- Vendor creates `feature` branch in vendor repository by branching from `X-Road/develop`.
+- Vendor creates `feature` branch in vendor repository by branching from `develop`.
 
-10.4 **Vendor version numbering.** To distinguish vendor-specific work, vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0-0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
+10.4 **Vendor version numbering.** To distinguish vendor-specific work, Vendor can label its product by attaching vendor suffix and vendor version number to X-Road semantic version number. Example: `6.8.0-0.AcmeCorp.3` denotes software developed by Acme Corporation, version 3.
 
 ## 11	Performing and integrating work
 
-11.1 X-Road is collaboratively developed by the X-Road Partners. The vendors working for the Partners have forked the main repository and the development work is done in the fork. Partners coordinate towards a common release by assigning tasks to vendors that constantly integrate their work to the main repository. Vendor is required to periodically fetch updates from `X-Road/develop` and integrate into Vendor's branch as described in [Github's documentation](https://help.github.com/articles/syncing-a-fork/). The purpose of this is to facilitate merging of Vendor's work into `X-Road/develop`.
+11.1 X-Road is collaboratively developed by the X-Road Partners. The Vendors working for the Partners have forked X-Road and the development work is done in the fork. Partners coordinate towards a common release by assigning tasks to Vendors that constantly integrate their work to the main repository. Vendor is required to periodically fetch updates from `X-Road/develop` and integrate into Vendor's branch as described in [Github's documentation](https://help.github.com/articles/syncing-a-fork/). The purpose of this is to facilitate merging of Vendor's work into `X-Road/develop`.
 
 11.2 It is the responsibility of the Contracting Partner to notify the Vendor about new development added to Roadmap that might affect Vendor's development responsibilities.
 
 ## 12 Submitting and accepting work
 
-12.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). In practise when integration is due a release branch is forked out of develop in the vendor's fork. In the release branch the code is developed and tested until it is ready to be taken forward. Once the code is ready a pull request (4) is made from the fork's release branch to the `X-Road/develop` branch as described in the [Github documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/). If defects are found in the pull request review they are fixed in the fork's release branch and the Github pull request updates automatically. When the pull request is eventually accepted to `X-Road/develop` the changes are synced back to fork's develop as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
+12.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). In practise when integration is due a `release` branch is forked out of `develop` in the Vendor's fork. In the `release` branch the code is developed and tested until it is ready to be taken forward. Once the code is ready a pull request is made from the fork's `release` branch to the `X-Road/develop` branch as described in the [Github documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/). If defects are found in the pull request review they are fixed in the fork's `release` branch and the Github pull request updates automatically. When the pull request is eventually accepted to `X-Road/develop` the changes are synced back to fork's `develop` as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
 
 ![X-Road Integration](IMG/xroad-integration.png)
 
@@ -194,7 +192,7 @@ Procedure:
 - Does the build and the test cases work?
 - Does the packaging work (Ubuntu & RHEL)?
 - Can the software be installed on a clean system (Ubuntu & RHEL)?
-- Can the software version be upgraded from the previous X-Road/source/master version?
+- Can the software version be upgraded from the previous `X-Road/master` version?
 
 12.2.6 SonarQube (LTS) static analysis
 
@@ -221,15 +219,15 @@ Procedure:
 
 12.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
 
-12.6 In cases of justified need, developers can request for up to 2 week 'code freeze' in develop branch of X-Road from Head Architect.
+12.6 In cases of justified need, developers can request for up to 2 week 'code freeze' in `develop` branch of X-Road from Head Architect.
 
 12.7 Up to 4 week 'code freeze' period can be applied to `X-Road/master` by approval of Head Architect.
 
-12.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `X-Road/develop`. The commit is then tagged with version number.
+12.8 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into `X-Road/develop`.
 
 ## 13	Release preparation
 
-13.1	Once enough features have accumulated to `X-Road/develop` branch the X-Road Steering Committee can decide to make a release. First a release branch (1) is forked from the develop branch. The version in the release branch is then exhaustively tested and fixes are made when necessary. When the version in the release branch satisfies all X-Road partners the release branch is merged to master using pull request procedure.
+13.1	Once enough features have accumulated to `X-Road/develop` branch the X-Road Steering Committee can decide to make a release. First a `release` branch is forked from the `develop` branch. The version in the `release` branch is then exhaustively tested and fixes are made when necessary. When the version in the `release` branch satisfies all X-Road partners the `release` branch is merged to `master` using pull request procedure.
 
 ![Release preparation](IMG/xroad-release.png)
 
@@ -249,13 +247,13 @@ Procedure:
 
 15.1	Critical bug in production version is handled by preparation and release of a patch (see [Change Management Process], section “Warranty”).
 
-15.2	Vendor prepares a patch on `hotfix` branch forked (1) from the master branch in forked repository.
+15.2	Vendor prepares a patch on `hotfix` branch forked from the `master` branch in forked repository.
 
 ![Hotfix](IMG/xroad-hotfix.png)
 
-15.3	When the fix is ready a pull request (2) is made against the `X-Road/master` branch. If defects are found in the pull request review they are fixed in the hotfix branch. After the pull request has been accepted the changes can be merged to `X-Road/develop` and synced back to forked repository.
+15.3	When the fix is ready a pull request is made against the `X-Road/master` branch. If defects are found in the pull request review they are fixed in the `hotfix` branch. After the pull request has been accepted the changes can be merged to `X-Road/develop` and synced back to forked repository.
 
-15.4 Hotfix can also be made for develop branch the same way as described for master branch above. This situation is possible if after an integration made to main repository's develop branch a partner requests a fix/change to previous.
+15.4 Hotfix can also be made for `develop` branch the same way as described for `master` branch above. This situation is possible if after an integration made to `X-Road/develop` branch a partner requests a fix/change to previous.
 
 ## 16	Setting up repositories
 
@@ -292,10 +290,10 @@ Procedure:
 
 19.4	Current version of Workflow Policy is made public in GitHub, https://github.com/vrk-kpa/xroad-joint-development/blob/master/WORKFLOW.md.
 
-## 16 Testing
+## 20 Testing
 
-16.1	All test scripts and software is published in X-Road-tests.
+20.1	All test scripts and software is published in X-Road-tests.
 
-16.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road.
+20.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road.
 
-16.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national implementation only tests.
+20.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national implementation only tests.
