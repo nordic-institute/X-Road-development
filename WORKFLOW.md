@@ -63,7 +63,7 @@ See also other documentation in [X-Road Joint Development](https://github.com/vr
 
 ## 6 Tagging
 
-6.1 The versions merged to X-Road `master` branch are tagged with annotated tags. E.g.
+6.1 The versions merged to `X-Road/master` branch are tagged by Head Architect with annotated tags. E.g.
 
 `git tag -a 6.7.12 -m "X-Road 6.7.12"`
 
@@ -162,7 +162,7 @@ Procedure:
 
 ## 12 Submitting and accepting work
 
-12.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any) (see also previous item). In practise when integration is due a `release` branch is forked out of `develop` in the Vendor's fork. In the `release` branch the code is developed and tested until it is ready to be taken forward. Once the code is ready a pull request is made from the fork's `release` branch to the `X-Road/develop` branch as described in the [Github documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/). If defects are found in the pull request review they are fixed in the fork's `release` branch and the Github pull request updates automatically. When the pull request is eventually accepted to `X-Road/develop` the changes are synced back to fork's `develop` as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
+12.1 Upon completion of feature development, Vendor submits a pull request to `X-Road/develop`. Prior to submitting the request Vendor must fetch the most recent updates from `X-Road/develop` and integrate into Vendor's branch (solve conflicts, if any). In practise when integration is due a `release` branch is forked out of `develop` in the Vendor's fork. In the `release` branch the code is developed and tested until it is ready to be taken forward. Once the code is ready a pull request is made from the fork's `release` branch to the `X-Road/develop` branch as described in the [Github documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/). If defects are found in the pull request review they are fixed in the fork's `release` branch and the Github pull request updates automatically. When the pull request is eventually accepted to `X-Road/develop` the changes are synced back to fork's `develop` as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
 
 ![X-Road Integration](IMG/xroad-integration.png)
 
@@ -245,7 +245,7 @@ Procedure:
 
 ## 15	Hotfix
 
-15.1	Critical bug in production version is handled by preparation and release of a patch (see [Change Management Process], section “Warranty”).
+15.1	Critical bug in production version is handled by preparation and release of a patch (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), section “Warranty”).
 
 15.2	Vendor prepares a patch on `hotfix` branch forked from the `master` branch in forked repository.
 
