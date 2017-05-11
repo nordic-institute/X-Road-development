@@ -23,7 +23,7 @@ v1.6
 
 1.4 This policy uses terminology of [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md).
 
-1.5 Adherence to this policy are made legally binding to Vendors by inclusion of appropriate stipulations in contracts between between Partners and Vendors. Vendor in context of this policy is a firm or other organisation performing development work by assigment of a Partner.
+1.5 Adherence to this policy are made legally binding to Vendors by inclusion of appropriate stipulations in contracts between Partners and Vendors. Vendor in context of this policy is a firm or other organisation performing development work by assigment of a Partner.
 
 1.6 Partners and Developers implement this policy in good faith and in the context of sustainable, good software development practice.
 
@@ -118,7 +118,7 @@ xroad (6.14.0-0) trusty; urgency=medium
 
 ## 9 Pull requests
 
-9.1 Pull requests made against the `X-Road/develop` branch MUST follow these conventions
+9.1 Pull requests from Partners made against the `X-Road/develop` branch MUST follow these conventions
 - Pull request name format is `country-version-sequence` e.g. Finnish-6.15.0-3
   - Country=origin of the pull request
   - Version=version of the software this pull request is intended for
@@ -211,7 +211,7 @@ Procedure:
 12.2.9 Documentation
 
 - Has the documentation been updated?
-- Is the documentation in correct format?
+- Is the documentation in correct format as specified in [X-Road Formatting & Style Guide](https://github.com/vrk-kpa/xroad-joint-development/blob/master/FormattingStyleGuide.md)? Are the sources of pictures provided?
 
 12.3 Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
 
@@ -227,16 +227,16 @@ Procedure:
 
 ## 13	Release preparation
 
-13.1	Once enough features have accumulated to `X-Road/develop` branch the X-Road Steering Committee can decide to make a release. First a `release` branch is forked from the `develop` branch. The version in the `release` branch is then exhaustively tested and fixes are made when necessary. When the version in the `release` branch satisfies all X-Road partners the `release` branch is merged to `master` using pull request procedure.
+13.1	Once enough features have accumulated to `X-Road/develop` branch the X-Road Steering Committee can decide to make a release. First a `release` branch is forked from the `develop` branch and pull request is made against `X-Road/master`. The version in the `release` branch is then exhaustively tested and fixes are made when necessary. When the version in the `release` branch satisfies all X-Road partners the `release` branch is merged to `master`.
 
 ![Release preparation](IMG/xroad-release.png)
 
 13.2	Jointly developed X-Road software is released by the procedure:
 
--	Head Architect creates a `release` branch from `X-Road/develop`.
+-	Vendor creates a `release` branch from `develop` and makes a pull request against `X-Road/master`.
 - both Partners thoroughly review the software to be released.
 - Steering Committee decides to release, including the version number (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Release sequence” and “Version compatibility”).
-- Head Architect pushes software from `X-Road/release` into `X-Road/master` and tags the commit with version number.
+- Head Architect merges the pull request from `release` branch into `X-Road/master` and tags the commit with version number.
 - Head Architect also updates `X-Road/develop` with changes made on `release` branch.
 
 ## 14	Deployment
