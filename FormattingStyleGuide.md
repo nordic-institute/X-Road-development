@@ -67,7 +67,7 @@ This document provides formatting and style conventions for publishing documents
 
 ## Drawing tool
 - Use draw.io to create drawings, flowcharts and pictures for X-Road documentation. Draw.io (https://www.draw.io/) is completely free online diagram editor. It can be also used in offline mode by going to the following URL into your web browser: https://www.draw.io/app or by using Chrome Application.
-- Use PNG file format in documents and save the original source file as native XML. Both files must be committed into Github to very same location where the document exists.
+- Use PNG file format in documents and save the original source file as native XML. Both files must be committed into Github to "img" sub-folder of the document.
 
 ## For more sophisticated publishing
 - For more sophisticated presentation needs, consider using [Hugo](https://gohugo.io/), [Jekyll](https://jekyllrb.com/) or some other website generation tool that accepts Markdown.
