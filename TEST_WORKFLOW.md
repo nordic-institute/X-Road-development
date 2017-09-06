@@ -5,7 +5,7 @@ v1.0
 
 ## 1	General
 
-1.1	This document establishes workflow policy for joint development of X-Road software. Workflow Policy strives to serve as a handbook for all practical aspects of development.
+1.1	This document establishes workflow policy for joint development of X-Road test development. Workflow Policy strives to serve as a handbook for all practical aspects of development.
 
 1.2	Workflow is understood as systematic arrangement of work, a complex of processes, practices, roles and responsibilities, communication patterns, and artefacts.
 
@@ -16,7 +16,7 @@ v1.0
 - transparency and openness
 - broader community of developers
 - use of software development best practice
-- clear communication among Partners as well as other stakeholders in the X-Road development process
+- clear communication among Partners as well as other stakeholders in the X-Road test development process
 - innovation.
 
 1.4 Adherence to this policy are made legally binding to Vendors by inclusion of appropriate stipulations in contracts between Partners and Vendors. Vendor in context of this policy is a firm or other organisation performing development work by assigment of a Partner.
@@ -28,7 +28,7 @@ v1.0
 ## 2 Related documents
 
 2.1 Workflow policy is related to other X-Road tests development policy and regulations:
-- workflow policy implements Harmonized X-road tests document [Harmonized X-Road test environment](https://github.com/ria-ee/blob/master/HARMONIZED_TEST_ENVIRONMENT.md)
+- Harmonized X-road tests document [Harmonized X-Road test environment](https://github.com/ria-ee/blob/master/HARMONIZED_TEST_ENVIRONMENT.md)
 
 ## 3 Development model
 
@@ -44,10 +44,10 @@ v1.0
 
 ## 5	Branching pattern
 
-5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and own `testfeature` branches.
+5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and own `feature` branches.
 
-- `master` branch is used to release X-Road tests
-- `develop` branch is used to test development
+- `master` branch is used for release X-Road tests
+- `develop` branch is used for test development
 - `feature` branches are used to work on test features
 
 Main repository:
@@ -58,15 +58,13 @@ Main repository:
 	- Integration branch between Finland and Estonia (and other possible partners)
 	- Latest integrated test development source code 
 
-README.md file in the root of X-Road-tests must indicate the X-Road source code version for both MASTER and DEVELOP branches so that there is no confusion for which version these tests were designated for. Indication is done by pointing to the specific tag (MASTER) or commit (DEVELOP) of the X-Road source code.
+README.md file in the root of X-Road-tests must indicate the X-Road source code version for both `master` and `develop` branches so that there is no confusion for which version these tests were designated for. Indication is done by pointing to the specific tag (master) or commit (develop) of the X-Road source code.
 	
 	
-
 Fork repository:
 - `master` branch https://github.com/vrk-kpa/X-Road-tests and https://github.com/asaquality/X-Road-tests
 	- Tagged releases of X-road-tests
 - `develop` branch https://github.com/vrk-kpa/X-Road-tests and https://github.com/asaquality/X-Road-tests 
-	- Country branch for test development
 	- Latest country test development source code 
 	- Make pull request to develop for ria-ee/X-Road-tests
 
@@ -82,15 +80,13 @@ The versions merged to X-Road-tests/develop branch are not tagged.
 
 Changelog description is visible in pull requests. Pull requests from Partners made against the `ria-ee/X-Road-tests/master` or `ria-ee/X-Road-tests/develop` branch MUST follow these conventions:
 
-Pull request name format is 'country-month-year-description':
-Country=origin of the pull request
-Month=Month when the pull request was created
-Year=Year when the pull request was created
-Description=(short) Description of the pull request
-
-e.g Finnish-08-2017-Description-of-pull-request, Estonian-07-2017-Description-of-pull-request
-
-- Description field must contain at least the changelist. Any relevant additional information should also be provided here.
+- Pull request name format is 'country-month-year-description':
+    - Country=origin of the pull request
+    - Month=Month when the pull request was created
+    - Year=Year when the pull request was created
+    - Description=(short) Description of the pull request
+        - e.g *Finnish-08-2017-Description-of-pull-request, Estonian-07-2017-Description-of-pull-request*
+    - Description field must contain at least the changelist. Any relevant additional information should also be provided here.
 
 ## 8 Submitting and accepting tests work
 
@@ -104,10 +100,10 @@ e.g Finnish-08-2017-Description-of-pull-request, Estonian-07-2017-Description-of
 
 8.2.2 CI build & tests
 - No merge conflicts
-- Test must be working LXC jenkins environment
-- Jenkins job is generated or added existing one
+- Test must be working in LXC jenkins environment
+- Tests must be attached to existing or new jenkins task
 - Test must working reliably e.g executed multiple times
-- If possible to make test independent
+- If possible test must work independently
 
 8.2.3 Documentation
 - Is documentation updated?
@@ -119,17 +115,22 @@ e.g Finnish-08-2017-Description-of-pull-request, Estonian-07-2017-Description-of
 - License exists in root folder
 - Is the licensing of the tests and its dependencies ok?
 
-8.2.5 Pull request
-- Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.Non-functional requirements
-- Descriptive git commit messages
-	- E.g "Added xroad-global-configuration test case 3.3" or "Fixed login test working with new layout"
-
-
-8.2.6 Browser acceptance testing
+8.2.5 Browser acceptance testing
 - Browser versions
-    - Mozilla firefox versionin tests README.md
+    - Mozilla firefox version tests README.md
     - Chrome version version tests README.md
     	- Chrome used only smoke tests (excluding file download and upload, and certificates)
+
+8.3 Pull request
+- Pull requests are generally reviewed and accepted on first-come, first-served (FCFS) basis.
+- Descriptive git commit messages
+	- E.g *"Added xroad-global-configuration test case 3.3"* or *"Fixed login test working with new layout"*
+
+8.4 If acceptance criteria are not met, then Vendor is requested to bring submitted work up to acceptance requirements.
+
+8.5 Head Architect can, in consultation with Partners, hold up acceptance of new pull requests from other Vendors, to allow Vendor fix the deficiencies found in submitted work.
+
+8.6 When the changeset meets the acceptance criteria and all the reviewers have accepted the work, then Head Architect pulls in and merges the work into X-Road-tests/develop.
 
 ## 9 Bug fixes
 
