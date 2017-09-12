@@ -3,7 +3,35 @@
 X-Road Joint Development
 # Workflow Policy
 
-v1.6
+v1.7
+
+## Table of contents
+
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Table of contents](#table-of-contents)
+- [1	General](#1-general)
+- [2 Related documents](#2-related-documents)
+- [3 Development model](#3-development-model)
+- [4	Repositories](#4-repositories)
+- [5	Branching pattern](#5-branching-pattern)
+- [6 Tagging](#6-tagging)
+- [7 Package naming](#7-package-naming)
+- [8 Changelog management](#8-changelog-management)
+- [9 Pull requests](#9-pull-requests)
+- [10 Work initiation](#10-work-initiation)
+- [11	Performing and integrating work](#11-performing-and-integrating-work)
+- [12 Submitting and accepting work](#12-submitting-and-accepting-work)
+- [13	Release preparation](#13-release-preparation)
+- [14	Deployment](#14-deployment)
+- [15	Hotfix](#15-hotfix)
+- [16	Setting up repositories](#16-setting-up-repositories)
+- [17	Open source development](#17-open-source-development)
+- [18	Documentation policy](#18-documentation-policy)
+- [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
+- [20 Testing](#20-testing)
+
+<!-- /TOC -->
 
 ## 1	General
 
@@ -89,14 +117,14 @@ The versions merged to `X-Road/develop` branch are not tagged.
 8.1 The main changelog of the application is in [CHANGELOG.md](https://github.com/ria-ee/X-Road/blob/develop/CHANGELOG.md) and it contains all software changes. The changelog entry format is
 
 ```
-## X.Y.Z - YYYY-MM-DD
+ ## X.Y.Z - YYYY-MM-DD
 - ISSUE: Description.
 ```
 
 For example
 
 ```
-## 6.12.0 - 2017-03-13
+ ## 6.12.0 - 2017-03-13
 - XTE-99 / Joint development issue #79: Security Server UI: Added uniqueness check of the entered security server code when initializing the server.
 - XTE-252 / Joint development issue #53: Security Server: Upgraded embedded Jetty to the version 9.4.2. Due to upgrade SHA1 ciphers are no longer supported for communication between security server and client.
 - XTE-293: Security Server: A field set used to generate the token ID of the SSCD has been made configurable.
@@ -278,7 +306,9 @@ Procedure:
 
 18.2	Production format for documentation is [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
-18.3	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
+18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software). In X-Road context it means that no country specific customizations, settings, repositories etc. are allowed. The vanilla version of X-Road security server is installed with `xroad-securityserver` package. The country specific versions are installed with `xroad-securityserver-XX` where XX is the country code.
+
+18.4	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
 
 ## 19	Approval, publication and amendment
 
