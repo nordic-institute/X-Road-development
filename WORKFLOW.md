@@ -306,7 +306,7 @@ Procedure:
 
 18.2	Production format for documentation is [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
-18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software). In X-Road context it means that no country specific customizations, settings, repositories etc. are allowed. The vanilla version of X-Road security server is installed with `xroad-securityserver` package. The country specific versions are installed with `xroad-securityserver-XX` where XX is the country code.
+18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software). In X-Road context it means that the country specific customizations, settings, repositories etc. need to stand out from documentation clearly. The vanilla version of X-Road security server is installed with `xroad-securityserver` package. The country specific versions are installed with `xroad-securityserver-XX` where XX is the country code.
 
 18.4	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
 
