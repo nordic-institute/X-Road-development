@@ -134,10 +134,6 @@ Additionally JRuby MAY be used for web interfaces.
 errors with the configuration defined in
 <https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>.
 
-3.2.2 PMD (<http://pmd.sourceforge.net/>) MUST NOT issue any errors with the
-configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/build.gradle>.
-
 3.2.3 All libraries needed for the operation of the component MUST be either
 packaged with the same component or component's installation package MUST
 depend on appropriate library packages.
@@ -189,19 +185,6 @@ data.
 original HTTP response code.
 
 4.4 Interface MUST conform to HTML 5 and CSS 3 standards.
-
-4.5 Web features used for building web interfaces MUST be supported by
-the majority of the web browsers. Web interfaces MUST be fully
-operational in the latest stable versions of the following web browser
-engines: Blink (tested with Chrome browser), Gecko (tested with Firefox
-browser), EdgeHTML (tested with Edge browser), Trident (tested with
-Internet Explorer 10 and 11) and WebKit (tested with Safari for OS X 8
-and 9). Testing of this requirement is performed using browser versions
-that were latest stable at some point of development phase. Developer
-MAY choose any operating system for testing of cross-platform engines.
-
-4.6 If the interface is not compatible with the browser used, the user
-MUST be notified.
 
 ## 5 Management
 
@@ -270,15 +253,7 @@ shown to users).
 5.3.5 All web servers MUST produce access.log files in a standard
 format.
 
-5.3.6 Calling methods of other components MUST result in debug level
-logging of all input parameters and return values.
-
 ## 6 Information Security
-
-6.1 Application MUST confirm to Security Requirements document.
-
-Note: Security Requirements document is not yet created. Current X-Road
-implementation therefore is not yet compatible with requirement 6.1
 
 6.2 The application MUST NOT create a new authentication system.
 Authentication MUST be based on existing core OS systems (PAM, Kerberos,
