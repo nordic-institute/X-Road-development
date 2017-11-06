@@ -1,4 +1,4 @@
-# X-Road Non-Functional Requirements v1.1
+# X-Road Non-Functional Requirements v1.2
 
 ## Introduction
 
