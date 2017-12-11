@@ -216,16 +216,6 @@ Gradle. Application packaging MUST me automated with a script.
 Components installation, update, and removal MUST be automated with
 both DEB and RPM systems.
 
-5.2.3 Package names MUST contain only the characters \[a-Z0-9\], “-”, “.”
-and “\_”. DEB package name MUST include the project name, version, build
-time, and architecture (for example
-xroad-proxy\_6.8.3-0-201510281010\_all.deb). RPM package name MUST
-include the project name, version, and build time (for example
-xroad-proxy\_6.8.3-1-201510281010.rpm).
-
-Note: Current X-Road implementation is not yet compatible with
-requirement 5.2.3.
-
 5.2.4 Component installation MUST NOT require different database users
 then these described in section 2.1.
 
