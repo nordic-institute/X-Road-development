@@ -228,14 +228,12 @@ logging format.
 
 5.3.2 Java components MUST use SLF4J framework (see <http://www.slf4j.org>).
 
-5.3.3 Every component of the system that has web interface MUST report in
-machine-readable form its name, version number, status of essential
-external systems, time of last execution, time of components package
-creation and current server time. For example such report may be issued
-at /heartbeat.json location.
-
-Note: Current X-Road implementation is not yet compatible with
-requirement 5.3.3.
+5.3.3 Every component of the system MUST report its child component's ant its own hearbeat in machine-readable (JSON) form with a minimal dataset of:
+* component name,
+* version number with time of component's package creation,
+* status of critical external systems/services,
+* time of last successful execution,
+* current server time.
 
 5.3.4 Logs are written in English (except for the localized notices
 shown to users).
