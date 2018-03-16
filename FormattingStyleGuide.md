@@ -6,6 +6,11 @@ This document provides formatting and style conventions for publishing documents
 ## General
 - Use [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 - Example document following this guide: [ExampleMarkdownDocument.md](ExampleMarkdownDocument.md).
+- Documents should not define their own general-purpose X-Road terms or abbreviations list but rather use reference to X-Road terms document ([Terms of X-Road](https://github.com/ria-ee/X-Road/blob/develop/doc/terms_x-road_docs.md)).
+    - Terms or abbreviations list should be moved from the existing documents to X-Road terms document.
+    - Add any new general-purpose X-Road terms and abbreviations to X-Road terms document if noticed missing one.
+    - Exception: terms and abbreviations that are related only to the document in question and are not useful in any other context (document), can be defined solely in the document itself to make reading easier.
+    
 
 ## Title & headings
 - Use # (h1) for document title.
