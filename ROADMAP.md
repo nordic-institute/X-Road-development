@@ -1,4 +1,4 @@
-Roadmap
+This Roadmap is out-of-date and it is no longer maintained. New Roadmap will be published by the [Nordic Institute for Interoperability Solutions (NIIS)](https://niis.org) during spring 2018.
 
 # Abstract
 
