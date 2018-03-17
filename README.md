@@ -31,7 +31,9 @@ own X-Road ecosystems and providing support to their ecosystems.
 
 ### X-Road Community
 
-More information about X-Road Community can be found [here](https://community.niis.org).
+X-Road is released under the MIT license and is available free of charge for
+any individual or organization. More information about the X-Road Community can
+be found [here](https://community.niis.org).
 
 ### How to contribute?
 Submit a pull request or raise an issue. Changes to the documents are reviewed in Working Group meetings and/or e-mail and/or issue comments in this repository.
