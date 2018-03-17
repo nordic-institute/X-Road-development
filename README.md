@@ -8,11 +8,26 @@ It is also used for managing changes to these documents.
 - [Workflow](WORKFLOW.md)
 - [NFR (Non-functional requirements)](NFR.md)
 
-### How do the documents relate to each other?
-
-X-Road Development 'Big Picture':
+### X-Road Development 'Big Picture'
 
 ![](IMG/xroad_development.png)
+
+The Nordic Institute for Interoperability Solutions (NIIS) owns the X-Road
+product and maintains Product Roadmap and Product Backlog. The NIIS is
+responsible for:
+
+* management, development, verification, and audit of the source code
+* administration of documentation
+* administration of business and technical requirements
+* conducting development, and managing development tools, platforms and practices
+* developing and implementing principles of licensing and distribution
+* providing second-line support to NIIS members.
+
+The NIIS Members nominate representatives to the Advisory Group and participate
+in the Working Group. Members submit feature and enhancement requests, submit
+code contributions, prioritize backlog and use X-Road for producing
+digital services. Members are responsible for running and maintaining their
+own X-Road ecosystems and providing support to their ecosystems.
 
 ### X-Road Community
 
