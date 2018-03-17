@@ -1,28 +1,26 @@
-# X-Road Joint Development
+# X-Road Development
 
-This repository is used to store the originals of X-Road joint development work agreements and regulations. It is also used to manage changes to these documents.
+This repository is used for storing X-Road development model, and
+documentation regarding common development practices and guidelines.
+It is also used for managing changes to these documents.
 
-- [Charter](CHARTER.md)
+- [Development Model](DEVELOPMENT_MODEL.md)
 - [Workflow](WORKFLOW.md)
 - [NFR (Non-functional requirements)](NFR.md)
-- [Backlog](BACKLOG.md)
 
 ### How do the documents relate to each other?
 
-X-Road Joint Development 'Big Picture':
+X-Road Development 'Big Picture':
 
-![](IMG/X-Road.Joint.Development.png)
+![](IMG/xroad_development.png)
 
-### X-Road Open Community
+### X-Road Community
 
-More information about X-Road Open Community can be found [here](https://github.com/jointxroad/About).
+More information about X-Road Community can be found [here](https://community.niis.org).
 
 ### How to contribute?
-Submit a pull request or raise an issue. Changes to the documents are reviewed in EE-FI workgroup meetings and/or e-mail and/or issue comments in this repository.
+Submit a pull request or raise an issue. Changes to the documents are reviewed in Working Group meetings and/or e-mail and/or issue comments in this repository.
 
 ### Source code
 
 X-road development repository [(X-Road) is here](https://github.com/ria-ee/X-Road). X-road related tests [(X-Road-tests) are here](https://github.com/ria-ee/X-Road-tests).
-
-Head Architect decides on submitted changes.
-
