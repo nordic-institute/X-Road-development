@@ -12,9 +12,9 @@ It is also used for managing changes to these documents.
 
 ![](IMG/xroad_development.png)
 
-The Nordic Institute for Interoperability Solutions (NIIS) owns the X-Road
-product and maintains Product Roadmap and Product Backlog. The NIIS is
-responsible for:
+The [Nordic Institute for Interoperability Solutions](https://niis.org) (NIIS)
+owns the X-Road product and maintains Product Roadmap and Product Backlog. The
+NIIS is responsible for:
 
 * management, development, verification, and audit of the source code
 * administration of documentation
@@ -23,7 +23,7 @@ responsible for:
 * developing and implementing principles of licensing and distribution
 * providing second-line support to NIIS members.
 
-The NIIS Members nominate representatives to the Advisory Group and participate
+The NIIS **Members** nominate representatives to the Advisory Group and participate
 in the Working Group. Members submit feature and enhancement requests, submit
 code contributions, prioritize backlog and use X-Road for producing
 digital services. Members are responsible for running and maintaining their
@@ -36,8 +36,11 @@ any individual or organization. More information about the X-Road Community can
 be found [here](https://community.niis.org).
 
 ### How to contribute?
-Submit a pull request or raise an issue. Changes to the documents are reviewed in Working Group meetings and/or e-mail and/or issue comments in this repository.
+
+Submit a pull request or raise an issue. Changes to the documents are reviewed
+in Working Group meetings and/or e-mail and/or issue comments in this repository.
 
 ### Source code
 
-X-road development repository [(X-Road) is here](https://github.com/ria-ee/X-Road). X-road related tests [(X-Road-tests) are here](https://github.com/ria-ee/X-Road-tests).
+X-road development repository [(X-Road) is here](https://github.com/nordic-institute/X-Road).
+X-road related tests [(X-Road-tests) are here](https://github.com/nordic-institute/X-Road-tests).
