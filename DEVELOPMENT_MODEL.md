@@ -5,13 +5,26 @@
 | ---- | ---- | ---- |
 | 0.1	| Initial draft.	| 18.3.18 / PK
 
+## Table of contents
+
+- [1	General](#1-general)
+- [2 Roles and Responsibilities](#2-roles-and-responsibilities)
+- [3 Change Management](#3-change-management)
+- [3.1 Evaluate](#31-evaluate)
+- [3.2 Prioritize](#32-prioritize)
+- [3.3 Develop](#33-develop)
+- [3.4 Publish](#34-publish)
+- [3.4.1 Publish](#341-version-compatibility)
+
+## 1 General
+
 The purpose of this document is to describe the change management process of the X-Road software. The process
 must ensure the quality of the source code, the application of best practices and the ability to manage software
 changes to be applied to local production environments. The process is controlled by the Nordic Institute for Interoperability Solutions (NIIS).
 
 Non-Functional Requirements are described in the [X-Road Non-Functional Requirements](NFR.md) document. The workflow policy based on this document is described in the [Workflow Policy](WORKFLOW.md) document.
 
-## 1 Roles and Responsibilities
+## 2 Roles and Responsibilities
 
 The change management process includes the following roles and responsibilities:
 
@@ -38,7 +51,7 @@ The change management process includes the following roles and responsibilities:
   * submits business feature and enhancement requests
   * submits code contributions including required documentation.
 
-## 2 Change Management
+## 3 Change Management
 
 The Product Roadmap is a plan that outlines the flow of new business features
 needed to satisfy the needs of the NIIS members. The roadmap helps reach a
@@ -64,7 +77,7 @@ The change management process consists of four phases:
 * **develop** – agile development of features requested by the NIIS members
 * **publish** – publish and distribute new releases.
 
-### 2.1 Evaluate
+### 3.1 Evaluate
 
 The NIIS members and X-Road Community may submit business feature requests and
 enhancement requests that are evaluated by the Working Group. Business feature
@@ -78,7 +91,7 @@ Advisory Group for approval. In addition, the requests that are too costly,
 not really essential, etc. are eliminated. The requests that pass the evaluation
 enter the Product Backlog.
 
-### 2.2 Prioritize
+### 3.2 Prioritize
 
 Product Backlog is a prioritized list of requests that have passed the evaluation.
 However, requests can also be eliminated from the Product Backlog. During prioritize
@@ -89,7 +102,7 @@ top candidates for entering the sprint backlog of the next sprint. The NIIS is
 responsible for maintaining the Product Backlog and prioritizing it together
 with the Advisory Group and Working Group.
 
-### 2.3 Develop
+### 3.3 Develop
 
 Items are implemented in sprints using agile software development methods. Each
 sprint, the implemented items are picked from the Product Backlog on top of its
@@ -104,7 +117,7 @@ development. Also then, the NIIS’s development practices must be followed
 approved upfront by the Working Group and they must fulfil the acceptance
 criteria for contributions.
 
-### 2.4 Publish
+### 3.4 Publish
 
 New versions of X-Road are published three times a year based on a fixed
 release schedule:
@@ -135,7 +148,7 @@ process within their ecosystems.
 
 Latest version and two earlier versions are officially supported by the NIIS.
 
-#### 2.4.1 Version Compatibility
+#### 3.4.1 Version Compatibility
 
 Major versions of X-Road are intended to be longlived versions of the software
 which consist of numerous minor versions. The decision to create a new major
