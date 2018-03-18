@@ -6,7 +6,7 @@ This document reflects the X-Road agreements on X-Road Non-Functional
 Requirements (X-Road NFR), which define the concepts of "good software".
 
 This X-Road NFR document is released in the public GitHub repository
-<https://github.com/vrk-kpa/xroad-joint-development> and all changes to
+<https://github.com/nordic-institute/x-road-development> and all changes to
 X-Road NFR MUST be proposed, discussed, and agreed on using GitHub issues.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -132,7 +132,7 @@ Additionally JRuby MAY be used for web interfaces.
 
 3.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) MUST NOT issue any
 errors with the configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/doc/checkstyle.xml>.
+<https://github.com/nordic-institute/xroad-public/blob/master/src/doc/checkstyle.xml>.
 
 3.2.3 All libraries needed for the operation of the component MUST be either
 packaged with the same component or component's installation package MUST
@@ -160,7 +160,7 @@ errors or warnings in ruby/jruby functions with the default
 configuration (rubocop --fail-level warning).
 Rubocop (<https://github.com/bbatsov/rubocop>) MUST NOT issue any errors
 with the configuration defined in
-<https://github.com/vrk-kpa/xroad-public/blob/master/src/check_ruby_source.sh>.
+<https://github.com/nordic-institute/xroad-public/blob/master/src/check_ruby_source.sh>.
 
 ### 3.5 JavaScript
 
