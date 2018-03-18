@@ -15,6 +15,7 @@
 - [3.3 Develop](#33-develop)
 - [3.4 Publish](#34-publish)
 - [3.4.1 Version Compatibility](#341-version-compatibility)
+- [4 References](#1-references)
 
 ## 1 General
 
@@ -155,6 +156,6 @@ which consist of numerous minor versions. The decision to create a new major
 version of X-Road will be the result of the need for major changes which cannot
 be successfully implemented without breaking version compatibility.
 
-#### References
+## 4 References
 - [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements, https://github.com/nordic-institute/x-road-development/blob/master/NFR.md.
 - [Workflow Policy] Workflow Policy, https://github.com/nordic-institute/x-road-development/blob/master/WORKFLOW.md.
