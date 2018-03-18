@@ -1,67 +1,61 @@
-# X-Road Joint Development Charter
+# X-Road Development Model
 
 #### VERSION CONTROL
 | version no.	 | what has been done	| date/person
-| ---- | ---- | ---- | 
-| 0.1	| Initial draft.	| 20.4.15 / PK
-| 0.2	| Updated according to comments received in EE-FI telco on 27.4.2015	| 4.5.15 / PK
-| 0.9	| Approved for piloting in Steering Committee meeting on 8.6.2015	| 13.6.15 / PK
-| 0.91	| Updated according to comments received in EE-FI F2F meeting on 7.7.2015 in Helsinki	| 9.7.15 / PK
-| 0.92	| Updated version numbering and SC tasks	| 6.10.15 / OK
-| 0.93	| Changed document name to Charter, removed details described in the Workflow document, refences section added	|  22.12.15 / PK
-| 0.94  | Conversion to Markdown, moved to xroad-joint-development repo | 25.01.16 / PP
-| 0.95  | Vendor suffix principles added to versioning | 05.04.16 / OK
-| 1.0  | Working Group role added | 14.12.16 / OK
+| ---- | ---- | ---- |
+| 0.1	| Initial draft.	| 18.3.18 / PK
 
 The purpose of this document is to describe the change management process of the X-Road software. The process
 must ensure the quality of the source code, the application of best practices and the ability to manage software
-changes to be applied to local production environments. The process is controlled by the Steering Committee. 
+changes to be applied to local production environments. The process is controlled by the Nordic Institute for Interoperability Solutions (NIIS).
 
-Non-Functional Requirements are described in the “X-Road Non-Functional Requirements” [X-Road Non-Functional Requirements] document. The workflow policy based on this document is described in the “Workflow Policy [Workflow Policy] document.
+Non-Functional Requirements are described in the [X-Road Non-Functional Requirements](NFR.md) document. The workflow policy based on this document is described in the [Workflow Policy](WORKFLOW.md) document.
 
 ## 1 Roles and Responsibilities
+
 The change management process includes the following roles and responsibilities:
-*	Steering Committee
-  - Accepts / rejects enhancement proposals
-  -	Maintains business roadmap
-  -	Schedules releases
-  -	Nominates the Head Architect for one year at a time
-  -	Agrees how security issues are fixed and who produces the fix
-*	Head Architect
-  -	Supports the Steering Committee on decision making
-  -	Maintains technical roadmap
-  -	Maintains the master repository
-  -	Reviews and accepts / rejects contributions
-*	Partner
-  -	Nominates representatives to the Steering Committee and Working Group
-  -	Submits enhancement proposals
-  -	Submits code contributions including required documentation 
-  -	Produces bug fixes and security bug fixes
-*	Working Group
-  -	Submits enhancement proposals to [Workflow](https://github.com/vrk-kpa/xroad-joint-development/blob/master/WORKFLOW.md)
-  -	Maintains technical [Backlog](https://github.com/vrk-kpa/xroad-joint-development/issues)
-  -	Maintains [Non Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md)
-  - Coordinates daily work
 
-## 2 Roadmap Management
-A roadmap is a plan that outlines the flow of new features needed to satisfy the needs of X-Road partners.
-The roadmap helps reach a consensus about future developments and it provides a framework to help plan and
-coordinate upcoming releases. The X-Road roadmap takes into consideration scoped functionality and X-Road
-production compatibility. 
+* NIIS
+  * Maintains product roadmap and product backlog
+  * Maintains the master source code repository
+  * Maintains Non Functional Requirements
+  * Reviews and accepts / rejects contributions
+  * Organizes and facilitates Advisory Group and Working Group meetings
+  * Schedules releases
+  * Coordinates daily work
+* NIIS Member
+  * Nominates representatives to the Advisory Group
+  * Participates in the Working Group
+  * Submits business feature and enhancement requests
+  * Submits code contributions including required documentation
+* Advisory Group  
+  * Accepts / rejects business feature requests
+  * Prioritizes product backlog
+* Working Group
+  * Prioritizes product backlog
+  * Accepts / rejects enhancement requests
+* X-Road Community
+  * Submits business feature and enhancement requests
+  * Submits code contributions including required documentation
 
-![](IMG/Charter01.PNG)
- 
-Diagram 1. Business roadmap management.
+## 2 Change Management
 
-The roadmap is divided in two parts: business roadmap and technical roadmap. The business roadmap is owned
-and managed by the Steering Committee and is updated through the scoping process. All the changes to the X-Road
-Roadmap must go through the standard approval process through the Steering Committee and scheduled for a release,
-regardless of issue type (core, extension). The technical roadmap is managed by the head architect, and
-it contains fine grained technical items derived from the business roadmap items.  
+![](IMG/xroad_change_management.png)
 
-![](IMG/Charter02.PNG)
- 
-Diagram 2. Technical roadmap management.
+Diagram 1. Change management.
+
+The Product Roadmap is a plan that outlines the flow of new business features
+needed to satisfy the needs of the NIIS members. The roadmap helps reach a
+consensus about future developments and it provides a framework to help plan
+and coordinate upcoming releases. The X-Road roadmap takes into consideration
+scoped functionality and X-Road production compatibility. Changes to the Product
+Roadmap are approved by the Advisory Board.
+
+The Product Backlog contains fine grained technical items derived from the
+Product Roadmap items and enhancement requests. The Product Backlog is prioritized
+by the Advisory Group and Working Group.
+
+X-Road Product Roadmap and Product Backlog are owned and managed by the NIIS.
 
 ### 2.1 Scoping Process
 The determination of what development is in scope of a X-Road Release is determined by the Steering Committee
@@ -82,7 +76,7 @@ All the extensions must be notified to the Steering Committee by submitting a fo
 must include a functional description of the extension. Adding a technical description of the extension to notice is highly recommended, but not mandatory. The Steering Committee adds the extension to the roadmap.
 
 ### 2.2 Security Bug Fixes
-All issues on critical updates shall be brought to the Steering Committee. The Steering Committee agrees how the 
+All issues on critical updates shall be brought to the Steering Committee. The Steering Committee agrees how the
 security issue is fixed and which partner produces the patch.
 
 ## 3 Warranty
@@ -97,7 +91,7 @@ cause incompatibility with interfacing systems or new modules/components.
 *	Revision Release (X.X.X) is used and incremented when minor bugs are fixed.
 
 At times the release sequence may jump multiple minor versions at a time to indicate sig-nificant features have been
-added, but are not enough to warrant incrementing a major version number. 
+added, but are not enough to warrant incrementing a major version number.
 See Non Functional Requirements [X-Road Non-Functional Requirements] document for more detailed information on version
 numbering.
 
@@ -110,4 +104,4 @@ successfully implemented without breaking version compatibility.
 
 #### References
 - [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements.
-- [Workflow Policy] Workflow Policy, https://github.com/e-gov/Open-Workflow/blob/master/WORKFLOW.md. 
+- [Workflow Policy] Workflow Policy, https://github.com/e-gov/Open-Workflow/blob/master/WORKFLOW.md.
