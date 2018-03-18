@@ -14,7 +14,7 @@
 - [3.2 Prioritize](#32-prioritize)
 - [3.3 Develop](#33-develop)
 - [3.4 Publish](#34-publish)
-- [3.4.1 Publish](#341-version-compatibility)
+- [3.4.1 Version Compatibility](#341-version-compatibility)
 
 ## 1 General
 
