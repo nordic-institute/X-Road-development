@@ -16,33 +16,29 @@ Non-Functional Requirements are described in the [X-Road Non-Functional Requirem
 The change management process includes the following roles and responsibilities:
 
 * NIIS
-  * Maintains product roadmap and product backlog
-  * Maintains the master source code repository
-  * Maintains Non Functional Requirements
-  * Reviews and accepts / rejects contributions
-  * Organizes and facilitates Advisory Group and Working Group meetings
-  * Schedules releases
-  * Coordinates daily work
+  * maintains product roadmap and product backlog
+  * maintains the master source code repository
+  * maintains Non Functional Requirements
+  * reviews and accepts / rejects contributions
+  * organizes and facilitates Advisory Group and Working Group meetings
+  * schedules releases
+  * coordinates daily work
 * NIIS Member
-  * Nominates representatives to the Advisory Group
-  * Participates in the Working Group
-  * Submits business feature and enhancement requests
-  * Submits code contributions including required documentation
+  * nominates representatives to the Advisory Group
+  * participates in the Working Group
+  * submits business feature and enhancement requests
+  * submits code contributions including required documentation
 * Advisory Group  
-  * Accepts / rejects business feature requests
-  * Prioritizes product backlog
+  * accepts / rejects business feature requests
+  * prioritizes product backlog
 * Working Group
-  * Prioritizes product backlog
-  * Accepts / rejects enhancement requests
+  * prioritizes product backlog
+  * accepts / rejects enhancement requests
 * X-Road Community
-  * Submits business feature and enhancement requests
-  * Submits code contributions including required documentation
+  * submits business feature and enhancement requests
+  * submits code contributions including required documentation.
 
 ## 2 Change Management
-
-![](IMG/xroad_change_management.png)
-
-Diagram 1. Change management.
 
 The Product Roadmap is a plan that outlines the flow of new business features
 needed to satisfy the needs of the NIIS members. The roadmap helps reach a
@@ -57,51 +53,93 @@ by the Advisory Group and Working Group.
 
 X-Road Product Roadmap and Product Backlog are owned and managed by the NIIS.
 
-### 2.1 Scoping Process
-The determination of what development is in scope of a X-Road Release is determined by the Steering Committee
-through a scoping process (diagram 1). Inputs to this process are provided by X-Road development partners.
+![](IMG/xroad_change_management.png)
 
-##### 2.1.1 Core System
-All the changes to the X-Road core must be approved by the Steering Committee. Adding a new core item to the roadmap
-is done by submitting a formal enhancement proposal that includes functional and technical description of the item.
-The technical description must contain a description of the architectural changes required by the item and a plan
-for the implementation. The Steering Committee accepts or rejects the proposal. Accepted proposals are added to
-the roadmap. Rejected proposals can be resubmitted after modification.
+Diagram 1. Change management.
 
-Alternatively, a new enhancement proposal can be submitted without the technical de-scription, and get accepted
-to the roadmap. However, the technical description must be submitted, and accepted by the Steering Committee prior to the implementation.
+The change management process consists of four phases:
 
-##### 2.1.2 Extensions
-All the extensions must be notified to the Steering Committee by submitting a formal ex-tension notice. The notice
-must include a functional description of the extension. Adding a technical description of the extension to notice is highly recommended, but not mandatory. The Steering Committee adds the extension to the roadmap.
+* **evaluate** - collect new feature and enhancement requests and select the best ones for development
+* **prioritize** – maintain and prioritize product backlog
+* **develop** – agile development of features requested by the NIIS members
+* **publish** – Publish and distribute new releases.
 
-### 2.2 Security Bug Fixes
-All issues on critical updates shall be brought to the Steering Committee. The Steering Committee agrees how the
-security issue is fixed and which partner produces the patch.
+### 2.1 Evaluate
 
-## 3 Warranty
-When an error is detected, the Partner who located the error is responsible of detecting the source of the error. Detecting the source of the error means tracking the first version of the software that contains the error. When the source is detected the Partner who created the version in question must be notified. The Partner who created the version is responsible of fixing the problem.
+The NIIS members and X-Road Community may submit business feature requests and
+enhancement requests that are evaluated by the Working Group. New business feature
+requests are submitted to the Advisory Group for approval. Requests must be
+aligned with the X-Road Product Roadmap and the requests that are not aligned
+with the Product Roadmap are rejected or submitted to the Advisory Group for
+approval. In addition, the requests that are too costly, not really essential,
+etc. are eliminated. The requests that pass the evaluation enter the Product
+Backlog.
 
-## 4 Release Sequence
-The determination of what sequence a release will be identified with will be determined by the X-Road Steering Committee.
-A basic software rule of thumb will be as follows.
-*	Major Release (X.0) will be used for significant jumps in functionality such as changing the framework which could
-cause incompatibility with interfacing systems or new modules/components.
-*	Minor Release (X.X) will be used when only minor features or significant fixes have been added.
+### 2.2 Prioritize
+
+Product Backlog is a prioritized list of requests that have passed the evaluation.
+However, requests can be eliminated from the Product Backlog. During prioritize
+phase requests are defined in more detailed level and they are broken down into
+technical items. Dependencies between different items are analyzed and documented,
+and prioritization is updated accordingly. Items on top of the backlog are the
+top candidates for entering the sprint backlog of the next sprint. The NIIS is
+responsible for maintaining the Product Backlog and prioritizing it together
+with the Advisory Group and Working Group.
+
+### 2.3 Develop
+
+Items are implemented in sprints using agile software development methods. Each
+sprint, the implemented items are picked from the Product Backlog on top of its
+stack. The development is done by the NIIS’s development teams. The NIIS is
+responsible for managing and coordinating the daily work of the development teams.
+The NIIS’s development practices are followed ([Workflow Policy]((WORKFLOW.md)),
+[NFR](NFR.md)). The NIIS is responsible for the whole develop phase.
+
+In addition, the NIIS members and X-Road community may contribute to the
+development. Also then, the NIIS’s development practices must be followed
+([Workflow Policy](WORKFLOW.md), [NFR](NFR.md)). The contributions must be
+approved upfront by the Working Group and they must fulfill the acceptance
+criteria for contributions.
+
+### 2.4 Publish
+
+New versions of X-Road are published three times a year based on a fixed
+release schedule:
+
+* winter (February)
+* spring (May)
+* autumn (October).
+
+The determination of what sequence a release will be identified with will be
+determined by the NIIS. A basic software rule of thumb will be as follows.
+
+*	Major Release (X.0) will be used for significant jumps in functionality such
+as changing the framework which could cause incompatibility with interfacing
+systems or new modules/components.
+*	Minor Release (X.X) will be used when only minor features or significant
+fixes have been added.
 *	Revision Release (X.X.X) is used and incremented when minor bugs are fixed.
 
-At times the release sequence may jump multiple minor versions at a time to indicate sig-nificant features have been
-added, but are not enough to warrant incrementing a major version number.
-See Non Functional Requirements [X-Road Non-Functional Requirements] document for more detailed information on version
-numbering.
+At times the release sequence may jump multiple minor versions at a time to
+indicate significant features have been added, but are not enough to warrant
+incrementing a major version number. See Non Functional Requirements
+[X-Road Non-Functional Requirements](NFR.md) document for more detailed
+information on version numbering.
 
-To distinguish vendor-specific work, vendors can label its products by attaching vendor suffix and vendor version number to X-Road semantic version number (mailnly in 'develop' branch). Example: `6.8.0.Qwerty.3` denotes software developed by Qwerty Corporation, version 3.
+The NIIS is responsible for publishing new versions and distributing installation
+packages to members and X-Road Community. The NIIS members and X-Road Community
+are responsible for updating their instances and coordinating the upgrade
+process within their ecosystems.
 
-## 5 Version Compatibility
-Major versions of X-Road are intended to be longlived versions of the software which consist of numerous minor versions.
-The decision to create a new major version of X-Road will be the result of the need for major changes which cannot be
-successfully implemented without breaking version compatibility.
+Latest version and two earlier versions are officially supported by the NIIS.
+
+#### 2.4.1 Version Compatibility
+
+Major versions of X-Road are intended to be longlived versions of the software
+which consist of numerous minor versions. The decision to create a new major
+version of X-Road will be the result of the need for major changes which cannot
+be successfully implemented without breaking version compatibility.
 
 #### References
-- [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements.
-- [Workflow Policy] Workflow Policy, https://github.com/e-gov/Open-Workflow/blob/master/WORKFLOW.md.
+- [X-Road Non-Functional Requirements](NFR.md) X-Road Non-Functional Requirements.
+- [Workflow Policy](https://github.com/e-gov/Open-Workflow/blob/master/WORKFLOW.md) Workflow Policy.
