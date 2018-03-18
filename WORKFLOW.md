@@ -316,8 +316,8 @@ into `X-Road/develop`.
 release schedule. First a `release` branch is forked from the `develop` branch
 and pull request is made against `X-Road/master`. The version in the `release`
 branch is then exhaustively tested and fixes are made when necessary. When the
-version in the `release` branch satisfies all X-Road partners the `release`
-branch is merged to `master`.
+version in the `release` branch meets the acceptance criteria the `release`
+branch is merged into `master` and back into `develop`.
 
 ![Release preparation](IMG/xroad-release.png)
 
