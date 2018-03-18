@@ -350,7 +350,8 @@ ecosystems.
 15.3	When the fix is ready a pull request is made against the `X-Road/master`
 branch. If defects are found in the pull request review they are fixed in the
 `hotfix` branch. After the pull request has been accepted the changes can be
-merged to `X-Road/develop`.
+merged into both `X-Road/master` and `X-Road/develop`. In addition, `X-Road/master`
+must be tagged with an updated version number.
 
 15.4 Hotfix can also be made for `develop` branch the same way as described for
 `master` branch above. This situation is possible if after an integration made
