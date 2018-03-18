@@ -228,7 +228,7 @@ development.
 ## 12 Submitting and accepting work
 
 12.1 Upon completion of feature development, Contributor [submits a pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
-to `X-Road/develop`. Prior to submitting the request Vendor must [fetch the
+to `X-Road/develop`. Prior to submitting the request Contributor must [fetch the
 most recent updates](https://help.github.com/articles/syncing-a-fork/) from
 `X-Road/develop` and integrate the changes into Contributor's branch
 (solve conflicts, if any). In practise when integration is due a `release`
