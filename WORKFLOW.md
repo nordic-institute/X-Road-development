@@ -80,8 +80,8 @@ The NIIS developers are working directly in the `nordic-institute/X-Road` main
 repository. The NIIS Members may choose to work directly in the
 `nordic-institute/X-Road` main repository or in their own forked repository.
 X-Road community members work in their own forked repositories. In this document
-the NIIS Members and their contractors, and X-Road community members are called
-Contributors.
+Contributors includes both the NIIS Members and their contractors, and
+X-Road community members.
 
 The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Semantic versioning](http://semver.org/) scheme is used for software versions.
 
@@ -263,8 +263,8 @@ by the NIIS.
 
 12.2.4 Version number
 
-- Is the version number format correct (see [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL)?
-- Is the version number correct (as agreed on the roadmap)?
+- Is the version number format correct (see [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL))?
+- Is the version number correct (as agreed on the Roadmap)?
 
 12.2.5 CI build & tests
 
@@ -272,7 +272,7 @@ by the NIIS.
 - Does the build and the test cases work?
 - Does the packaging work (Ubuntu & RHEL)?
 - Can the software be installed on a clean system (Ubuntu & RHEL)?
-- Can the software version be upgraded from the previous `X-Road/master` version?
+- Can the software version be upgraded from two previous `X-Road/master` version?
 
 12.2.6 SonarQube (LTS) static analysis
 
