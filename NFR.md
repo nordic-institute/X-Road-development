@@ -15,9 +15,9 @@ in this document are to be interpreted as described in \[[RFC 2119](#Ref_RFC-211
 
 ## References
 
-1. <a id="Ref_ARC-G" class="anchor"></a>\[ARC-G\] X-Road architecture document, <https://github.com/ria-ee/X-Road/blob/develop/doc/Architecture/arc-g_x-road_arhitecture.md>.
+1. <a id="Ref_ARC-G" class="anchor"></a>\[ARC-G\] X-Road architecture document, <https://github.com/nordic-institute/X-Road/blob/develop/doc/Architecture/arc-g_x-road_arhitecture.md>.
 
-2. <a id="Ref_SPEC-AL" class="anchor"></a>\[SPEC-AL\] X-Road audit log events document, <https://github.com/ria-ee/X-Road/blob/develop/doc/Architecture/spec-al_x-road_audit_log_events_1.7_Y-883-17.docx>.
+2. <a id="Ref_SPEC-AL" class="anchor"></a>\[SPEC-AL\] X-Road audit log events document, <https://github.com/nordic-institute/X-Road/blob/develop/doc/Architecture/spec-al_x-road_audit_log_events_1.7_Y-883-17.docx>.
 
 3. <a id="Ref_RFC-2119" class="anchor"></a>\[RFC 2119\] Key words for use in RFCs to Indicate Requirement Levels, <https://www.ietf.org/rfc/rfc2119.txt>.
 
