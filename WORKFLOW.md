@@ -432,3 +432,5 @@ the same as with `nordic-institute/X-Road`.
 20.3 For clarity `nordic-institute/X-Road-tests` is divided into 3 folders -
 COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national
 implementation only tests.
+
+20.4. Current version of Test Workflow Policy is made public in GitHub, https://github.com/nordic-institute/x-road-development/blob/master/TEST_WORKFLOW.md.
