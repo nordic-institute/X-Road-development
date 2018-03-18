@@ -143,5 +143,5 @@ version of X-Road will be the result of the need for major changes which cannot
 be successfully implemented without breaking version compatibility.
 
 #### References
-- [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements, https://github.com/e-gov/Open-Workflow/blob/master/NFR.md.
-- [Workflow Policy] Workflow Policy, https://github.com/e-gov/Open-Workflow/blob/master/WORKFLOW.md.
+- [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements, https://github.com/nordic-institute/x-road-development/blob/master/NFR.md.
+- [Workflow Policy] Workflow Policy, https://github.com/nordic-institute/x-road-development/blob/master/WORKFLOW.md.
