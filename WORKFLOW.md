@@ -1,15 +1,12 @@
-
-
-X-Road Joint Development
 # Workflow Policy
 
-v1.7
+#### VERSION CONTROL
+| version no.	 | what has been done	| date/person
+| ---- | ---- | ---- |
+| 0.1	| Initial draft.	| 18.3.18 / PK
 
 ## Table of contents
 
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Table of contents](#table-of-contents)
 - [1	General](#1-general)
 - [2 Related documents](#2-related-documents)
 - [3 Development model](#3-development-model)
@@ -30,8 +27,6 @@ v1.7
 - [18	Documentation policy](#18-documentation-policy)
 - [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
 - [20 Testing](#20-testing)
-
-<!-- /TOC -->
 
 ## 1	General
 
@@ -199,7 +194,7 @@ One pull request can contain several bug fix or feature commits. However, pull r
 request is submitted for review and approval to X-Road Working Group, according
 to the procedure in [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL.md#31-evaluate), section "Evaluate".
 
-10.2 The NIIS co-ordinates development by the X-Road Product Roadmap. Approved
+10.2 The NIIS coordinates development by the X-Road Product Roadmap. Approved
 request will be entered into the Roadmap. Dependencies and effects to other
 components of the X-Road software and other projects must be analysed in
 preparing of requests.
@@ -208,7 +203,7 @@ preparing of requests.
 
 Procedure:
 - Contributor creates its own repository by forking `X-Road`.
-- Create `feature` branch by branching from `develop`.
+- `feature` branch is created by branching from `develop`.
 
 10.4 **Contributor version numbering.** To distinguish contributor-specific work,
 Contributor can label its product by attaching contributor suffix and contributor
@@ -221,23 +216,26 @@ denotes software developed by Acme Corporation, version 3.
 forked X-Road and the development work is done in the fork. The NIIS coordinates
 towards a common release and the Contributors integrate their work to the main
 repository. Contributor is required to periodically fetch updates from
-`X-Road/develop` and integrate into Contributor's branch as described in [Github's documentation](https://help.github.com/articles/syncing-a-fork/). The purpose
-of this is to facilitate merging of Contributor's work into `X-Road/develop`.
+`X-Road/develop` and integrate changes into Contributor's branch as described
+in [Github's documentation](https://help.github.com/articles/syncing-a-fork/).
+The purpose of this is to facilitate merging of Contributor's work into
+`X-Road/develop`.
 
 11.2 It is the responsibility of the Contributor to follow the X-Road Product
-Roadmap and react to changes that might affect Contributor's development
-responsibilities.
+Roadmap and react to changes that might affect the scope of the Contributor's
+development.
 
 ## 12 Submitting and accepting work
 
 12.1 Upon completion of feature development, Contributor [submits a pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
 to `X-Road/develop`. Prior to submitting the request Contributor must [fetch the
 most recent updates](https://help.github.com/articles/syncing-a-fork/) from
-`X-Road/develop` and integrate into Contributor's branch (solve conflicts, if any).
-If defects are found in the pull request review they are fixed in the fork's
-`feature` branch and the Github pull request updates automatically. When the
-pull request is eventually accepted to `X-Road/develop` the changes are synced
-back to fork's `develop` as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
+`X-Road/develop` and integrate the changes into Contributor's branch
+(solve conflicts, if any). If defects are found in the pull request review
+they are fixed in the fork's `feature` branch and the Github pull request
+updates automatically. When the pull request is eventually accepted to
+`X-Road/develop` the changes are synced back to fork's `develop` as described
+in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
 
 ![X-Road Integration](IMG/xroad-integration.png)
 
@@ -261,7 +259,7 @@ by the NIIS.
 
 12.2.4 Version number
 
-- Is the version number format correct (see https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL)?
+- Is the version number format correct (see [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL)?
 - Is the version number correct (as agreed on the roadmap)?
 
 12.2.5 CI build & tests
@@ -296,12 +294,11 @@ developer has a chance to comment the issues before accept/reject action.
 12.3 Pull requests are generally reviewed and accepted on first-come,
 first-served (FCFS) basis.
 
-12.4 If acceptance criteria are not met, then Contributor is requested to bring
+12.4 If acceptance criteria is not met, then Contributor is requested to bring
 submitted work up to acceptance requirements.
 
-12.5 Head Architect can, in consultation with Partners, hold up acceptance of
-new pull requests from other Vendors, to allow Vendor fix the deficiencies found
-in submitted work.
+12.5 The NIIS can hold up acceptance of new pull requests from other Contributors,
+to allow Contributor fix the deficiencies found in submitted work.
 
 12.6 In cases of justified need, Contributor can request for up to 2 week
 'code freeze' in `develop` branch of X-Road from the NIIS.
@@ -327,8 +324,8 @@ branch is merged to `master`.
 13.2	X-Road is released by the procedure:
 
 -	The NIIS creates a `release` branch from `develop` and makes a pull request against `X-Road/master`.
-- The NIIS thoroughly review the software to be released.
-- The NIIS decides to release, including the version number (see [X-Road Joint Development Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Release sequence” and “Version compatibility”).
+- The NIIS thoroughly reviews the software to be released.
+- The NIIS decides to release, including the version number (see [X-Road Development Model](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md), sections “Publish” and “Version compatibility”).
 - The NIIS merges the pull request from `release` branch into `X-Road/master` and tags the commit with version number.
 - The NIIS also updates `X-Road/develop` with changes made on `release` branch.
 
@@ -365,9 +362,9 @@ by committing X-Road v6.0 software into the `master` branch.
 
 ## 17	Open source development
 
-17.1	Open source development and Partner development are only loosely coupled.
-Master Repository `X-Road` is open to everybody for forking. The NIIS administers
-the Master Repository `X-Road`.
+17.1	Open source development and the development conducted by the NIIS Members
+are only loosely coupled. Master Repository `X-Road` is open to everybody for
+forking. The NIIS administers the Master Repository `X-Road`.
 
 17.2	New branches are created in `X-Road` by the NIIS as needed.
 
@@ -378,28 +375,40 @@ integrated into `X-Road`. Exact procedure is out of scope of this document.
 
 ## 18	Documentation policy
 
-18.1	X-Road documentation is produced in English. Partners are free to translate documentation into national languages.
+18.1	X-Road documentation is produced in English. Contributors are free to
+translate documentation into national languages.
 
 18.2	Production format for documentation is [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
-18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software). In X-Road context it means that the country specific customizations, settings, repositories etc. need to stand out from documentation clearly. The vanilla version of X-Road security server is installed with `xroad-securityserver` package. The country specific versions are installed with `xroad-securityserver-XX` where XX is the country code.
+18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software).
+In X-Road context it means that the NIIS Member specific customizations,
+settings, repositories etc. need to stand out from documentation clearly. The
+vanilla version of X-Road security server is installed with `xroad-securityserver`
+package. The NIIS Member specific versions are installed with
+`xroad-securityserver-XX` where XX is the country code of a NIIS Member.
 
-18.4	Partners can publish X-Road documentation on their own websites, either verbatim or in part. Partners can modify and extend the documentation as they consider fit for their uses.
+18.4	Contributors can publish X-Road documentation on their own websites,
+either verbatim or in part. Contributors can modify and extend the documentation
+as they consider fit for their uses.
 
 ## 19	Approval, publication and amendment
 
-19.1	Workflow will be amended as needed. Amendments are guided by the goal of having efficient and flexible workflow.
+19.1	Workflow will be amended as needed. Amendments are guided by the goal of
+having efficient and flexible workflow.
 
-19.2  All participants of the development can propose to amend Workflow Policy. Amendment proposal can be submitted by raising an issue or submitting a pull request in GitHub.
+19.2  All participants of the development can propose to amend Workflow Policy.
+Amendment proposal can be submitted by raising an issue or submitting a pull
+request in GitHub.
 
-19.3	Head Architect, upon consultation with Partners, when appropriate, accepts or rejects the proposal.
+19.3	The NIIS, upon consultation with the NIIS Members, when appropriate,
+accepts or rejects the proposal.
 
-19.4	Current version of Workflow Policy is made public in GitHub, https://github.com/vrk-kpa/xroad-joint-development/blob/master/WORKFLOW.md.
+19.4	Current version of Workflow Policy is made public in GitHub, https://github.com/nordic-institute/x-road-development/blob/master/WORKFLOW.md.
 
 ## 20 Testing
 
-20.1	All test scripts and software is published in X-Road-tests.
+20.1	All test scripts and software is published in `X-Road-tests`.
 
-20.2 The branching pattern and workflow with X-Road-tests is the same as with X-Road.
+20.2 The branching pattern and workflow with `X-Road-tests` is the same as with `X-Road`.
 
-20.3 For clarity X-Road-tests is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national implementation only tests.
+20.3 For clarity `X-Road-tests` is divided into 3 folders - COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national implementation only tests.
