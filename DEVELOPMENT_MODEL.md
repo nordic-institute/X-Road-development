@@ -67,18 +67,21 @@ The change management process consists of four phases:
 ### 2.1 Evaluate
 
 The NIIS members and X-Road Community may submit business feature requests and
-enhancement requests that are evaluated by the Working Group. New business feature
-requests are submitted to the Advisory Group for approval. Requests must be
-aligned with the X-Road Product Roadmap and the requests that are not aligned
-with the Product Roadmap are rejected or submitted to the Advisory Group for
-approval. In addition, the requests that are too costly, not really essential,
-etc. are eliminated. The requests that pass the evaluation enter the Product
-Backlog.
+enhancement requests that are evaluated by the Working Group. Business feature
+requests are about adding a new feature to X-Road core and enhancement requests
+are about improving existing functionality. New business feature requests are
+submitted to the Advisory Group for approval.
+
+Requests must be aligned with the X-Road Product Roadmap and the requests that
+are not aligned with the Product Roadmap are rejected or submitted to the
+Advisory Group for approval. In addition, the requests that are too costly,
+not really essential, etc. are eliminated. The requests that pass the evaluation
+enter the Product Backlog.
 
 ### 2.2 Prioritize
 
 Product Backlog is a prioritized list of requests that have passed the evaluation.
-However, requests can be eliminated from the Product Backlog. During prioritize
+However, requests can also be eliminated from the Product Backlog. During prioritize
 phase requests are defined in more detailed level and they are broken down into
 technical items. Dependencies between different items are analyzed and documented,
 and prioritization is updated accordingly. Items on top of the backlog are the
