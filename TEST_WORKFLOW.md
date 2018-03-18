@@ -77,8 +77,8 @@ X-Road community members work in their own forked repositories.
 - Contributor repositories - purpose: development work carried out by
 	Contributor; administered by: Contributor.
 
-	4.2	The NIIS members can establish their own, additional repositories, for backup,
-	software distribution or other purposes.
+4.2	The NIIS members can establish their own, additional repositories, for
+backup, software distribution or other purposes.
 
 ## 5	Branching Pattern
 
@@ -106,7 +106,7 @@ code.
 
 6.1 The versions merged to X-Road-tests/master branch are tagged by the NIIS.
 
-`git tag -a 6.16.0 -m "X-Road-tests for X-road version 6.16.0"``
+`git tag -a 6.16.0 -m "X-Road-tests for X-road version 6.16.0"`
 
 The versions merged to X-Road-tests/develop branch are not tagged.
 
