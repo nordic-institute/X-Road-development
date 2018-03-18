@@ -15,7 +15,8 @@
 - [3.3 Develop](#33-develop)
 - [3.4 Publish](#34-publish)
 - [3.4.1 Version Compatibility](#341-version-compatibility)
-- [4 References](#4-references)
+- [4 Warranty](#3-warranty)
+- [5 References](#4-references)
 
 ## 1 General
 
@@ -156,6 +157,11 @@ which consist of numerous minor versions. The decision to create a new major
 version of X-Road will be the result of the need for major changes which cannot
 be successfully implemented without breaking version compatibility.
 
-## 4 References
+## 4 Warranty
+
+The NIIS is responsible for fixing software errors detected in the X-Road core
+and providing second level support to the NIIS Members.
+
+## 5 References
 - [X-Road Non-Functional Requirements] X-Road Non-Functional Requirements, https://github.com/nordic-institute/x-road-development/blob/master/NFR.md.
 - [Workflow Policy] Workflow Policy, https://github.com/nordic-institute/x-road-development/blob/master/WORKFLOW.md.
