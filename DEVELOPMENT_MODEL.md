@@ -62,7 +62,7 @@ The change management process consists of four phases:
 * **evaluate** - collect new feature and enhancement requests and select the best ones for development
 * **prioritize** – maintain and prioritize product backlog
 * **develop** – agile development of features requested by the NIIS members
-* **publish** – Publish and distribute new releases.
+* **publish** – publish and distribute new releases.
 
 ### 2.1 Evaluate
 
@@ -90,15 +90,15 @@ with the Advisory Group and Working Group.
 
 Items are implemented in sprints using agile software development methods. Each
 sprint, the implemented items are picked from the Product Backlog on top of its
-stack. The development is done by the NIIS’s development teams. The NIIS is
-responsible for managing and coordinating the daily work of the development teams.
-The NIIS’s development practices are followed ([Workflow Policy]((WORKFLOW.md)),
-[NFR](NFR.md)). The NIIS is responsible for the whole develop phase.
+stack. The development is done by the NIIS’s development teams and the development
+practices of the NIIS are followed ([Workflow Policy]((WORKFLOW.md)),
+[NFR](NFR.md)). The NIIS is responsible for managing and coordinating the daily
+work of the development teams.
 
 In addition, the NIIS members and X-Road community may contribute to the
 development. Also then, the NIIS’s development practices must be followed
 ([Workflow Policy](WORKFLOW.md), [NFR](NFR.md)). The contributions must be
-approved upfront by the Working Group and they must fulfill the acceptance
+approved upfront by the Working Group and they must fulfil the acceptance
 criteria for contributions.
 
 ### 2.4 Publish
@@ -122,9 +122,8 @@ fixes have been added.
 
 At times the release sequence may jump multiple minor versions at a time to
 indicate significant features have been added, but are not enough to warrant
-incrementing a major version number. See Non Functional Requirements
-[X-Road Non-Functional Requirements](NFR.md) document for more detailed
-information on version numbering.
+incrementing a major version number. See [X-Road Non-Functional Requirements](NFR.md)
+document for more detailed information on version numbering.
 
 The NIIS is responsible for publishing new versions and distributing installation
 packages to members and X-Road Community. The NIIS members and X-Road Community
