@@ -41,5 +41,5 @@ in Working Group meetings and/or e-mail and/or issue comments in this repository
 
 ### Source code
 
-X-Road development repository (nordic-institute/X-Road) is [here](https://github.com/nordic-institute/X-Road).
-X-Road related tests (nordic-institute/X-Road-tests) are [here](https://github.com/nordic-institute/X-Road-tests).
+X-Road development repository (`nordic-institute/X-Road`) is [here](https://github.com/nordic-institute/X-Road).
+X-Road related tests (`nordic-institute/X-Road-tests`) are [here](https://github.com/nordic-institute/X-Road-tests).
