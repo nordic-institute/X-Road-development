@@ -64,25 +64,25 @@ X-Road community are referred as **Contributors**.
 based version management. In general the workflow policy follows Atlassian [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow)
 scheme.
 
-The NIIS developers are working directly in the `nordic-institute/X-Road-tests` main
-repository. The NIIS Members may choose to work directly in the
-`nordic-institute/X-Road-tests` main repository or in their own forked repository.
-X-Road community members work in their own forked repositories.
+* The NIIS developers are working directly in the `nordic-institute/X-Road-tests`
+main repository.
+* The NIIS Members may choose to work directly in the `nordic-institute/X-Road-tests`
+main repository or in their own forked repository.
+* X-Road community members work in their own forked repositories.
 
 ## 4	Repositories
 
 4.1	The following code and documentation repositories are used:
 - Master Test Repository - short name: X-Road-tests; hosted by: GitHub; managed by: NIIS; purpose: release of X-Road automated tests; access: NIIS has write access; read access: ALL.
-	- https://github.com/nordic-institute/X-Road-tests
 - Contributor repositories - purpose: development work carried out by
-	Contributor; administered by: Contributor.
+Contributor; administered by: Contributor.
 
-4.2	The NIIS members can establish their own, additional repositories, for
+4.2	The Contributors can establish their own, additional repositories, for
 backup, software distribution or other purposes.
 
 ## 5	Branching Pattern
 
-5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and own `feature` branches.
+5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and additional `feature` branches.
 
 - `master` branch is used for release X-Road tests
 - `develop` branch is used for test development
@@ -96,7 +96,7 @@ Main repository:
 	- Integration branch between Finland and Estonia (and other possible partners)
 	- Latest integrated test development source code
 
-README.md file in the root of X-Road-tests must indicate the X-Road source code
+`README.md` file in the root of X-Road-tests must indicate the X-Road source code
 version for both `master` and `develop` branches so that there is no confusion
 for which version these tests were designated for. Indication is done by
 pointing to the specific tag (master) or commit (develop) of the X-Road source
@@ -156,8 +156,8 @@ criteria that was in effect when the work on this changeset started.
 
 8.2.5 Browser acceptance testing
 - Browser versions
-    - Mozilla firefox version tests README.md
-    - Chrome version version tests README.md
+    - Mozilla firefox version tests `README.md`
+    - Chrome version version tests `README.md`
     	- Chrome used only smoke tests (excluding file download and upload, and
 				certificates)
 
@@ -165,7 +165,8 @@ criteria that was in effect when the work on this changeset started.
 - Pull requests are generally reviewed and accepted on first-come, first-served
 (FCFS) basis.
 - Descriptive git commit messages
-	- E.g *"Added xroad-global-configuration test case 3.3"* or *"Fixed login test working with new layout"*
+	- E.g `Added xroad-global-configuration test case 3.3` or
+	`Fixed login test working with new layout`
 
 8.4 If acceptance criteria are not met, then Contributor is requested to bring
 submitted work up to acceptance requirements.
