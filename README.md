@@ -27,16 +27,12 @@ The NIIS **Members** nominate representatives to the **Advisory Group** and
 participate in the **Working Group**. The NIIS organizes and facilitates
 Advisory Group and Working Group meetings.
 
-Members also submit feature and enhancement requests, submit code contributions,
-prioritize backlog and use X-Road for producing digital services. Members are
-responsible for running and maintaining their own X-Road ecosystems and
-providing support to their ecosystems.
-
 ### X-Road Community
 
-X-Road is released under the MIT license and is available free of charge for
-any individual or organization. More information about the X-Road Community can
-be found [here](https://community.niis.org).
+X-Road is released under the [MIT](‹https://en.wikipedia.org/wiki/MIT_License)
+license and is available free of charge for any individual or organization.
+More information about the X-Road Community can be found
+[here](https://community.niis.org).
 
 ### How to contribute?
 
