@@ -23,7 +23,7 @@ NIIS is responsible for:
 * developing and implementing principles of licensing and distribution
 * providing second-line support to NIIS members.
 
-The NIIS **Members** nominate representatives to the **Advisory Group** and
+The **NIIS Members** nominate representatives to the **Advisory Group** and
 participate in the **Working Group**. The NIIS organizes and facilitates
 Advisory Group and Working Group meetings.
 
