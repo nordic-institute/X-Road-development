@@ -55,10 +55,10 @@ The change management process includes the following roles and responsibilities:
 
 ## 3 Change Management
 
-The Product Roadmap is a plan that outlines the flow of new business features
-needed to satisfy the needs of the NIIS members. The roadmap helps reach a
+The **Product Roadmap** is a plan that outlines the flow of new business features
+needed to satisfy the needs of the NIIS members. The Product Roadmap helps reach a
 consensus about future developments and it provides a framework to help plan
-and coordinate upcoming releases. The X-Road roadmap takes into consideration
+and coordinate upcoming releases. The Product Roadmap takes into consideration
 scoped functionality and X-Road production compatibility. Changes to the Product
 Roadmap are approved by the Advisory Board.
 
@@ -108,12 +108,12 @@ with the Advisory Group and Working Group.
 
 Items are implemented in sprints using agile software development methods. Each
 sprint, the implemented items are picked from the Product Backlog on top of its
-stack. The development is done by the NIIS’s development teams and the development
+stack. The development is done by the NIIS and the development
 practices of the NIIS are followed ([Workflow Policy]((WORKFLOW.md)),
 [NFR](NFR.md)). The NIIS is responsible for managing and coordinating the daily
 work of the development teams.
 
-In addition, the NIIS members and X-Road community may contribute to the
+In addition, the NIIS Members and X-Road community may contribute to the
 development. Also then, the NIIS’s development practices must be followed
 ([Workflow Policy](WORKFLOW.md), [NFR](NFR.md)). The contributions must be
 approved upfront by the Working Group and they must fulfil the acceptance
@@ -138,17 +138,20 @@ systems or new modules/components.
 fixes have been added.
 *	Revision Release (X.X.X) is used and incremented when minor bugs are fixed.
 
-At times the release sequence may jump multiple minor versions at a time to
+At times, the release sequence may jump multiple minor versions at a time to
 indicate significant features have been added, but are not enough to warrant
 incrementing a major version number. See [X-Road Non-Functional Requirements](NFR.md)
 document for more detailed information on version numbering.
 
-The NIIS is responsible for publishing new versions and distributing installation
-packages to members and X-Road Community. The NIIS members and X-Road Community
-are responsible for updating their instances and coordinating the upgrade
-process within their ecosystems.
+![](IMG/xroad_publish.png)
 
-Latest version and two earlier versions are officially supported by the NIIS.
+The NIIS is responsible for publishing new versions and distributing installation
+packages to the NIIS Members and X-Road Community. The NIIS Members and X-Road
+Community are responsible for updating their instances and coordinating the
+upgrade process within their ecosystems.
+
+Latest version and two earlier versions of the X-Road are officially supported
+by the NIIS.
 
 #### 3.4.1 Version Compatibility
 
