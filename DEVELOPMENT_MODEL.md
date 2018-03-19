@@ -70,7 +70,7 @@ X-Road Product Roadmap and Product Backlog are owned and managed by the NIIS.
 
 ![](IMG/xroad_change_management.png)
 
-Diagram 1. Change management.
+*Diagram 1. Change management.*
 
 The change management process consists of four phases:
 
@@ -145,7 +145,7 @@ document for more detailed information on version numbering.
 
 ![](IMG/xroad_publish.png)
 
-Diagram 2. Distribute release versions.
+*Diagram 2. Distribute release versions.*
 
 The NIIS is responsible for publishing new versions and distributing installation
 packages to the NIIS Members and X-Road Community. The NIIS Members and X-Road
