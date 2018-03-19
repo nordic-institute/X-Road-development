@@ -23,11 +23,14 @@ NIIS is responsible for:
 * developing and implementing principles of licensing and distribution
 * providing second-line support to NIIS members.
 
-The NIIS **Members** nominate representatives to the Advisory Group and participate
-in the Working Group. Members submit feature and enhancement requests, submit
-code contributions, prioritize backlog and use X-Road for producing
-digital services. Members are responsible for running and maintaining their
-own X-Road ecosystems and providing support to their ecosystems.
+The NIIS **Members** nominate representatives to the **Advisory Group** and
+participate in the **Working Group**. The NIIS organizes and facilitates
+Advisory Group and Working Group meetings.
+
+Members also submit feature and enhancement requests, submit code contributions,
+prioritize backlog and use X-Road for producing digital services. Members are
+responsible for running and maintaining their own X-Road ecosystems and
+providing support to their ecosystems.
 
 ### X-Road Community
 
@@ -42,5 +45,5 @@ in Working Group meetings and/or e-mail and/or issue comments in this repository
 
 ### Source code
 
-X-road development repository [(X-Road) is here](https://github.com/nordic-institute/X-Road).
-X-road related tests [(X-Road-tests) are here](https://github.com/nordic-institute/X-Road-tests).
+X-Road development repository (nordic-institute/X-Road) is [here](https://github.com/nordic-institute/X-Road).
+X-Road related tests (nordic-institute/X-Road-tests) are [here](https://github.com/nordic-institute/X-Road-tests).
