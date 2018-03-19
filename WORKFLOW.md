@@ -30,8 +30,8 @@
 
 ## 1	General
 
-1.1	This document establishes workflow policy for the development of X-Road
-software. Workflow Policy strives to serve as a handbook for all practical
+1.1	This document establishes workflow policy for the development of the X-Road
+core. Workflow Policy strives to serve as a handbook for all practical
 aspects of the development.
 
 1.2	Workflow is understood as systematic arrangement of work, a complex of
@@ -79,16 +79,18 @@ See also other documentation in [X-Road Development](https://github.com/nordic-i
 based version management. In general the workflow policy follows Atlassian [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow)
 scheme.
 
-The NIIS developers are working directly in the `nordic-institute/X-Road` main
-repository. The NIIS Members may choose to work directly in the
-`nordic-institute/X-Road` main repository or in their own forked repository.
-X-Road community members work in their own forked repositories.
+* The NIIS developers are working directly in the `nordic-institute/X-Road` main
+repository.
+* The NIIS Members may choose to work directly in the `nordic-institute/X-Road`
+main repository or in their own forked repository.
+* X-Road community members work in their own forked repositories.
 
 The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Semantic versioning](http://semver.org/) scheme is used for software versions.
 
 ## 4	Repositories
 
 4.1	The following code and documentation repositories are used:
+
 - Master Repository - short name: `nordic-institute/X-Road`; hosted by: GitHub; managed by: NIIS;
 purpose: release of X-Road software; access: NIIS has write access; read access: ALL.
 - Master Test Repository - short name: `nordic-institute/X-Road-tests`; hosted by: GitHub; managed
@@ -97,7 +99,7 @@ access; read access: ALL.
 - Contributor repositories - purpose: development work carried out by
 Contributor; administered by: Contributor.
 
-4.2	The NIIS members can establish their own, additional repositories, for backup,
+4.2	The Contributors can establish their own, additional repositories, for backup,
 software distribution or other purposes.
 
 ## 5	Branching pattern
@@ -196,8 +198,8 @@ request is submitted for review and approval to X-Road Working Group, according
 to the procedure in [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL.md#31-evaluate), section "Evaluate".
 
 10.2 The NIIS coordinates development by the X-Road Product Roadmap. Approved
-request will be entered into the Roadmap. Dependencies and effects to other
-components of the X-Road software and other projects must be analysed in
+request will be entered into the Product Roadmap. Dependencies and effects to
+other components of the X-Road core and related projects must be analysed in
 preparing of requests.
 
 10.3	New features are always developed on `feature` branches.
@@ -380,20 +382,23 @@ by committing X-Road v6.0 software into the `master` branch.
 ## 17	Open source development
 
 17.1	Open source development and the development conducted by the NIIS Members
-are only loosely coupled. Master Repository `X-Road` is open to everybody for
-forking. The NIIS administers the Master Repository `X-Road`.
+are only loosely coupled. Master Repository `nordic-institute/X-Road` is open
+to everybody for forking. The NIIS administers the Master Repository
+`nordic-institute/X-Road`.
 
-17.2	New branches are created in `X-Road` by the NIIS as needed.
+17.2	New branches are created in `nordic-institute/X-Road` by the NIIS as needed.
 
-17.3	Pull requests into `X-Road` are reviewed and accepted by the NIIS.
+17.3	Pull requests into `nordic-institute/X-Road` are reviewed and accepted
+by the NIIS.
 
 17.4	Good quality and useful results of open source development can be
-integrated into `X-Road`. Exact procedure is out of scope of this document.
+integrated into `nordic-institute/X-Road`. Exact procedure is out of scope
+of this document.
 
 ## 18	Documentation policy
 
 18.1	X-Road documentation is produced in English. Contributors are free to
-translate documentation into national languages.
+translate documentation into other languages.
 
 18.2	Production format for documentation is [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown/).
 
@@ -404,8 +409,8 @@ vanilla version of X-Road security server is installed with `xroad-securityserve
 package. The NIIS Member specific versions are installed with
 `xroad-securityserver-XX` where XX is the country code of a NIIS Member.
 
-18.4	Contributors can publish X-Road documentation on their own websites,
-either verbatim or in part. Contributors can modify and extend the documentation
+18.4	Contributors may publish X-Road documentation on their own websites,
+either verbatim or in part. Contributors may modify and extend the documentation
 as they consider fit for their uses.
 
 ## 19	Approval, publication and amendment
