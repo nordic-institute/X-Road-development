@@ -145,6 +145,8 @@ document for more detailed information on version numbering.
 
 ![](IMG/xroad_publish.png)
 
+Diagram 2. Distribute release versions.
+
 The NIIS is responsible for publishing new versions and distributing installation
 packages to the NIIS Members and X-Road Community. The NIIS Members and X-Road
 Community are responsible for updating their instances and coordinating the
