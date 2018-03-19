@@ -62,7 +62,7 @@ and coordinate upcoming releases. The Product Roadmap takes into consideration
 scoped functionality and X-Road production compatibility. Changes to the Product
 Roadmap are approved by the Advisory Board.
 
-The Product Backlog contains fine grained technical items derived from the
+The **Product Backlog** contains fine grained technical items derived from the
 Product Roadmap items and enhancement requests. The Product Backlog is prioritized
 by the Advisory Group and Working Group.
 
