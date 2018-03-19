@@ -143,7 +143,7 @@ indicate significant features have been added, but are not enough to warrant
 incrementing a major version number. See [X-Road Non-Functional Requirements](NFR.md)
 document for more detailed information on version numbering.
 
-![](IMG/xroad_publish.png)
+<img src="IMG/xroad_publish.png" width="70%">
 
 *Diagram 2. Distribute release versions.*
 
