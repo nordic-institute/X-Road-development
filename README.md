@@ -29,7 +29,7 @@ Advisory Group and Working Group meetings.
 
 ### X-Road Community
 
-X-Road is released under the [MIT](‹https://en.wikipedia.org/wiki/MIT_License)
+X-Road is released under the [MIT](https://en.wikipedia.org/wiki/MIT_License)
 license and is available free of charge for any individual or organization.
 More information about the X-Road Community can be found
 [here](https://community.niis.org).
