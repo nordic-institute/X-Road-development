@@ -79,6 +79,19 @@ See also other documentation in [X-Road Development](https://github.com/nordic-i
 based version management. In general the workflow policy follows Atlassian [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow)
 scheme.
 
+X-Road master repository is maintained in a Git version control system hosted
+and managed by the NIIS. In addition, the master repository is also available
+on GitHub as a mirror repository. The state of the upstream repository is
+replicated to GitHub on every commit. The state means all the branches
+(including master) and all the tags as well.
+
+Pull requests can be opened on both upstream and mirror repositories. The pull
+request acceptance process is the same regardless of the repository where the
+pull request is created. The mirror is a two way mirror which means that pull
+requests created on the mirror repository are replicated to the upstream. **For
+clarity, this documents describes the working model on GitHub mirror repository.**
+The process for synchronising the upstream and the mirror is omitted on purpose.
+
 * The NIIS developers are working directly in the `nordic-institute/X-Road` main
 repository.
 * The NIIS Members may choose to work directly in the `nordic-institute/X-Road`
