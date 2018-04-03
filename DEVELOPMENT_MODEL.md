@@ -32,9 +32,9 @@ The change management process includes the following roles and responsibilities:
 
 * NIIS
   * maintains product roadmap and product backlog
-  * maintains the master source code repository
-  * maintains Non Functional Requirements
-  * reviews and accepts / rejects contributions
+  * maintains the [master](https://github.com/nordic-institute/X-Road) source code repository
+  * maintains [Non Functional Requirements](NFR.md)
+  * [reviews](WORKFLOW.md#12-submitting-and-accepting-work) and accepts / rejects contributions
   * organizes and facilitates Advisory Group and Working Group meetings
   * schedules releases
   * coordinates daily work
@@ -42,7 +42,7 @@ The change management process includes the following roles and responsibilities:
   * nominates representatives to the Advisory Group
   * participates in the Working Group
   * submits business feature and enhancement requests
-  * submits code contributions including required documentation
+  * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation
 * Advisory Group  
   * accepts / rejects business feature requests
   * prioritizes product roadmap and product backlog
@@ -51,7 +51,7 @@ The change management process includes the following roles and responsibilities:
   * prioritizes product backlog
 * X-Road Community
   * submits business feature and enhancement requests
-  * submits code contributions including required documentation.
+  * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation.
 
 ## 3 Change Management
 
@@ -109,7 +109,7 @@ with the Advisory Group and Working Group.
 Items are implemented in sprints using agile software development methods. Each
 sprint, the implemented items are picked from the Product Backlog on top of its
 stack. The development is done by the NIIS and the development
-practices of the NIIS are followed ([Workflow Policy]((WORKFLOW.md)),
+practices of the NIIS are followed ([Workflow Policy](WORKFLOW.md)),
 [NFR](NFR.md)). The NIIS is responsible for managing and coordinating the daily
 work of the development teams.
 
@@ -128,20 +128,19 @@ release schedule:
 * spring (May)
 * autumn (October).
 
-The determination of what sequence a release will be identified with will be
-determined by the NIIS. A basic software rule of thumb will be as follows.
+[Semantic versioning](http://semver.org/) scheme is used for software versions.
+A basic software rule of thumb will be as follows.
 
-*	Major Release (X.0) will be used for significant jumps in functionality such
+*	Major Release (X) will be used for significant jumps in functionality such
 as changing the framework which could cause incompatibility with interfacing
 systems or new modules/components.
 *	Minor Release (X.X) will be used when only minor features or significant
 fixes have been added.
-*	Revision Release (X.X.X) is used and incremented when minor bugs are fixed.
+*	Patch Release (X.X.X) is used and incremented when minor bugs are fixed.
 
 At times, the release sequence may jump multiple minor versions at a time to
 indicate significant features have been added, but are not enough to warrant
-incrementing a major version number. See [X-Road Non-Functional Requirements](NFR.md)
-document for more detailed information on version numbering.
+incrementing a major version number.
 
 <img src="IMG/xroad_publish.png" width="70%">
 
@@ -153,7 +152,8 @@ Community are responsible for updating their instances and coordinating the
 upgrade process within their ecosystems.
 
 Latest version and two earlier versions of the X-Road are officially supported
-by the NIIS.
+by the NIIS. The supported versions are defined on MAJOR.MINOR level so the
+release of patch versions (MAJOR.MINOR.PATCH) does not effect on the support.
 
 #### 3.4.1 Version Compatibility
 
