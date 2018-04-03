@@ -44,10 +44,10 @@ The change management process includes the following roles and responsibilities:
   * submits business feature and enhancement requests
   * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation
 * Advisory Group  
-  * accepts / rejects business feature requests
+  * [accepts / rejects](DEVELOPMENT_MODEL.md#31-evaluate) business feature requests
   * prioritizes product roadmap and product backlog
 * Working Group
-  * accepts / rejects enhancement requests
+  * [accepts / rejects](DEVELOPMENT_MODEL.md#31-evaluate) enhancement requests
   * prioritizes product backlog
 * X-Road Community
   * submits business feature and enhancement requests
