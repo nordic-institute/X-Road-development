@@ -125,7 +125,7 @@ The versions merged to `X-Road/develop` branch are not tagged.
 7.1 There are development versions and release versions and their package naming format is different.
 
 7.2 The development package name format is `X.Y.Z-R.YYYYMMDDHHMMSSgitAAAAAA` (e.g. xroad-securityserver_6.14.0-0.20170428110816gitfbe4542_all.deb and xroad-securityserver-6.14.0-0.20170428110816gitfbe4542.el7.noarch.rpm)
-- The software version X.Y.Z: X=major, Y=minor, Z=bugfix, e.g. 6.7.1
+- The software version X.Y.Z: X=major, Y=minor, Z=patch, e.g. 6.7.1
 - R=package release number. For development versions this should be set to 0.
 - YYYYMMDDHHMMSS = git commit timestamp (UTC) and AAAAAA = git commit hash (git show -s --format=%h)
   - The purpose of the timestamp is to ensure that packages will update although the software version number is not changed
