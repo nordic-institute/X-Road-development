@@ -109,7 +109,7 @@ with the Advisory Group and Working Group.
 Items are implemented in sprints using agile software development methods. Each
 sprint, the implemented items are picked from the Product Backlog on top of its
 stack. The development is done by the NIIS and the development
-practices of the NIIS are followed ([Workflow Policy](WORKFLOW.md)),
+practices of the NIIS are followed ([Workflow Policy](WORKFLOW.md),
 [NFR](NFR.md)). The NIIS is responsible for managing and coordinating the daily
 work of the development teams.
 
