@@ -55,17 +55,12 @@ The tools listed below are used in the development of the X-Road.
 | --- | --- |
 | https://jira.niis.org/projects/XRDDEV/ | X-Road backlog. |
 | https://jira.niis.org/servicedesk/customer/portal/1 | X-Road Service Desk for submitting enhancement requests and error reports. |
-| https://github.com/nordic-institute/X-Road | Master source code repository. |
-| https://github.com/nordic-institute/X-Road-tests | Master testing repository. |
-| https://github.com/nordic-institute/X-Road-tests-environment | Automated test environment repository. |
-| https://github.com/nordic-institute/X-Road-development | X-Road development model repository. |
 
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
-get access to the [X-Road Service
-Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
-[X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
+get access to the tools.
 
 ### Source code
 
 X-Road development repository (`nordic-institute/X-Road`) is [here](https://github.com/nordic-institute/X-Road).
 X-Road related tests (`nordic-institute/X-Road-tests`) are [here](https://github.com/nordic-institute/X-Road-tests).
+X-Road automated test environment (`nordic-institute/X-Road-tests-environment`) are [here](https://github.com/nordic-institute/X-Road-tests-environment).
