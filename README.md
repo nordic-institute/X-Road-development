@@ -51,7 +51,8 @@ Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
 
 The tools listed below are used in the development of the X-Road.
 
-|| URL || Description ||
+| URL | Description |
+| --- | --- |
 | https://jira.niis.org/projects/XRDDEV/ | X-Road backlog. |
 | https://jira.niis.org/servicedesk/customer/portal/1 | X-Road Service Desk for submitting enhancement requests and error reports. |
 | https://github.com/nordic-institute/X-Road | Master source code repository. |
