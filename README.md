@@ -40,12 +40,16 @@ More information about the X-Road Community can be found
 Submit a pull request or raise an issue. Changes to the documents are reviewed
 in Working Group meetings and/or e-mail and/or issue comments.
 
-Enhancement requests and error reports can be submitted to the [X-Road Service
+X-Road enhancement requests and error reports can be submitted to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1).
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
 get access to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
 [X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
+
+If you want to propose a change to the documents in this repository, please
+[submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
+issue using the GitHub issue tracker.
 
 ### Development Tools
 
