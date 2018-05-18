@@ -81,25 +81,27 @@ The change management process consists of four phases:
 
 ### 3.1 Evaluate
 
-The NIIS members and X-Road Community may submit business feature requests and
-enhancement requests that are evaluated by the Working Group. Business feature
-requests are about adding a new feature to X-Road core and enhancement requests
-are about improving existing functionality. New business feature requests are
-submitted to the Advisory Group for approval.
+The NIIS members and X-Road Community may
+[submit](https://jira.niis.org/servicedesk/customer/portal/1) business feature
+requests and enhancement requests that are evaluated by the Working Group.
+Business feature requests are about adding a new feature to X-Road core and
+enhancement requests are about improving existing functionality. New business
+feature requests are submitted to the Advisory Group for approval.
 
 Requests must be aligned with the X-Road Product Roadmap and the requests that
 are not aligned with the Product Roadmap are rejected or submitted to the
 Advisory Group for approval. In addition, the requests that are too costly,
 not really essential, etc. are eliminated. The requests that pass the evaluation
-enter the Product Backlog.
+enter the [Product Backlog](https://jira.niis.org/projects/XRDDEV/).
 
 ### 3.2 Prioritize
 
-Product Backlog is a prioritized list of requests that have passed the evaluation.
-However, requests can also be eliminated from the Product Backlog. During prioritize
-phase requests are defined in more detailed level and they are broken down into
-technical items. Dependencies between different items are analyzed and documented,
-and prioritization is updated accordingly. Items on top of the backlog are the
+[Product Backlog](https://jira.niis.org/projects/XRDDEV/) is a prioritized
+list of requests that have passed the evaluation. However, requests can also be
+eliminated from the Product Backlog. During prioritize phase requests are
+defined in more detailed level and they are broken down into technical items.
+Dependencies between different items are analyzed and documented, and 
+prioritization is updated accordingly. Items on top of the backlog are the
 top candidates for entering the sprint backlog of the next sprint. The NIIS is
 responsible for maintaining the Product Backlog and prioritizing it together
 with the Advisory Group and Working Group.
@@ -135,8 +137,9 @@ A basic software rule of thumb will be as follows.
 as changing the framework which could cause incompatibility with interfacing
 systems or new modules/components.
 *	Minor Release (X.X) will be used when only minor features or significant
-fixes have been added.
-*	Patch Release (X.X.X) is used and incremented when minor bugs are fixed.
+fixes have been added in a backwards-compatible manner.
+*	Patch Release (X.X.X) is used and incremented when minor bugs are fixed in a
+backwards-compatible manner.
 
 At times, the release sequence may jump multiple minor versions at a time to
 indicate significant features have been added, but are not enough to warrant

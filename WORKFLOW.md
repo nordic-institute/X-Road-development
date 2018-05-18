@@ -398,9 +398,8 @@ vanilla version of X-Road security server is installed with `xroad-securityserve
 package. The NIIS Member specific versions are installed with
 `xroad-securityserver-XX` where XX is the country code of a NIIS Member.
 
-18.4	Contributors may publish X-Road documentation on their own websites,
-either verbatim or in part. Contributors may modify and extend the documentation
-as they consider fit for their uses.
+18.4	Contributors may publish X-Road documentation on their own websites in
+accordance with the [License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## 19	Approval, publication and amendment
 
