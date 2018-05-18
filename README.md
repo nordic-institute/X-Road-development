@@ -67,4 +67,4 @@ get access to the tools.
 
 X-Road development repository (`nordic-institute/X-Road`) is [here](https://github.com/nordic-institute/X-Road).
 X-Road related tests (`nordic-institute/X-Road-tests`) are [here](https://github.com/nordic-institute/X-Road-tests).
-X-Road automated test environment (`nordic-institute/X-Road-tests-environment`) are [here](https://github.com/nordic-institute/X-Road-tests-environment).
+X-Road test automation environment (`nordic-institute/X-Road-tests-environment`) is [here](https://github.com/nordic-institute/X-Road-tests-environment).
