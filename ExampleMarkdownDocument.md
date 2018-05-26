@@ -9,6 +9,7 @@ Doc. ID: UG-EXAMPLEMD
 | 13.01.2017 | 1.0.1       | Fixed some typos                                | Vitali Stupin      |
 | 20.01.2017 | 1.0.2       | Fixed some more typos                           | Vitali Stupin      |
 | 02.03.2017 | 1.0.3       | Toc is generated using markdown-toc             | Vitali Stupin      |
+| 18.03.2018 | 1.0.3       | Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).            | Petteri Kivimäki   |
 
 ## Table of Contents
 

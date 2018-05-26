@@ -1,5 +1,10 @@
 # Formatting & Style Guide
 
+#### VERSION CONTROL
+| version no.	 | what has been done	| date/person
+| ---- | ---- | ---- |
+| 1.0	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
+
 ## Scope and purpose
 This document provides formatting and style conventions for publishing documents in __GitHub__ in __Markdown__ format. Some advice on document conversion and how to meet more sophisticated publishing needs is offered.
 
@@ -10,7 +15,7 @@ This document provides formatting and style conventions for publishing documents
     - Terms or abbreviations list should be moved from the existing documents to X-Road terms document.
     - Add any new general-purpose X-Road terms and abbreviations to X-Road terms document if noticed missing one.
     - Exception: terms and abbreviations that are related only to the document in question and are not useful in any other context (document), can be defined solely in the document itself to make reading easier.
-    
+
 
 ## Title & headings
 - Use # (h1) for document title.
@@ -18,7 +23,7 @@ This document provides formatting and style conventions for publishing documents
 - Number the headings manually. There's no heading numbering support in Markdown.
 
 ## Version history
-- Markdown document should include version history table. 
+- Markdown document should include version history table.
 - Version history table is describing what changes have been made to document.
 - Newest (latest) change comment is at the bottom of table (oldest is on the top of table).
 - Version history table is positioned after the document name and ID fields and before the table of contents.
@@ -29,7 +34,7 @@ This document provides formatting and style conventions for publishing documents
   For example the following code links to this section:
 
   ```
-  [Table of contents](#table-of-contents) 
+  [Table of contents](#table-of-contents)
   ```
 - Table of contents can be generated using a appropriate tool, for example, https://www.npmjs.com/package/markdown-toc or vim-markdown-toc.
 
@@ -79,4 +84,3 @@ This document provides formatting and style conventions for publishing documents
 
 ## References
 [GitHub Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-

@@ -3,7 +3,8 @@
 #### VERSION CONTROL
 | version no.	 | what has been done	| date/person
 | ---- | ---- | ---- |
-| 0.1	| Initial draft.	| 19.3.18 / PK
+| 1.7	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 17.3.18 / PK
+| 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 
 ## Table of contents
 
