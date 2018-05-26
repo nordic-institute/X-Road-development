@@ -3,7 +3,17 @@
 #### VERSION CONTROL
 | version no.	 | what has been done	| date/person
 | ---- | ---- | ---- |
-| 0.1	| Initial draft.	| 19.3.18 / PK
+| 0.1	| Initial draft.	| 20.4.15 / PK
+| 0.2	| Updated according to comments received in EE-FI telco on 27.4.2015	| 4.5.15 / PK
+| 0.9	| Approved for piloting in Steering Committee meeting on 8.6.2015	| 13.6.15 / PK
+| 0.91 | Updated according to comments received in EE-FI F2F meeting on 7.7.2015 in Helsinki	| 9.7.15 / PK
+| 0.92 | Updated version numbering and SC tasks	| 6.10.15 / OK
+| 0.93 | Changed document name to Charter, removed details described in the Workflow document, refences section added	|  22.12.15 / PK
+| 0.94 | Conversion to Markdown, moved to xroad-joint-development repo | 25.01.16 / PP
+| 0.95 | Vendor suffix principles added to versioning | 05.04.16 / OK
+| 1.0 | Working Group role added | 14.12.16 / OK
+| 1.9	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development) and renamed document from [Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md) to X-Road Development Model.	| 17.3.18 / PK
+| 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK 
 
 ## Table of contents
 
@@ -100,7 +110,7 @@ enter the [Product Backlog](https://jira.niis.org/projects/XRDDEV/).
 list of requests that have passed the evaluation. However, requests can also be
 eliminated from the Product Backlog. During prioritize phase requests are
 defined in more detailed level and they are broken down into technical items.
-Dependencies between different items are analyzed and documented, and 
+Dependencies between different items are analyzed and documented, and
 prioritization is updated accordingly. Items on top of the backlog are the
 top candidates for entering the sprint backlog of the next sprint. The NIIS is
 responsible for maintaining the Product Backlog and prioritizing it together
