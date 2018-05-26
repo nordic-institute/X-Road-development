@@ -92,7 +92,7 @@ The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Sema
 4.1	The following code and documentation repositories are used:
 
 - Master Repository - short name: `nordic-institute/X-Road`; hosted by: GitHub; managed by: NIIS;
-purpose: release of X-Road software; access: NIIS has write access; read access: ALL.
+purpose: development and release of X-Road software; access: NIIS has write access; read access: ALL.
 - Master Test Repository - short name: `nordic-institute/X-Road-tests`; hosted by: GitHub; managed
 by: NIIS; purpose: release of X-Road automated tests; access: NIIS has write
 access; read access: ALL.
@@ -125,7 +125,7 @@ The versions merged to `X-Road/develop` branch are not tagged.
 7.1 There are development versions and release versions and their package naming format is different.
 
 7.2 The development package name format is `X.Y.Z-R.YYYYMMDDHHMMSSgitAAAAAA` (e.g. xroad-securityserver_6.14.0-0.20170428110816gitfbe4542_all.deb and xroad-securityserver-6.14.0-0.20170428110816gitfbe4542.el7.noarch.rpm)
-- The software version X.Y.Z: X=major, Y=minor, Z=bugfix, e.g. 6.7.1
+- The software version X.Y.Z: X=major, Y=minor, Z=patch, e.g. 6.7.1
 - R=package release number. For development versions this should be set to 0.
 - YYYYMMDDHHMMSS = git commit timestamp (UTC) and AAAAAA = git commit hash (git show -s --format=%h)
   - The purpose of the timestamp is to ensure that packages will update although the software version number is not changed
@@ -207,11 +207,6 @@ preparing of requests.
 Procedure:
 - Contributor creates its own repository by forking `X-Road`
 - `feature` branch is created by branching from `develop`
-
-10.4 **Contributor version numbering.** To distinguish contributor-specific work,
-Contributor can label its product by attaching contributor suffix and contributor
-version number to X-Road semantic version number. Example: `6.8.0-0.AcmeCorp.3`
-denotes software developed by Acme Corporation, version 3.
 
 ## 11	Performing and integrating work
 
@@ -308,13 +303,7 @@ submitted work up to acceptance requirements.
 12.5 The NIIS can hold up acceptance of new pull requests from other Contributors,
 to allow a specific Contributor fix the deficiencies found in submitted work.
 
-12.6 In cases of justified need, Contributor can request for up to 2 week
-'code freeze' in `develop` branch of X-Road from the NIIS.
-
-12.7 Up to 4 week 'code freeze' period can be applied to
-`nordic-institute/X-Road/master` by approval of the NIIS.
-
-12.8 When the changeset meets the acceptance criteria and all the reviewers
+12.6 When the changeset meets the acceptance criteria and all the reviewers
 have accepted the work, then the NIIS pulls in and merges the work
 into `nordic-institute/X-Road/develop`.
 
@@ -392,8 +381,8 @@ to everybody for forking. The NIIS administers the Master Repository
 by the NIIS.
 
 17.4	Good quality and useful results of open source development can be
-integrated into `nordic-institute/X-Road`. Exact procedure is out of scope
-of this document.
+integrated into `nordic-institute/X-Road`. The X-Road change management
+process is described in the [development model](DEVELOPMENT_MODEL.md).
 
 ## 18	Documentation policy
 
@@ -409,9 +398,8 @@ vanilla version of X-Road security server is installed with `xroad-securityserve
 package. The NIIS Member specific versions are installed with
 `xroad-securityserver-XX` where XX is the country code of a NIIS Member.
 
-18.4	Contributors may publish X-Road documentation on their own websites,
-either verbatim or in part. Contributors may modify and extend the documentation
-as they consider fit for their uses.
+18.4	Contributors may publish X-Road documentation on their own websites in
+accordance with the [License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## 19	Approval, publication and amendment
 
@@ -431,8 +419,8 @@ accepts or rejects the proposal.
 
 20.1	All test scripts and software is published in `nordic-institute/X-Road-tests`.
 
-20.2 The branching pattern and workflow with `nordic-institute/X-Road-tests` is
-the same as with `nordic-institute/X-Road`.
+20.2 The branching pattern used in the `nordic-institute/X-Road-tests`
+repository is the same as in the `nordic-institute/X-Road` repository.
 
 20.3 For clarity `nordic-institute/X-Road-tests` is divided into 3 folders -
 COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national

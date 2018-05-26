@@ -38,9 +38,33 @@ More information about the X-Road Community can be found
 ### How to contribute?
 
 Submit a pull request or raise an issue. Changes to the documents are reviewed
-in Working Group meetings and/or e-mail and/or issue comments in this repository.
+in Working Group meetings and/or e-mail and/or issue comments.
+
+X-Road enhancement requests and error reports can be submitted to the [X-Road Service
+Desk](https://jira.niis.org/servicedesk/customer/portal/1).
+[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
+get access to the [X-Road Service
+Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
+[X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
+
+If you want to propose a change to the documents in this repository, please
+[submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
+issue using the GitHub issue tracker.
+
+### Development Tools
+
+The tools listed below are used in the development of the X-Road.
+
+| URL | Description |
+| --- | --- |
+| https://jira.niis.org/projects/XRDDEV/ | X-Road backlog. |
+| https://jira.niis.org/servicedesk/customer/portal/1 | X-Road Service Desk for submitting enhancement requests and error reports. |
+
+[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
+get access to the tools.
 
 ### Source code
 
 X-Road development repository (`nordic-institute/X-Road`) is [here](https://github.com/nordic-institute/X-Road).
 X-Road related tests (`nordic-institute/X-Road-tests`) are [here](https://github.com/nordic-institute/X-Road-tests).
+X-Road test automation environment (`nordic-institute/X-Road-tests-environment`) is [here](https://github.com/nordic-institute/X-Road-tests-environment).
