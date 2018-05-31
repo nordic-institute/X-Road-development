@@ -14,6 +14,7 @@
 | 1.0 | Working Group role added | 14.12.16 / OK
 | 1.9	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development) and renamed document from [Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md) to X-Road Development Model.	| 17.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
+| 2.01 | Added links to [Product Backlog](https://jira.niis.org/projects/XRDDEV/) and instructions how to [submit](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests. | 31.5.18 / PK
 
 ## Table of contents
 

@@ -4,6 +4,7 @@
 | version no.	 | what has been done	| date/person
 | ---- | ---- | ---- |
 | 1.2	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
+| 1.3	| Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	| 31.5.18 / PK
 
 ## Table of contents
 
