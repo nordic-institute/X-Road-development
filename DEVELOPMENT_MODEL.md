@@ -13,7 +13,8 @@
 | 0.95 | Vendor suffix principles added to versioning | 05.04.16 / OK
 | 1.0 | Working Group role added | 14.12.16 / OK
 | 1.9	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development) and renamed document from [Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md) to X-Road Development Model.	| 17.3.18 / PK
-| 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK 
+| 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
+| 2.01 | Added links to [Product Backlog](https://jira.niis.org/projects/XRDDEV/) and instructions how to [submit](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests. | 31.5.18 / PK
 
 ## Table of contents
 
@@ -41,7 +42,7 @@ Non-Functional Requirements are described in the [X-Road Non-Functional Requirem
 The change management process includes the following roles and responsibilities:
 
 * NIIS
-  * maintains product roadmap and product backlog
+  * maintains product roadmap and [product backlog](https://jira.niis.org/projects/XRDDEV/)
   * maintains the [master](https://github.com/nordic-institute/X-Road) source code repository
   * maintains [Non Functional Requirements](NFR.md)
   * [reviews](WORKFLOW.md#12-submitting-and-accepting-work) and accepts / rejects contributions
@@ -51,16 +52,16 @@ The change management process includes the following roles and responsibilities:
 * NIIS Member
   * nominates representatives to the Advisory Group
   * participates in the Working Group
-  * submits business feature and enhancement requests
+  * [submits](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests
   * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation
 * Advisory Group  
   * [accepts / rejects](DEVELOPMENT_MODEL.md#31-evaluate) business feature requests
-  * prioritizes product roadmap and product backlog
+  * prioritizes product roadmap and [product backlog](https://jira.niis.org/projects/XRDDEV/)
 * Working Group
   * [accepts / rejects](DEVELOPMENT_MODEL.md#31-evaluate) enhancement requests
-  * prioritizes product backlog
+  * prioritizes [product backlog](https://jira.niis.org/projects/XRDDEV/)
 * X-Road Community
-  * submits business feature and enhancement requests
+  * [submits](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests
   * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation.
 
 ## 3 Change Management
@@ -72,11 +73,13 @@ and coordinate upcoming releases. The Product Roadmap takes into consideration
 scoped functionality and X-Road production compatibility. Changes to the Product
 Roadmap are approved by the Advisory Board.
 
-The **Product Backlog** contains fine grained technical items derived from the
-Product Roadmap items and enhancement requests. The Product Backlog is prioritized
-by the Advisory Group and Working Group.
+The **[Product Backlog](https://jira.niis.org/projects/XRDDEV/)** contains fine
+grained technical items derived from the Product Roadmap items and enhancement
+requests. The [Product Backlog](https://jira.niis.org/projects/XRDDEV/)
+is prioritized by the Advisory Group and Working Group.
 
-X-Road Product Roadmap and Product Backlog are owned and managed by the NIIS.
+X-Road Product Roadmap and [Product Backlog](https://jira.niis.org/projects/XRDDEV/)
+are owned and managed by the NIIS.
 
 ![](IMG/xroad_change_management.png)
 
@@ -85,7 +88,7 @@ X-Road Product Roadmap and Product Backlog are owned and managed by the NIIS.
 The change management process consists of four phases:
 
 * **evaluate** - collect new feature and enhancement requests and select the best ones for development
-* **prioritize** – maintain and prioritize product backlog
+* **prioritize** – maintain and prioritize [product backlog](https://jira.niis.org/projects/XRDDEV/)
 * **develop** – agile development of features requested by the NIIS members
 * **publish** – publish and distribute new releases.
 

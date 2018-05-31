@@ -4,6 +4,7 @@
 | version no.	 | what has been done	| date/person
 | ---- | ---- | ---- |
 | 1.2	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
+| 1.3	| Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	| 31.5.18 / PK
 
 ## Table of contents
 
@@ -142,7 +143,7 @@ Additionally JRuby MAY be used for web interfaces.
 
 5.2.1 Checkstyle (<http://checkstyle.sourceforge.net/>) MUST NOT issue any
 errors with the configuration defined in
-<https://github.com/nordic-institute/xroad-public/blob/master/src/doc/checkstyle.xml>.
+<https://github.com/nordic-institute/X-Road/blob/develop/src/config/checkstyle/checkstyle.xml>.
 
 5.2.3 All libraries needed for the operation of the component MUST be either
 packaged with the same component or component's installation package MUST
@@ -157,7 +158,7 @@ dependencies description is not permitted.
 then it is REQUIRED to update whole application to use that newer
 library version.
 
-### 5.3 Changelog
+### 5.3 Git commit log
 
 5.3.1 The developer MUST supply a human readable commit message with
 every commit. Commit messages MUST describe in human readable form
@@ -218,9 +219,6 @@ required for building deb and rpm packages.
 7.2.1 The component MUST NOT use unconfigured (hard-coded) references
 to files or external systems.
 
-Note: Current X-Road implementation is not yet compatible with
-requirement 5.2.1.
-
 7.2.2 Application building and unit testing MUST be automated with
 Gradle. Application packaging MUST me automated with a script.
 Components installation, update, and removal MUST be automated with
@@ -245,8 +243,7 @@ logging format.
 * time of last successful execution,
 * current server time.
 
-7.3.4 Logs are written in English (except for the localized notices
-shown to users).
+7.3.4 Logs are written in English.
 
 7.3.5 All web servers MUST produce access.log files in a standard
 format.
@@ -271,7 +268,7 @@ lead to financial or legal consequences MUST be logged in the separately
 configurable audit log. List of these events can be found in X-Road
 audit log events document \[[SPEC-AL](#Ref_SPEC-AL)\].
 
-8.6 All outputs MUST be sanitized not to include system operation information
+8.6 All user outputs MUST be sanitized not to include system operation information
 such as full names of files, stack traces, etc.
 
 8.7 In web interfaces session management MUST be based on session cookies.

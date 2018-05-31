@@ -5,6 +5,7 @@
 | ---- | ---- | ---- |
 | 1.7	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 17.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
+| 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
 
 ## Table of contents
 
@@ -95,7 +96,7 @@ The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Sema
 - Master Repository - short name: `nordic-institute/X-Road`; hosted by: GitHub; managed by: NIIS;
 purpose: development and release of X-Road software; access: NIIS has write access; read access: ALL.
 - Master Test Repository - short name: `nordic-institute/X-Road-tests`; hosted by: GitHub; managed
-by: NIIS; purpose: release of X-Road automated tests; access: NIIS has write
+by: NIIS; purpose: development and release of X-Road automated tests; access: NIIS has write
 access; read access: ALL.
 - Contributor repositories - purpose: development work carried out by
 Contributor; administered by: Contributor.
@@ -418,13 +419,4 @@ accepts or rejects the proposal.
 
 ## 20 Testing
 
-20.1	All test scripts and software is published in `nordic-institute/X-Road-tests`.
-
-20.2 The branching pattern used in the `nordic-institute/X-Road-tests`
-repository is the same as in the `nordic-institute/X-Road` repository.
-
-20.3 For clarity `nordic-institute/X-Road-tests` is divided into 3 folders -
-COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national
-implementation only tests.
-
-20.4. Current version of Test Workflow Policy is made public in GitHub, https://github.com/nordic-institute/x-road-development/blob/master/TEST_WORKFLOW.md.
+20.1. Current version of Test Workflow Policy is made public in GitHub at https://github.com/nordic-institute/x-road-development/blob/master/TEST_WORKFLOW.md.
