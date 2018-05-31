@@ -55,6 +55,10 @@ contradict this policy.
 1.8 In this document the NIIS Members and their contractors, and
 X-Road community are referred as **Contributors**.
 
+1.9 For clarity `nordic-institute/X-Road-tests` is divided into 3 folders -
+COMMON, EE-NATIONAL and FI-NATIONAL. National folders are dedicated for national
+implementation only tests.
+
 ## 2 Related documents
 
 2.1 Workflow policy is related to other X-Road tests development policy and regulations:
@@ -84,7 +88,9 @@ backup, software distribution or other purposes.
 
 ## 5	Branching Pattern
 
-5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and additional `feature` branches.
+5.1	The branching pattern used in the `nordic-institute/X-Road-tests`
+repository is the same as in the `nordic-institute/X-Road` repository. Branching
+pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` , `develop` and additional `feature` branches.
 
 - `master` branch is used for release X-Road tests
 - `develop` branch is used for test development

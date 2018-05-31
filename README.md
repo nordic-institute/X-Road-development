@@ -37,8 +37,16 @@ More information about the X-Road Community can be found
 
 ### How to contribute?
 
-Submit a pull request or raise an issue. Changes to the documents are reviewed
-in Working Group meetings and/or e-mail and/or issue comments.
+All contributions are warmly welcome. Submit a pull request, enhancement request,
+error report or propose a change to the [Workflow](WORKFLOW.md). Requests are
+reviewed in Working Group meetings and/or e-mail and/or issue comments.
+
+### Pull requests
+
+Pull requests can be submitted following the process described in the
+[Workflow](WORKFLOW.md#12-submitting-and-accepting-work).
+
+### Enhancement requests and error reports
 
 X-Road enhancement requests and error reports can be submitted to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1).
@@ -46,6 +54,8 @@ Desk](https://jira.niis.org/servicedesk/customer/portal/1).
 get access to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
 [X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
+
+### Changes to the workflow
 
 If you want to propose a change to the documents in this repository, please
 [submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
@@ -65,6 +75,10 @@ get access to the tools.
 
 ### Source code
 
-X-Road development repository (`nordic-institute/X-Road`) is [here](https://github.com/nordic-institute/X-Road).
-X-Road related tests (`nordic-institute/X-Road-tests`) are [here](https://github.com/nordic-institute/X-Road-tests).
-X-Road test automation environment (`nordic-institute/X-Road-tests-environment`) is [here](https://github.com/nordic-institute/X-Road-tests-environment).
+The X-Road core source code is located in the repositories listed below.
+
+| Repository | Description |
+| --- | --- |
+| [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development master repository. |
+| [nordic-institute/X-Road-tests](https://github.com/nordic-institute/X-Road-tests) | X-Road related tests. |
+| [nordic-institute/X-Road-tests-environment](https://github.com/nordic-institute/X-Road-tests-environment) | X-Road test automation environment. |
