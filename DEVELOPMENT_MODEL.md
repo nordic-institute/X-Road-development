@@ -74,10 +74,10 @@ Roadmap are approved by the Advisory Board.
 
 The **[Product Backlog](https://jira.niis.org/projects/XRDDEV/)** contains fine
 grained technical items derived from the Product Roadmap items and enhancement
-requests. The [Product Backlog][product backlog](https://jira.niis.org/projects/XRDDEV/)
+requests. The [Product Backlog](https://jira.niis.org/projects/XRDDEV/)
 is prioritized by the Advisory Group and Working Group.
 
-X-Road Product Roadmap and [Product Backlog][product backlog](https://jira.niis.org/projects/XRDDEV/)
+X-Road Product Roadmap and [Product Backlog](https://jira.niis.org/projects/XRDDEV/)
 are owned and managed by the NIIS.
 
 ![](IMG/xroad_change_management.png)
