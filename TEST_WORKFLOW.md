@@ -6,6 +6,7 @@
 | ---- | ---- | ---- |
 | 1.0	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
+| 2.1 | Added chapter 1.9, updated chapter 5.1. | 31.5.18 / PK
 
 ## Table of contents
 
