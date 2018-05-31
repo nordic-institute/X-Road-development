@@ -75,10 +75,10 @@ get access to the tools.
 
 ### Source code
 
-The X-Road core source code is located in the repositories listed below.
+The X-Road core source code master repositories are listed below.
 
 | Repository | Description |
 | --- | --- |
-| [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development master repository. |
+| [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development repository. |
 | [nordic-institute/X-Road-tests](https://github.com/nordic-institute/X-Road-tests) | X-Road related tests. |
 | [nordic-institute/X-Road-tests-environment](https://github.com/nordic-institute/X-Road-tests-environment) | X-Road test automation environment. |
