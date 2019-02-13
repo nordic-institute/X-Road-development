@@ -6,29 +6,33 @@
 | 1.7	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 17.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
+| 2.2 | Added description of support branches | 13.2.18 / IS
 
 ## Table of contents
 
-- [1	General](#1-general)
-- [2 Related documents](#2-related-documents)
-- [3 Development model](#3-development-model)
-- [4	Repositories](#4-repositories)
-- [5	Branching pattern](#5-branching-pattern)
-- [6 Tagging](#6-tagging)
-- [7 Package naming](#7-package-naming)
-- [8 Changelog management](#8-changelog-management)
-- [9 Pull requests](#9-pull-requests)
-- [10 Work initiation](#10-work-initiation)
-- [11	Performing and integrating work](#11-performing-and-integrating-work)
-- [12 Submitting and accepting work](#12-submitting-and-accepting-work)
-- [13	Release preparation](#13-release-preparation)
-- [14	Deployment](#14-deployment)
-- [15	Hotfix](#15-hotfix)
-- [16	Setting up repositories](#16-setting-up-repositories)
-- [17	Open source development](#17-open-source-development)
-- [18	Documentation policy](#18-documentation-policy)
-- [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
-- [20 Testing](#20-testing)
+- [Workflow Policy](#workflow-policy)
+      - [VERSION CONTROL](#version-control)
+  - [Table of contents](#table-of-contents)
+  - [1	General](#1-general)
+  - [2 Related documents](#2-related-documents)
+  - [3 Development model](#3-development-model)
+  - [4	Repositories](#4-repositories)
+  - [5	Branching pattern](#5-branching-pattern)
+  - [6 Tagging](#6-tagging)
+  - [7 Package naming](#7-package-naming)
+  - [8 Changelog management](#8-changelog-management)
+  - [9 Pull requests](#9-pull-requests)
+  - [10 Work initiation](#10-work-initiation)
+  - [11	Performing and integrating work](#11-performing-and-integrating-work)
+  - [12 Submitting and accepting work](#12-submitting-and-accepting-work)
+  - [13	Release preparation](#13-release-preparation)
+  - [14	Deployment](#14-deployment)
+  - [15	Hotfix](#15-hotfix)
+  - [16	Setting up repositories](#16-setting-up-repositories)
+  - [17	Open source development](#17-open-source-development)
+  - [18	Documentation policy](#18-documentation-policy)
+  - [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
+  - [20 Testing](#20-testing)
 
 ## 1	General
 
@@ -106,13 +110,14 @@ software distribution or other purposes.
 
 ## 5	Branching pattern
 
-5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` and `develop` – together with three additional branches – `feature`, `release` and `hotfix` – are used.
+5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` and `develop` – together with three additional branches – `feature`, `release` and `hotfix` – are used. In addition `support` branches are used for maintaining old releases.
 
 - `master` branch is used to release X-Road software into production
 - `develop` branch is used to accumulate features for the next big release
 - `feature` branches are used to work on features (or closely related sets of features) to enhance X-Road core software
 - new production release is prepared on `release` branch
 - patches are prepared on `hotfix` branches.
+- `support` branch is created when an old release needs to be patched
 
 ## 6 Tagging
 
@@ -361,6 +366,8 @@ version number.
 15.4 Hotfix can also be made for `develop` branch the same way as described for
 `master` branch above. This situation is possible if after an integration made
 to `nordic-institute/X-Road/develop` branch a Contributor requests a fix/change to previous.
+
+15.5 When an old release needs to be patched NIIS prepares a patch on `support` branch forked from the relevant release tag on the `master` branch. The necessary commits are made and finally the released version is tagged in the `support` branch.
 
 ## 16	Setting up repositories
 
