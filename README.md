@@ -55,7 +55,7 @@ get access to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
 [X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
 
-### Security issues and vulnerabilities
+#### Security issues and vulnerabilities
 
 Security issues and vulnerabilities are reported privately to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) using the
