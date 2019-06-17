@@ -6,7 +6,8 @@
 | 1.7	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 17.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
-| 2.2 | Added description of support branches | 13.2.18 / IS
+| 2.2 | Added description of support branches. | 13.2.18 / IS
+| 2.3 | Added requirement regarding Contributor License Agreement (CLA). | 17.6.19 / PK
 
 ## Table of contents
 
