@@ -98,10 +98,10 @@ A digitally signed CLA must be emailed to `info@niis.org`.
 Alternatively, the CLA can be printed out, signed manually and sent to NIIS
 by post:
 
-  MTÜ Nordic Institute for Interoperability Solutions
-  Hobujaama 4
-  10151 Tallinn
-  Estonia
+    MTÜ Nordic Institute for Interoperability Solutions
+    Hobujaama 4
+    10151 Tallinn
+    Estonia
 
 ### Development Tools
 
