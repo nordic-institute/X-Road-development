@@ -69,6 +69,40 @@ If you want to propose a change to the documents in this repository, please
 [submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
 issue using the GitHub issue tracker.
 
+#### Contributor License Agreement
+
+We appreciate community contributions to X-Road open source code repositories
+managed by NIIS. By signing a [contributor license agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement),
+we ensure that the community is free to use your contributions.
+
+##### Review the CLA document
+
+The NIIS Contributor License Agreement (CLA) document is available for review as
+a [Word](docs/NIIS_Contributor_Licence_Agreement.docx) and
+[PDF](docs/NIIS_Contributor_Licence_Agreement.pdf) document.
+
+##### Sign the CLA
+
+When you contribute to X-Road open source project on GitHub with a new pull
+request, it will be checked whether you have signed the CLA. If required, the
+pull request will be commented on with further instructions. The CLA must be
+received by NIIS prior to approval of the pull request. The CLA covers any and
+all submissions that the contributor now, or in the future, submits to the
+project. Therefore, it is enough to sign the CLA once before the first
+contribution, and not with every contribution.
+
+The CLA can be signed digitally using a
+[qualified electronic signature](https://ec.europa.eu/cefdigital/wiki/display/SDBX/Introduction+to+e-signature).
+A digitally signed CLA must be emailed to `info@niis.org`.
+
+Alternatively, the CLA can be printed out, signed manually and sent to NIIS
+by post:
+
+  MTÜ Nordic Institute for Interoperability Solutions
+  Hobujaama 4
+  10151 Tallinn
+  Estonia
+
 ### Development Tools
 
 The tools listed below are used in the development of the X-Road.

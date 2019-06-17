@@ -301,6 +301,10 @@ developer has a chance to comment the issues before accept/reject action.
 - Has the documentation been updated?
 - Is the documentation in correct format as specified in [X-Road Formatting & Style Guide](https://github.com/nordic-institute/x-road-development/blob/master/FormattingStyleGuide.md)? Are the sources of pictures provided?
 
+12.2.10 Contributor License Agreement (CLA)
+
+- Has the contributor delivered a signed CLA?
+
 12.3 Pull requests are generally reviewed and accepted on first-come,
 first-served (FCFS) basis.
 
