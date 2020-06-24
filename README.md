@@ -80,7 +80,7 @@ we ensure that the community is free to use your contributions.
 
 ##### Review the CLA document
 
-The NIIS Contributor License Agreement (CLA) document is available for review as
+The NIIS Contributor License Agreement (CLA) document is available as
 a [Word](docs/NIIS_Contributor_Licence_Agreement.docx) and
 [PDF](docs/NIIS_Contributor_Licence_Agreement.pdf) document.
 
@@ -95,7 +95,7 @@ project. Therefore, it is enough to sign the CLA once before the first
 contribution, and not with every contribution.
 
 The CLA can be signed digitally using a
-[qualified electronic signature](https://ec.europa.eu/cefdigital/wiki/display/SDBX/Introduction+to+e-signature).
+[qualified electronic signature](https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Introduction+to+e-signature).
 A digitally signed CLA must be emailed to `info@niis.org`.
 
 Alternatively, the CLA can be printed out, signed manually and sent to NIIS
