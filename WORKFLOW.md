@@ -8,37 +8,35 @@
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
 | 2.2 | Added description of support branches. | 13.2.18 / IS
 | 2.3 | Added requirement regarding Contributor License Agreement (CLA). | 17.6.19 / PK
-| 2.4 | Add license. Remove references to Test Workflow Policy. | 22.11.20 / PK
+| 2.4 | Add licence. Remove references to Test Workflow Policy. | 22.11.20 / PK
 
-## License
+## Licence
 
-This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/
+This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported Licence. To view a copy of this licence, visit http://creativecommons.org/licenses/by-sa/3.0/
 
 ## Table of contents
 
-- [Workflow Policy](#workflow-policy)
-      - [VERSION CONTROL](#version-control)
-  - [Table of contents](#table-of-contents)
-  - [1	General](#1-general)
-  - [2 Related documents](#2-related-documents)
-  - [3 Development model](#3-development-model)
-  - [4	Repositories](#4-repositories)
-  - [5	Branching pattern](#5-branching-pattern)
-  - [6 Tagging](#6-tagging)
-  - [7 Package naming](#7-package-naming)
-  - [8 Changelog management](#8-changelog-management)
-  - [9 Pull requests](#9-pull-requests)
-  - [10 Work initiation](#10-work-initiation)
-  - [11	Performing and integrating work](#11-performing-and-integrating-work)
-  - [12 Submitting and accepting work](#12-submitting-and-accepting-work)
-  - [13	Release preparation](#13-release-preparation)
-  - [14	Deployment](#14-deployment)
-  - [15	Hotfix](#15-hotfix)
-  - [16	Setting up repositories](#16-setting-up-repositories)
-  - [17	Open source development](#17-open-source-development)
-  - [18	Documentation policy](#18-documentation-policy)
-  - [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
-  - [20 Testing](#20-testing)
+- [Licence](#licence)
+- [1 General](#1-general)
+- [2 Related documents](#2-related-documents)
+- [3 Development model](#3-development-model)
+- [4 Repositories](#4-repositories)
+- [5 Branching pattern](#5-branching-pattern)
+- [6 Tagging](#6-tagging)
+- [7 Package naming](#7-package-naming)
+- [8 Changelog management](#8-changelog-management)
+- [9 Pull requests](#9-pull-requests)
+- [10 Work initiation](#10-work-initiation)
+- [11	Performing and integrating work](#11-performing-and-integrating-work)
+- [12 Submitting and accepting work](#12-submitting-and-accepting-work)
+- [13	Release preparation](#13-release-preparation)
+- [14	Deployment](#14-deployment)
+- [15	Hotfix](#15-hotfix)
+- [16	Setting up repositories](#16-setting-up-repositories)
+- [17	Open source development](#17-open-source-development)
+- [18	Documentation policy](#18-documentation-policy)
+- [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
+- [20 Testing](#20-testing)
 
 ## 1	General
 
