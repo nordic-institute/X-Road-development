@@ -8,6 +8,11 @@
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
 | 2.2 | Added description of support branches. | 13.2.18 / IS
 | 2.3 | Added requirement regarding Contributor License Agreement (CLA). | 17.6.19 / PK
+| 2.4 | Add license. | 22.11.20 / PK
+
+## License
+
+This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/
 
 ## Table of contents
 
