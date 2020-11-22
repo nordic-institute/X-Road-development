@@ -40,9 +40,9 @@ Working Group meetings.
 ## X-Road Community
 
 X-Road is released under the [MIT](https://en.wikipedia.org/wiki/MIT_License)
-license and is available free of charge for any individual or organization.
+licence and is available free of charge for any individual or organization.
 More information about the X-Road Community can be found
-[here](https://community.niis.org).
+[here](https://x-road.global/community).
 
 ## How to contribute?
 
@@ -78,15 +78,15 @@ If you want to propose a change to the documents in this repository, please
 [submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
 issue using the GitHub issue tracker.
 
-### Contributor License Agreement
+### Contributor Licence Agreement
 
 We appreciate community contributions to X-Road open source code repositories
-managed by NIIS. By signing a [contributor license agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement),
+managed by NIIS. By signing a [contributor licence agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement),
 we ensure that the community is free to use your contributions.
 
 #### Review the CLA document
 
-The NIIS Contributor License Agreement (CLA) document is available as
+The NIIS Contributor Licence Agreement (CLA) document is available as
 a [Word](docs/NIIS_Contributor_Licence_Agreement.docx) and
 [PDF](docs/NIIS_Contributor_Licence_Agreement.pdf) document.
 

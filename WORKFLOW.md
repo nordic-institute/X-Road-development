@@ -7,7 +7,7 @@
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
 | 2.2 | Added description of support branches. | 13.2.18 / IS
-| 2.3 | Added requirement regarding Contributor License Agreement (CLA). | 17.6.19 / PK
+| 2.3 | Added requirement regarding Contributor Licence Agreement (CLA). | 17.6.19 / PK
 | 2.4 | Add licence. Remove references to Test Workflow Policy. | 22.11.20 / PK
 
 ## Licence
@@ -307,7 +307,7 @@ developer has a chance to comment the issues before accept/reject action.
 - Has the documentation been updated?
 - Is the documentation in correct format as specified in [X-Road Formatting & Style Guide](https://github.com/nordic-institute/x-road-development/blob/master/FormattingStyleGuide.md)? Are the sources of pictures provided?
 
-12.2.10 Contributor License Agreement (CLA)
+12.2.10 Contributor Licence Agreement (CLA)
 
 - Has the contributor delivered a signed CLA?
 
@@ -418,7 +418,7 @@ package. The NIIS Member specific versions are installed with
 `xroad-securityserver-XX` where XX is the country code of a NIIS Member.
 
 18.4	Contributors may publish X-Road documentation on their own websites in
-accordance with the [License](https://creativecommons.org/licenses/by-sa/3.0/).
+accordance with the [Licence](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## 19	Approval, publication and amendment
 
