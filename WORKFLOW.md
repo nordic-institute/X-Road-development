@@ -438,5 +438,5 @@ accepts or rejects the proposal.
 
 ## 20 Testing
 
-20.1. Tests are maintained in in the `nordic-institute/X-Road` main repository.
+20.1. Tests are maintained in the `nordic-institute/X-Road` main repository.
 Changes related to tests follow this workflow policy.
