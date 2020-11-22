@@ -3,7 +3,7 @@
 [![Go to X-Road Community Slack](https://img.shields.io/badge/Go%20to%20Community%20Slack-grey.svg)](https://jointxroad.slack.com/)
 [![Get invited](https://img.shields.io/badge/No%20Slack-Get%20invited-green.svg)](https://x-road.global/join-the-xroad-community)
 
-This repository is used for storing X-Road development model, and
+This repository is used for storing X-Road® development model, and
 documentation regarding common development practices and guidelines.
 It is also used for managing changes to these documents.
 
@@ -118,6 +118,9 @@ The tools listed below are used in the development of the X-Road.
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
 get access to the tools.
 
+More information about available X-Road developer resources is available
+[here](https://x-road.global/resources).
+
 ### Source code
 
 The X-Road core source code master repositories are listed below.
@@ -125,5 +128,3 @@ The X-Road core source code master repositories are listed below.
 | Repository | Description |
 | --- | --- |
 | [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development repository. |
-| [nordic-institute/X-Road-tests](https://github.com/nordic-institute/X-Road-tests) | X-Road related tests. |
-| [nordic-institute/X-Road-tests-environment](https://github.com/nordic-institute/X-Road-tests-environment) | X-Road test automation environment. |
