@@ -8,7 +8,7 @@
 | 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
 | 2.2 | Added description of support branches. | 13.2.18 / IS
 | 2.3 | Added requirement regarding Contributor License Agreement (CLA). | 17.6.19 / PK
-| 2.4 | Add license. | 22.11.20 / PK
+| 2.4 | Add license. Remove references to Test Workflow Policy. | 22.11.20 / PK
 
 ## License
 
@@ -105,9 +105,6 @@ The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Sema
 
 - Master Repository - short name: `nordic-institute/X-Road`; hosted by: GitHub; managed by: NIIS;
 purpose: development and release of X-Road software; access: NIIS has write access; read access: ALL.
-- Master Test Repository - short name: `nordic-institute/X-Road-tests`; hosted by: GitHub; managed
-by: NIIS; purpose: development and release of X-Road automated tests; access: NIIS has write
-access; read access: ALL.
 - Contributor repositories - purpose: development work carried out by
 Contributor; administered by: Contributor.
 
@@ -160,37 +157,42 @@ The versions merged to `X-Road/develop` branch are not tagged.
 For example
 
 ```
- ## 6.12.0 - 2017-03-13
-- XTE-99 / Joint development issue #79: Security Server UI: Added uniqueness check of the entered security server code when initializing the server.
-- XTE-252 / Joint development issue #53: Security Server: Upgraded embedded Jetty to the version 9.4.2. Due to upgrade SHA1 ciphers are no longer supported for communication between security server and client.
-- XTE-293: Security Server: A field set used to generate the token ID of the SSCD has been made configurable.
-- XTE-294 / Joint development issue #84: Security Server: Added configuration file for the OCSP responder Jetty server (and increased max threads size of the thread pool).
-- XTE-307 / Joint development issue #131: Security Server bugfix: Added missing HTTP header "Connection: close" into the server proxy response in cases error occurs before parsing a service provider's response.
-- XTE-308 / Joint development issue #132: Security Server bugfix: Added missing read timeout for OCSP responder client.
-- XTE-310 / Joint development issue #125: Security Server bugfix: SOAP messages with attachments caused in some cases a temopray file handle leak.
-- XTE-333 / Joint development issue #128: Security Server bugfix: Fixed parsing SOAP messages containing &amp; or &lt; entities.
-- Security Server: TCP socket SO_LINGER values in the proxy configuration file (proxy.ini) set to -1 according to avoid unexpected data stream closures.
+## 6.24.1 - 2020-09-18
+- XRDDEV-1306: Fix security server docker image build
+- XRDDEV-1305: Fix central server schema rename when BDR 1.0 is in use.
+- XRDDEV-1303: Fix security server UI permission handling in "keys and certificates" view
+- XRDDEV-1304: Fix security server UI routing in "security server tls certificate" view
+- XRDDEV-1308: Fix UI bug in security server settings view child tab active state
+- XRDDEV-1316: Update XROAD_SYSTEM_ADMINISTRATOR permissions
+- XRDDEV-1317: Fix duplicate routing console log warning messages in security server UI.
 ```
 
-Debian packaging has its own changelogs in `src/packages/xroad/debian/changelog` and `src/packages/xroad-jetty9/debian/changelog` but these are not used to record changelog entries since these are already in [CHANGELOG.md](https://github.com/nordic-institute/X-Road/blob/develop/CHANGELOG.md), only to set the Debian package version. I.e. the following Debian changelog is sufficient.
+Debian packaging has its own changelogs in `src/packages/src/xroad/ubuntu/generic/changelog`
+and `src/packages/src/xroad-jetty9/ubuntu/generic/changelog` but these are not used to record
+changelog entries since these are already in
+[CHANGELOG.md](https://github.com/nordic-institute/X-Road/blob/develop/CHANGELOG.md),
+only to set the Debian package version. I.e. the following Debian changelog is sufficient.
 
 ```
-xroad (6.14.0-0) trusty; urgency=medium
-  * Change history is found at /usr/share/doc/xroad-securityserver/CHANGELOG.md
--- Jarkko Hyöty <jarkko.hyoty@gofore.com> Tue, 11 Apr 2017 15:46:12 +0300
+xroad (6.25.0-0) stable; urgency=medium
+
+  * Change history is found at /usr/share/doc/xroad-
+    common/CHANGELOG.md.gz
+
+ -- NIIS <info@niis.org>  Thu, 17 Sep 2020 14:20:14 +0300
 ```
 
 ## 9 Pull requests
 
 9.1 Pull requests made against the `X-Road/develop` branch MUST follow these conventions
-- Pull request name format is `contributor-version-sequence` e.g. Finnish-6.15.0-3
+- Pull request name format is `contributor-version-sequence` e.g. Finnish-6.25.0-3
   - Contributor=origin of the pull request
   - Version=version of the software this pull request is intended for
   - Sequence=sequence number of the pull request. There can be multiple pull requests aiming for the same release and the sequence distinguishes between these.
 - Description field must contain at least the changelist. Any relevant additional information should also be provided here.
 
 Release and hotfix pull requests made against `master` branch must follow these conventions
-- Pull request name format is just `version` e.g. 6.15.0
+- Pull request name format is just `version` e.g. 6.25.0
 - Description field must contain at least the changelist. Any relevant additional information should also be provided here.
 
 9.2 To ease the review work and to make clearer what changes are done, the following guidelines are required:
@@ -436,4 +438,5 @@ accepts or rejects the proposal.
 
 ## 20 Testing
 
-20.1. Current version of Test Workflow Policy is made public in GitHub at https://github.com/nordic-institute/x-road-development/blob/master/TEST_WORKFLOW.md.
+20.1. Tests are maintained in in the `nordic-institute/X-Road` main repository.
+Changes related to tests follow this workflow policy.
