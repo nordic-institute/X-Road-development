@@ -38,7 +38,7 @@ This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 
 - [19	Approval, publication and amendment](#19-approval-publication-and-amendment)
 - [20 Testing](#20-testing)
 
-## 1	General
+## 1 General
 
 1.1	This document establishes workflow policy for the development of the X-Road
 core. Workflow Policy strives to serve as a handbook for all practical
