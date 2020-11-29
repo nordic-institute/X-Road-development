@@ -3,7 +3,13 @@
 [![Go to X-Road Community Slack](https://img.shields.io/badge/Go%20to%20Community%20Slack-grey.svg)](https://jointxroad.slack.com/)
 [![Get invited](https://img.shields.io/badge/No%20Slack-Get%20invited-green.svg)](https://x-road.global/join-the-xroad-community)
 
-This repository is used for storing X-Road development model, and
+## Licence
+
+This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported Licence. To view a copy of this licence, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+## Introduction
+
+This repository is used for storing X-Road® development model, and
 documentation regarding common development practices and guidelines.
 It is also used for managing changes to these documents.
 
@@ -11,7 +17,7 @@ It is also used for managing changes to these documents.
 - [Workflow](WORKFLOW.md)
 - [NFR (Non-functional requirements)](NFR.md)
 
-### X-Road Development 'Big Picture'
+## X-Road Development 'Big Picture'
 
 ![](IMG/xroad_development.png)
 
@@ -31,25 +37,25 @@ nominate representatives to the **Advisory Group** and participate in the
 **Working Group**. The NIIS organizes and facilitates Advisory Group and
 Working Group meetings.
 
-### X-Road Community
+## X-Road Community
 
 X-Road is released under the [MIT](https://en.wikipedia.org/wiki/MIT_License)
-license and is available free of charge for any individual or organization.
+licence and is available free of charge for any individual or organization.
 More information about the X-Road Community can be found
-[here](https://community.niis.org).
+[here](https://x-road.global/community).
 
-### How to contribute?
+## How to contribute?
 
 All contributions are warmly welcome. Submit a pull request, enhancement request,
 error report or propose a change to the [Workflow](WORKFLOW.md). Requests are
 reviewed in Working Group meetings and/or e-mail and/or issue comments.
 
-#### Pull requests
+### Pull requests
 
 Pull requests can be submitted following the process described in the
 [Workflow](WORKFLOW.md#12-submitting-and-accepting-work).
 
-#### Enhancement requests and error reports
+### Enhancement requests and error reports
 
 X-Road enhancement requests and error reports can be submitted to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1).
@@ -58,7 +64,7 @@ get access to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
 [X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
 
-#### Security issues and vulnerabilities
+### Security issues and vulnerabilities
 
 Security issues and vulnerabilities are reported privately to the [X-Road Service
 Desk](https://jira.niis.org/servicedesk/customer/portal/1) using the
@@ -66,25 +72,25 @@ Desk](https://jira.niis.org/servicedesk/customer/portal/1) using the
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
 get access to the [X-Road Service Desk](https://jira.niis.org/servicedesk/customer/portal/1).
 
-#### Changes to the workflow
+### Changes to the workflow
 
 If you want to propose a change to the documents in this repository, please
 [submit](https://github.com/nordic-institute/X-Road-development/issues/new) an
 issue using the GitHub issue tracker.
 
-#### Contributor License Agreement
+### Contributor Licence Agreement
 
 We appreciate community contributions to X-Road open source code repositories
-managed by NIIS. By signing a [contributor license agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement),
+managed by NIIS. By signing a [contributor licence agreement](https://en.wikipedia.org/wiki/Contributor_License_Agreement),
 we ensure that the community is free to use your contributions.
 
-##### Review the CLA document
+#### Review the CLA document
 
-The NIIS Contributor License Agreement (CLA) document is available as
+The NIIS Contributor Licence Agreement (CLA) document is available as
 a [Word](docs/NIIS_Contributor_Licence_Agreement.docx) and
 [PDF](docs/NIIS_Contributor_Licence_Agreement.pdf) document.
 
-##### Sign the CLA
+#### Sign the CLA
 
 When you contribute to X-Road open source project on GitHub with a new pull
 request, it will be checked whether you have signed the CLA. If required, the
@@ -106,7 +112,7 @@ by post:
     10151 Tallinn
     Estonia
 
-### Development Tools
+## Development Tools
 
 The tools listed below are used in the development of the X-Road.
 
@@ -118,12 +124,13 @@ The tools listed below are used in the development of the X-Road.
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
 get access to the tools.
 
-### Source code
+More information about available X-Road developer resources is available
+[here](https://x-road.global/resources).
+
+## Source code
 
 The X-Road core source code master repositories are listed below.
 
 | Repository | Description |
 | --- | --- |
 | [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development repository. |
-| [nordic-institute/X-Road-tests](https://github.com/nordic-institute/X-Road-tests) | X-Road related tests. |
-| [nordic-institute/X-Road-tests-environment](https://github.com/nordic-institute/X-Road-tests-environment) | X-Road test automation environment. |

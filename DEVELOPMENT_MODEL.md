@@ -15,10 +15,16 @@
 | 1.9	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development) and renamed document from [Charter](https://github.com/vrk-kpa/xroad-joint-development/blob/master/CHARTER.md) to X-Road Development Model.	| 17.3.18 / PK
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 | 2.01 | Added links to [Product Backlog](https://jira.niis.org/projects/XRDDEV/) and instructions how to [submit](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests. | 31.5.18 / PK
+| 2.02 | Add licence. Update section [3.4 Publish](#34-publish). | 22.11.20 / PK
+
+## Licence
+
+This document is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported Licence. To view a copy of this licence, visit http://creativecommons.org/licenses/by-sa/3.0/
 
 ## Table of contents
 
-- [1	General](#1-general)
+- [Licence](#licence)
+- [1 General](#1-general)
 - [2 Roles and Responsibilities](#2-roles-and-responsibilities)
 - [3 Change Management](#3-change-management)
   * [3.1 Evaluate](#31-evaluate)
@@ -136,12 +142,11 @@ criteria for contributions.
 
 ### 3.4 Publish
 
-New versions of X-Road are published three times a year based on a fixed
-release schedule:
+New versions of X-Road are published approximately three times a year, for example:
 
-* winter (February)
-* spring (May)
-* autumn (October).
+* winter
+* spring
+* autumn.
 
 [Semantic versioning](http://semver.org/) scheme is used for software versions.
 A basic software rule of thumb will be as follows.
