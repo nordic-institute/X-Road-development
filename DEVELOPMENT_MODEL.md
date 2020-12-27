@@ -78,7 +78,7 @@ needed to satisfy the needs of the NIIS members. The Product Roadmap helps reach
 consensus about future developments and it provides a framework to help plan
 and coordinate upcoming releases. The Product Roadmap takes into consideration
 scoped functionality and X-Road production compatibility. Changes to the Product
-Roadmap are approved by the Advisory Board.
+Roadmap are approved by the Advisory Group.
 
 The **[Product Backlog](https://jira.niis.org/projects/XRDDEV/)** contains fine
 grained technical items derived from the Product Roadmap items and enhancement
