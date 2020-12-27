@@ -16,6 +16,7 @@
 | 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
 | 2.01 | Added links to [Product Backlog](https://jira.niis.org/projects/XRDDEV/) and instructions how to [submit](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests. | 31.5.18 / PK
 | 2.02 | Add licence. Update section [3.4 Publish](#34-publish). | 22.11.20 / PK
+| 2.03 | Update diagrams. | 26.12.20 / PK
 
 ## Licence
 
@@ -77,7 +78,7 @@ needed to satisfy the needs of the NIIS members. The Product Roadmap helps reach
 consensus about future developments and it provides a framework to help plan
 and coordinate upcoming releases. The Product Roadmap takes into consideration
 scoped functionality and X-Road production compatibility. Changes to the Product
-Roadmap are approved by the Advisory Board.
+Roadmap are approved by the Advisory Group.
 
 The **[Product Backlog](https://jira.niis.org/projects/XRDDEV/)** contains fine
 grained technical items derived from the Product Roadmap items and enhancement
@@ -87,9 +88,9 @@ is prioritized by the Advisory Group and Working Group.
 X-Road Product Roadmap and [Product Backlog](https://jira.niis.org/projects/XRDDEV/)
 are owned and managed by the NIIS.
 
-![](IMG/xroad_change_management.png)
+![](IMG/x-road-development-model-approval-2d.png)
 
-*Diagram 1. Change management.*
+*Diagram 1. The approval process of enhancement requests and business feature requests.*
 
 The change management process consists of four phases:
 
@@ -97,6 +98,10 @@ The change management process consists of four phases:
 * **prioritize** – maintain and prioritize [product backlog](https://jira.niis.org/projects/XRDDEV/)
 * **develop** – agile development of features requested by the NIIS members
 * **publish** – publish and distribute new releases.
+
+![](IMG/x-road-development-model-2d.png)
+
+*Diagram 2. The change management process.*
 
 ### 3.1 Evaluate
 
