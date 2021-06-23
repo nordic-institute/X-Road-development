@@ -167,13 +167,13 @@ For example
 
 ```
 ## 6.24.1 - 2020-09-18
-- XRDDEV-1306: Fix security server docker image build
+- XRDDEV-1306: Fix  docker image build
 - XRDDEV-1305: Fix central server schema rename when BDR 1.0 is in use.
-- XRDDEV-1303: Fix security server UI permission handling in "keys and certificates" view
-- XRDDEV-1304: Fix security server UI routing in "security server tls certificate" view
-- XRDDEV-1308: Fix UI bug in security server settings view child tab active state
+- XRDDEV-1303: Fix  UI permission handling in "keys and certificates" view
+- XRDDEV-1304: Fix  UI routing in " tls certificate" view
+- XRDDEV-1308: Fix UI bug in  settings view child tab active state
 - XRDDEV-1316: Update XROAD_SYSTEM_ADMINISTRATOR permissions
-- XRDDEV-1317: Fix duplicate routing console log warning messages in security server UI.
+- XRDDEV-1317: Fix duplicate routing console log warning messages in  UI.
 ```
 
 Debian packaging has its own changelogs in `src/packages/src/xroad/ubuntu/generic/changelog`
@@ -208,7 +208,7 @@ Release and hotfix pull requests made against `master` branch must follow these 
 
 9.3 Commit messages SHOULD follow the format `<ISSUE_ID>: <COMMIT_MESSAGE>`, for example:
 
-`XRDDEV-123: Fix typo in security server user guide`
+`XRDDEV-123: Fix typo in  user guide`
 
 If the commit is not related to any backlog item, `ISSUE_ID` can be omitted.
 
@@ -409,7 +409,7 @@ translate documentation into other languages.
 18.3 The documentation is written in [vanilla style](https://en.wikipedia.org/wiki/Vanilla_software).
 In X-Road context it means that the NIIS Member specific customizations,
 settings, repositories etc. need to stand out from documentation clearly. The
-vanilla version of X-Road security server is installed with `xroad-securityserver`
+vanilla version of X-Road Security Server is installed with `xroad-securityserver`
 package. The country specific versions are installed with
 `xroad-securityserver-XX` where XX is the country code.
 
