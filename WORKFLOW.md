@@ -197,9 +197,9 @@ xroad (6.25.0-0) stable; urgency=medium
 
 9.2 Pull requests made against the `X-Road/develop` branch MUST follow these conventions:
 
-- Pull request name format is `<ISSUE_ID>: <SHORT DESCRIPTION>`, for example: `XRDDEV-1669: Allow overriding startup parameters`
+- Pull request name format is `<ISSUE_ID>: <SHORT_DESCRIPTION>`, for example: `XRDDEV-1669: Allow overriding startup parameters`
   - `ISSUE_ID` = id of the feature's / bug's backlog item. If the pull request is not related to any backlog item, `ISSUE_ID` can be omitted.
-  - `DESCRIPTION` = short description of the changes included in the pull request.
+  - `SHORT_DESCRIPTION` = short description of the changes included in the pull request.
 - The pull request's description field must contain more detailed information about the changes. Any relevant additional information should also be provided here.
 
 Release and hotfix pull requests made against `master` branch must follow these conventions
@@ -228,6 +228,10 @@ preparing of requests.
 Procedure:
 - Contributor creates its own repository by forking `X-Road`
 - `feature` branch is created by branching from `develop`
+
+10.4    In case you're planning to implement an existing backlog item, let the NIIS know about your plans in advance to avoid duplicate work.
+
+10.5    If a new feature requires changes in the architecture, it's strongly recommended to discuss the changes with the NIIS in advance. Agreeing on the details of the changes upfront will likely speed up the approval process.
 
 ## 11	Performing and integrating work
 
@@ -389,7 +393,7 @@ by committing the X-Road core source code into the `master` branch.
 
 ## 17	Open source development
 
-17.1	Master Repository `nordic-institute/X-Road` is open to everybody for forking. The NIIS administers the Master Repository `nordic-institute/X-Road`.
+17.1	The X-Road Master Repository `nordic-institute/X-Road` is open to everybody for forking. The NIIS administers the Master Repository `nordic-institute/X-Road`.
 
 17.2	New branches are created in `nordic-institute/X-Road` by the NIIS as needed.
 
