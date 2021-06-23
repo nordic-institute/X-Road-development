@@ -5,6 +5,7 @@
 | ---- | ---- | ---- |
 | 1.2	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
 | 1.3	| Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	| 31.5.18 / PK
+| 1.4	| Minor updates.	| 23.06.21 / PK
 
 ## Table of contents
 
@@ -65,8 +66,16 @@ Central Server.
 
 3.4 Application MUST be able to handle time zones correctly.
 
-3.5 Application MUST be implemented for both Ubuntu LTS 14.04 and Redhat
-RHEL 7 platform.
+3.5 Application MUST be implemented for the following platforms:
+
+- Ubuntu LTS 18.04
+  - Central Server, Configuration Proxy, Security Server
+- Ubuntu LTS 20.04
+  - Central Server, Configuration Proxy, Security Server
+- Redhat Enterprise Linux (RHEL) 7
+  - Security Server
+- Redhat Enterprise Linux (RHEL) 8
+  - Security Server.
 
 3.6 Application MUST be able to communicate with the network using IP v4
 protocol.
@@ -137,7 +146,8 @@ English throughout.
 MIT license rules. Copyright MUST be clearly defined.
 
 5.1.4 New X-Road components MUST be created using Java 8 SE.
-Additionally JRuby MAY be used for web interfaces.
+
+5.1.5 JRuby MUST NOT be used in any new components.
 
 ### 5.2 Java
 

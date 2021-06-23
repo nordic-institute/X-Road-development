@@ -55,6 +55,12 @@ reviewed in Working Group meetings and/or e-mail and/or issue comments.
 Pull requests can be submitted following the process described in the
 [Workflow](WORKFLOW.md#12-submitting-and-accepting-work).
 
+If a pull request implements a new feature or a bigger change in an existing feature, it's strongly recommended to submit an enhancement request in advance and indicate in the enhancement request that the implementation will be provided too. In that way, it's possible to ensure in advance that the pull request will be approved.
+
+Also, in case you're planning to implement an existing backlog item, let NIIS know about your plans in advance to avoid duplicate work.
+
+In case a pull request includes changes in the architecture, it's strongly recommended to discuss the changes with NIIS in advance. Agreeing on the details of the changes upfront will likely speed up the approval process.
+
 ### Enhancement requests and error reports
 
 X-Road enhancement requests and error reports can be submitted to the [X-Road Service
@@ -71,6 +77,8 @@ Desk](https://jira.niis.org/servicedesk/customer/portal/1) using the
 `Report a software problem` request type.
 [Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
 get access to the [X-Road Service Desk](https://jira.niis.org/servicedesk/customer/portal/1).
+
+Another alternative to report security issues and vulnerabilities is the X-Road bug bounty program that is run on the Intigrity platform. [Visit the program details](https://app.intigriti.com/programs/niis/x-road/detail) to get started.
 
 ### Changes to the workflow
 
