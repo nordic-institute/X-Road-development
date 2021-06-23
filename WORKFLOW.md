@@ -217,6 +217,8 @@ If the commit is not related to any backlog item, `ISSUE_ID` can be omitted.
 10.1 New development is initiated by preparing an enhancement request. The
 request is submitted for review and approval to X-Road Working Group, according
 to the procedure in [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL.md#31-evaluate), section "Evaluate".
+It's strongly recommended to submit the enhancement request in advance and indicate 
+in the enhancement request that the implementation will be provided, too.
 
 10.2 The NIIS coordinates development by the X-Road Product Roadmap. Approved
 request will be entered into the Product Roadmap. Dependencies and effects to
