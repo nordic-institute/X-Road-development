@@ -9,6 +9,7 @@
 | 2.2 | Added description of support branches. | 13.2.18 / IS
 | 2.3 | Added requirement regarding Contributor Licence Agreement (CLA). | 17.6.19 / PK
 | 2.4 | Add licence. Remove references to Test Workflow Policy. | 22.11.20 / PK
+| 2.5 | Minor updates. Remove outdated sections. | 23.06.21 / PK
 
 ## Licence
 
@@ -95,16 +96,23 @@ repository.
 main repository or in their own forked repository.
 * X-Road community members work in their own forked repositories.
 
-The main forks at the time being are `vrk-kpa/X-Road` and `ria-ee/X-Road`. [Semantic versioning](http://semver.org/) scheme is used for software versions.
+[Semantic versioning](http://semver.org/) scheme is used for software versions.
 
 ## 4	Repositories
 
 4.1	The following code and documentation repositories are used:
 
-- Master Repository - short name: `nordic-institute/X-Road`; hosted by: GitHub; managed by: NIIS;
-purpose: development and release of X-Road software; access: NIIS has write access; read access: ALL.
-- Contributor repositories - purpose: development work carried out by
-Contributor; administered by: Contributor.
+- Master Repository
+  - short name: `nordic-institute/X-Road`
+  - hosted on: GitHub
+  - managed by: NIIS
+  - purpose: development and release of X-Road software
+  - access:
+    - write access: NIIS
+    - read access: all
+- Contributor repositories
+  - purpose: development work carried out by Contributor
+  - administered by: Contributor.
 
 4.2	The Contributors can establish their own, additional repositories, for backup,
 software distribution or other purposes.
@@ -116,15 +124,18 @@ software distribution or other purposes.
 - `master` branch is used to release X-Road software into production
 - `develop` branch is used to accumulate features for the next big release
 - `feature` branches are used to work on features (or closely related sets of features) to enhance X-Road core software
+  - `feature` branches are named using the id of the feature's backlog item, e.g., `XRDDEV-123`
 - new production release is prepared on `release` branch
 - patches are prepared on `hotfix` branches.
 - `support` branch is created when an old release needs to be patched
+
+The latest development version is always available in the `develop` branch and the latest stable version in the `master` branch.
 
 ## 6 Tagging
 
 6.1 The versions merged to `X-Road/master` branch are tagged with annotated tags. E.g.
 
-`git tag -a 6.7.12 -m "X-Road 6.7.12"`
+`git tag -a 6.26.0 -m "X-Road 6.26.0"`
 
 The versions merged to `X-Road/develop` branch are not tagged.
 
@@ -132,16 +143,16 @@ The versions merged to `X-Road/develop` branch are not tagged.
 
 7.1 There are development versions and release versions and their package naming format is different.
 
-7.2 The development package name format is `X.Y.Z-R.YYYYMMDDHHMMSSgitAAAAAA` (e.g. xroad-securityserver_6.14.0-0.20170428110816gitfbe4542_all.deb and xroad-securityserver-6.14.0-0.20170428110816gitfbe4542.el7.noarch.rpm)
-- The software version X.Y.Z: X=major, Y=minor, Z=patch, e.g. 6.7.1
-- R=package release number. For development versions this should be set to 0.
-- YYYYMMDDHHMMSS = git commit timestamp (UTC) and AAAAAA = git commit hash (git show -s --format=%h)
+7.2 The development package name format is `X.Y.Z-R.YYYYMMDDHHMMSSgitAAAAAA` (e.g. `xroad-securityserver_6.14.0-0.20170428110816gitfbe4542_all.deb` and `xroad-securityserver-6.14.0-0.20170428110816gitfbe4542.el7.noarch.rpm`)
+- The software version `X.Y.Z`: `X`=major, `Y`=minor, `Z`=patch, e.g. `6.24.1`
+- `R`=package release number. For development versions this should be set to `0`.
+- `YYYYMMDDHHMMSS` = git commit timestamp (UTC) and `AAAAAA` = git commit hash (`git show -s --format=%h`)
   - The purpose of the timestamp is to ensure that packages will update although the software version number is not changed
   - Commit hash can be used to help working out from which commit the packages are made of
 
-7.3 The release package name format is `X.Y.Z-R` (e.g. xroad-securityserver_6.14.0-1_all.deb and xroad-securityserver-6.14.0-1.noarch.rpm)
-- R=package release number. If there is no specific reason to set otherwise, for release versions it should be equal to 1 (debian/rhel convention)
-  - Specific reason to raise the package release number could be a bug in packaging when the software version doesn't change, only packaging. When the software version changes, the package release number is set back to 1.
+7.3 The release package name format is `X.Y.Z-R` (e.g. `xroad-securityserver_6.14.0-1_all.deb` and `xroad-securityserver-6.14.0-1.noarch.rpm`)
+- `R`=package release number. If there is no specific reason to set otherwise, for release versions it should be equal to `1` (debian/rhel convention)
+  - Specific reason to raise the package release number could be a bug in packaging when the software version doesn't change, only packaging. When the software version changes, the package release number is set back to `1`.
 
 ## 8 Changelog management
 
@@ -149,7 +160,7 @@ The versions merged to `X-Road/develop` branch are not tagged.
 
 ```
  ## X.Y.Z - YYYY-MM-DD
-- ISSUE: Description.
+- ISSUE-ID: Description.
 ```
 
 For example
@@ -182,27 +193,24 @@ xroad (6.25.0-0) stable; urgency=medium
 
 ## 9 Pull requests
 
-9.1 Pull requests made against the `X-Road/develop` branch MUST follow these conventions
-- Pull request name format is `contributor-version-sequence` e.g. Finnish-6.25.0-3
-  - Contributor=origin of the pull request
-  - Version=version of the software this pull request is intended for
-  - Sequence=sequence number of the pull request. There can be multiple pull requests aiming for the same release and the sequence distinguishes between these.
-- Description field must contain at least the changelist. Any relevant additional information should also be provided here.
+9.1 To ease the review work and to make clearer what changes are done, a pull request should contain one feature or bug fix. The larger the pull request is, the more complex it is to review.
+
+9.2 Pull requests made against the `X-Road/develop` branch MUST follow these conventions:
+
+- Pull request name format is `<ISSUE_ID>: <SHORT DESCRIPTION>`, for example: `XRDDEV-1669: Allow overriding startup parameters`
+  - `ISSUE_ID` = id of the feature's / bug's backlog item. If the pull request is not related to any backlog item, `ISSUE_ID` can be omitted.
+  - `DESCRIPTION` = short description of the changes included in the pull request.
+- The pull request's description field must contain more detailed information about the changes. Any relevant additional information should also be provided here.
 
 Release and hotfix pull requests made against `master` branch must follow these conventions
-- Pull request name format is just `version` e.g. 6.25.0
-- Description field must contain at least the changelist. Any relevant additional information should also be provided here.
+- Pull request name format is just `version` e.g. `6.25.0`
+- The pull request's description field must contain more detailed information about the changes. Any relevant additional information should also be provided here.
 
-9.2 To ease the review work and to make clearer what changes are done, the following guidelines are required:
+9.3 Commit messages SHOULD follow the format `<ISSUE_ID>: <COMMIT_MESSAGE>`, for example:
 
-- Separate commits MUST be made for every bug fix included to pull request
-- Separate commits SHOULD be made for every feature included to pull request
+`XRDDEV-123: Fix typo in security server user guide`
 
-One pull request can contain several bug fix or feature commits. However, pull requests containing critical production related bug fixes should be keep simple to make reviewing easier.
-
-9.3 For commit messages the following format SHOULD be used:
-
-`ISSUE-111: Fix typo in security server user guide`
+If the commit is not related to any backlog item, `ISSUE_ID` can be omitted.
 
 ## 10 Work initiation
 
@@ -242,21 +250,17 @@ development work.
 to `nordic-institute/X-Road/develop`. Prior to submitting the request Contributor
 must [fetch the most recent updates](https://help.github.com/articles/syncing-a-fork/)
 from `nordic-institute/X-Road/develop` and integrate the changes into
-Contributor's branch (solve conflicts, if any). In practise, when integration
-is due a `release` branch is forked out of `develop` in the Contributor's fork.
-In the `release` branch the code is developed and tested until it is ready to be
-taken forward. Once the code is ready a pull request is made from the fork's
-`release` branch to the `nordic-institute/X-Road/develop` branch as described
+Contributor's branch (solve conflicts, if any). Once the code is ready a pull request is made from the fork's
+`feature` branch to the `nordic-institute/X-Road/develop` branch as described
 in the [Github documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
 If defects are found in the pull request review they are fixed in the fork's
-`release` branch and the Github pull request updates automatically. When the
+`feature` branch and the Github pull request updates automatically. When the
 pull request is eventually accepted to `nordic-institute/X-Road/develop` the
 changes are synced back to fork's `develop` as described in the [Github documentation](https://help.github.com/articles/syncing-a-fork/).
 
 ![X-Road Integration](IMG/xroad-integration.png)
 
-12.2	The pull request is reviewed by the NIIS. Additional reviewers can be
-added as necessary. The pull request is reviewed according to the acceptance
+12.2 The pull request is reviewed by the NIIS. The pull request is reviewed according to the acceptance
 criteria that was in effect when the work on this changeset started.
 
 12.2.1 Feature analysis
@@ -267,7 +271,8 @@ by the NIIS
 
 12.2.2 Source code
 
-- Is the source code for the software and its dependencies available?
+- Is the source code available?
+- Are all the required dependencies available?
 
 12.2.3 Non-functional requirements
 
@@ -326,11 +331,10 @@ into `nordic-institute/X-Road/develop`.
 
 ## 13	Release preparation
 
-13.1	New versions of X-Road are published three times a year based on a fixed
-release schedule. Releases are always prepared in the X-Road core master
+13.1	New versions of X-Road are published 2-4 times a year. Releases are always prepared in the X-Road core master
 repository `nordic-institute/X-Road`.
 
-First a `release` branch is forked from the `develop` branch and pull request
+First, a `release` branch is forked from the `develop` branch and pull request
 is made against `nordic-institute/X-Road/master`. The version in the `release`
 branch is then exhaustively tested and fixes are made when necessary. When the
 version in the `release` branch meets the acceptance criteria the `release`
@@ -373,31 +377,23 @@ has been accepted the changes can be merged into both
 In addition, `nordic-institute/X-Road/master` must be tagged with an updated
 version number.
 
-15.4 Hotfix can also be made for `develop` branch the same way as described for
-`master` branch above. This situation is possible if after an integration made
-to `nordic-institute/X-Road/develop` branch a Contributor requests a fix/change to previous.
-
-15.5 When an old release needs to be patched NIIS prepares a patch on `support` branch forked from the relevant release tag on the `master` branch. The necessary commits are made and finally the released version is tagged in the `support` branch.
+15.4 When an old release needs to be patched NIIS prepares a patch on `support` branch forked from the relevant release tag on the `master` branch. The necessary commits are made and finally the released version is tagged in the `support` branch.
 
 ## 16	Setting up repositories
 
 16.1	Repositories are set up according to the process:
 
 - The NIIS sets up the Master Repository `X-Road`. Repository is initialised
-by committing X-Road v6.0 software into the `master` branch.
+by committing the X-Road core source code into the `master` branch.
 - The NIIS creates `develop` branch in `X-Road`.
 
 ## 17	Open source development
 
-17.1	Open source development and the development conducted by the NIIS Members
-are only loosely coupled. Master Repository `nordic-institute/X-Road` is open
-to everybody for forking. The NIIS administers the Master Repository
-`nordic-institute/X-Road`.
+17.1	Master Repository `nordic-institute/X-Road` is open to everybody for forking. The NIIS administers the Master Repository `nordic-institute/X-Road`.
 
 17.2	New branches are created in `nordic-institute/X-Road` by the NIIS as needed.
 
-17.3	Pull requests into `nordic-institute/X-Road` are reviewed and accepted
-by the NIIS.
+17.3	Pull requests into `nordic-institute/X-Road` are reviewed and accepted by the NIIS.
 
 17.4	Good quality and useful results of open source development can be
 integrated into `nordic-institute/X-Road`. The X-Road change management
@@ -414,8 +410,8 @@ translate documentation into other languages.
 In X-Road context it means that the NIIS Member specific customizations,
 settings, repositories etc. need to stand out from documentation clearly. The
 vanilla version of X-Road security server is installed with `xroad-securityserver`
-package. The NIIS Member specific versions are installed with
-`xroad-securityserver-XX` where XX is the country code of a NIIS Member.
+package. The country specific versions are installed with
+`xroad-securityserver-XX` where XX is the country code.
 
 18.4	Contributors may publish X-Road documentation on their own websites in
 accordance with the [Licence](https://creativecommons.org/licenses/by-sa/3.0/).
