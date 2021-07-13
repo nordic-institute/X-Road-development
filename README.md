@@ -168,7 +168,7 @@ The X-Road core source code master repositories are listed below.
    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
    THE SOFTWARE.
-><
+>
 <template>
   <v-footer class="footer">
     <v-container>
@@ -239,8 +239,8 @@ The X-Road core source code master repositories are listed below.
                 href="https://x-road.global/xroad-licence-info"
                 target="_blank"
               
-                {{ $t('footer.copyright.licenceInfo') }}
-              </a>
+                {{ $t('footer.copyright.licenceInfo')
+            }}</a>
             </v-col>
           </v-row>
         </v-col>
