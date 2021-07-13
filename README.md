@@ -144,7 +144,7 @@ The X-Road core source code master repositories are listed below.
 | [nordic-institute/X-Road](https://github.com/nordic-institute/X-Road) | X-Road development repository. |
 
 ## AppFooter 
-<!--
+<
    The MIT License
    Copyright (c) 2019- Nordic Institute for Interoperability Solutions (NIIS)
    Copyright (c) 2018 Estonian Information System Authority (RIA),
@@ -168,7 +168,7 @@ The X-Road core source code master repositories are listed below.
    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
    THE SOFTWARE.
- -->
+><
 <template>
   <v-footer class="footer">
     <v-container>
@@ -205,7 +205,7 @@ The X-Road core source code master repositories are listed below.
                 class="footer-link"
                 target="_blank"
                 href="https://x-road.global/feedback"
-              >
+              
                 {{ $t('footer.software.feedback') }}
               </a>
             </v-col>
@@ -226,7 +226,7 @@ The X-Road core source code master repositories are listed below.
                 class="footer-link"
                 href="https://niis.org/"
                 target="_blank"
-              >
+              
                 {{ $t('footer.copyright.company') }}
               </a>
             </v-col>
@@ -238,7 +238,7 @@ The X-Road core source code master repositories are listed below.
                 class="footer-link"
                 href="https://x-road.global/xroad-licence-info"
                 target="_blank"
-              >
+              
                 {{ $t('footer.copyright.licenceInfo') }}
               </a>
             </v-col>
