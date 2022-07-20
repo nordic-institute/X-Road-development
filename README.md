@@ -64,19 +64,21 @@ In case a pull request includes changes in the architecture, it's strongly recom
 ### Enhancement requests and error reports
 
 X-Road enhancement requests and error reports can be submitted to the [X-Road Service
-Desk](https://jira.niis.org/servicedesk/customer/portal/1).
-[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
-get access to the [X-Road Service
-Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
-[X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
+Desk](https://nordic-institute.atlassian.net/servicedesk/customer/portal/4). In order
+to access the X-Road Service Desk, [sign up](https://id.atlassian.com/signup) for an
+account and request access to the [X-Road Backlog](https://nordic-institute.atlassian.net/jira/software/c/projects/XRDDEV/boards/6/backlog).
+Alternatively, you can use your existing account, sign in and request for access. Once
+your request has been approved, you're able to access the [X-Road Service Desk](https://nordic-institute.atlassian.net/servicedesk/customer/portal/4)
+and the [X-Road Backlog](https://nordic-institute.atlassian.net/jira/software/c/projects/XRDDEV/boards/6/backlog).
+Approving the  request typically requires 1-2 business days.
 
 ### Security issues and vulnerabilities
 
 Security issues and vulnerabilities are reported privately to the [X-Road Service
-Desk](https://jira.niis.org/servicedesk/customer/portal/1) using the
+Desk](https://nordic-institute.atlassian.net/servicedesk/customer/portal/4) using the
 `Report a software problem` request type.
-[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
-get access to the [X-Road Service Desk](https://jira.niis.org/servicedesk/customer/portal/1).
+[Sign up](https://id.atlassian.com/signup) for an account and
+get access to the [X-Road Service Desk](https://nordic-institute.atlassian.net/servicedesk/customer/portal/4).
 
 Another alternative to report security issues and vulnerabilities is the X-Road bug bounty program that is run on the Intigrity platform. [Visit the program details](https://app.intigriti.com/programs/niis/x-road/detail) to get started.
 
@@ -127,12 +129,13 @@ by post:
 
 The tools listed below are used in the development of the X-Road.
 
-| URL | Description |
-| --- | --- |
-| https://jira.niis.org/projects/XRDDEV/ | X-Road backlog. |
-| https://jira.niis.org/servicedesk/customer/portal/1 | X-Road Service Desk for submitting enhancement requests and error reports. |
+| URL | Description                                                                |
+| --- |----------------------------------------------------------------------------|
+| https://nordic-institute.atlassian.net/browse/XRDDEV | X-Road backlog.                                                            |
+| https://nordic-institute.atlassian.net/wiki/spaces/XRDKB | X-Road Knowledge Base.                                                     |
+| https://nordic-institute.atlassian.net/servicedesk/customer/portal/4 | X-Road Service Desk for submitting enhancement requests and error reports. |
 
-[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
+[Sign up](https://id.atlassian.com/signup) for an account and
 get access to the tools.
 
 More information about available X-Road developer resources is available
