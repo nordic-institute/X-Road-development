@@ -1,15 +1,16 @@
 # Workflow Policy
 
 #### VERSION CONTROL
-| version no.	 | what has been done	| date/person
-| ---- | ---- | ---- |
-| 1.7	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 17.3.18 / PK
-| 2.0 | Document updated to match the NIIS operating model. Changes approved by the Working Group. | 25.5.18 / PK
-| 2.1 | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document. | 31.5.18 / PK
-| 2.2 | Added description of support branches. | 13.2.18 / IS
-| 2.3 | Added requirement regarding Contributor Licence Agreement (CLA). | 17.6.19 / PK
-| 2.4 | Add licence. Remove references to Test Workflow Policy. | 22.11.20 / PK
-| 2.5 | Minor updates. Remove outdated sections. | 23.06.21 / PK
+| version no.	 | what has been done	                                                                                     | date/person
+|--------------|---------------------------------------------------------------------------------------------------------| ---- |
+| 1.7	         | Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	 | 17.3.18 / PK
+| 2.0          | Document updated to match the NIIS operating model. Changes approved by the Working Group.              | 25.5.18 / PK
+| 2.1          | Moved chapter 20 content to [TEST_WORKFLOW.md](TEST_WORKFLOW.md) document.                              | 31.5.18 / PK
+| 2.2          | Added description of support branches.                                                                  | 13.2.18 / IS
+| 2.3          | Added requirement regarding Contributor Licence Agreement (CLA).                                        | 17.6.19 / PK
+| 2.4          | Add licence. Remove references to Test Workflow Policy.                                                 | 22.11.20 / PK
+| 2.5          | Minor updates. Remove outdated sections.                                                                | 23.06.21 / PK
+| 2.6          | Minor updates. Link to external documents and remove outdated sections.                                 | 16.06.23 / PK
 
 ## Licence
 
@@ -119,25 +120,11 @@ software distribution or other purposes.
 
 ## 5	Branching pattern
 
-5.1	Branching pattern follows the [Gitflow model](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). Two perpetual branches – `master` and `develop` – together with three additional branches – `feature`, `release` and `hotfix` – are used. In addition `support` branches are used for maintaining old releases.
-
-- `master` branch is used to release X-Road software into production
-- `develop` branch is used to accumulate features for the next big release
-- `feature` branches are used to work on features (or closely related sets of features) to enhance X-Road core software
-  - `feature` branches are named using the id of the feature's backlog item, e.g., `XRDDEV-123`
-- new production release is prepared on `release` branch
-- patches are prepared on `hotfix` branches.
-- `support` branch is created when an old release needs to be patched
-
-The latest development version is always available in the `develop` branch and the latest stable version in the `master` branch.
+Branching pattern is described in the X-Road core [source code master repository](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#branching-pattern).
 
 ## 6 Tagging
 
-6.1 The versions merged to `X-Road/master` branch are tagged with annotated tags. E.g.
-
-`git tag -a 6.26.0 -m "X-Road 6.26.0"`
-
-The versions merged to `X-Road/develop` branch are not tagged.
+Tagging practices are described in the X-Road core [source code master repository](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#tagging).
 
 ## 7 Package naming
 
@@ -195,27 +182,14 @@ xroad (6.25.0-0) stable; urgency=medium
 
 9.1 To ease the review work and to make clearer what changes are done, a pull request should contain one feature or bug fix. The larger the pull request is, the more complex it is to review.
 
-9.2 Pull requests made against the `X-Road/develop` branch MUST follow these conventions:
+9.2 Pull request conventions are described in the X-Road core [source code master repository](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#pull-requests).
 
-- Pull request name format is `<ISSUE_ID>: <SHORT_DESCRIPTION>`, for example: `XRDDEV-1669: Allow overriding startup parameters`
-  - `ISSUE_ID` = id of the feature's / bug's backlog item. If the pull request is not related to any backlog item, `ISSUE_ID` can be omitted.
-  - `SHORT_DESCRIPTION` = short description of the changes included in the pull request.
-- The pull request's description field must contain more detailed information about the changes. Any relevant additional information should also be provided here.
-
-Release and hotfix pull requests made against `master` branch must follow these conventions
-- Pull request name format is just `version` e.g. `6.25.0`
-- The pull request's description field must contain more detailed information about the changes. Any relevant additional information should also be provided here.
-
-9.3 Commit messages SHOULD follow the format `<ISSUE_ID>: <COMMIT_MESSAGE>`, for example:
-
-`XRDDEV-123: Fix typo in  user guide`
-
-If the commit is not related to any backlog item, `ISSUE_ID` can be omitted.
+9.3 Commit message conventions are described in the X-Road core [source code master repository](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#commit-messages).
 
 ## 10 Work initiation
 
 10.1 New development is initiated by preparing an enhancement request. The
-request is submitted for review and approval to X-Road Working Group, according
+request is submitted for review and approval to X-Road Technical Committee, according
 to the procedure in [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL.md#31-evaluate), section "Evaluate".
 It's strongly recommended to submit the enhancement request in advance and indicate 
 in the enhancement request that the implementation will be provided, too.
@@ -267,60 +241,9 @@ changes are synced back to fork's `develop` as described in the [Github document
 ![X-Road Integration](IMG/xroad-integration.png)
 
 12.2 The pull request is reviewed by the NIIS. The pull request is reviewed according to the acceptance
-criteria that was in effect when the work on this changeset started.
-
-12.2.1 Feature analysis
-
-- Are the features OK to be accepted to the core?
-- The feature should come through the change management process and be accepted
-by the NIIS
-
-12.2.2 Source code
-
-- Is the source code available?
-- Are all the required dependencies available?
-
-12.2.3 Non-functional requirements
-
-- Does the code conform to the X-Road non-functional requirements (see [X-Road Non-Functional Requirements](https://github.com/nordic-institute/x-road-development/blob/master/NFR.md))?
-
-12.2.4 Version number
-
-- Is the version number format correct (see [X-Road Development Model](https://github.com/nordic-institute/x-road-development/blob/master/DEVELOPMENT_MODEL))?
-- Is the version number correct (as agreed on the Roadmap)?
-
-12.2.5 CI build & tests
-
-- No merge conflicts?
-- Does the build and the test cases work?
-- Does the packaging work (Ubuntu & RHEL)?
-- Can the software be installed on a clean system (Ubuntu & RHEL)?
-- Can the software version be upgraded from two previous `nordic-institute/X-Road/master` version?
-
-12.2.6 SonarQube (LTS) static analysis
-
-- Is there enough test coverage? The test coverage should be equal or higher
-than in the previous version.
-- SonarQube shows no bugs or code smells of severity blocker or critical? The
-developer has a chance to comment the issues before accept/reject action.
-
-12.2.7 Changelogs
-
-- Have the changelogs been updated and include the changes made?
-- The changelog items contain reference to the backlog item where applicable?
-
-12.2.8 Licensing
-
-- Is the code licensing OK?
-
-12.2.9 Documentation
-
-- Has the documentation been updated?
-- Is the documentation in correct format as specified in [X-Road Formatting & Style Guide](https://github.com/nordic-institute/x-road-development/blob/master/FormattingStyleGuide.md)? Are the sources of pictures provided?
-
-12.2.10 Contributor Licence Agreement (CLA)
-
-- Has the contributor delivered a signed CLA?
+criteria that was in effect when the work on this changeset started. Before opening a pull request, it's recommended 
+to review the [pull request checklist](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#pull-request-checklist) 
+and make sure that all the requirements are met.
 
 12.3 Pull requests are generally reviewed and accepted on first-come,
 first-served (FCFS) basis.
