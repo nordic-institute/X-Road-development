@@ -59,8 +59,8 @@ The change management process includes the following roles and responsibilities:
   * coordinates daily work
 * NIIS Member
   * nominates representatives to the Steering Committee and Technical Committee
-  * [submits](README.md#enhancement-requests-and-error-reports) business feature and enhancement requests
-  * [submits](WORKFLOW.md#12-submitting-and-accepting-work) code contributions including required documentation
+  * [submits](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#submitting-an-enhancement-request) business feature and enhancement requests
+  * [submits](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#submitting-a-pull-request) code contributions including required documentation
 * Steering Committee  
   * approves product strategy and budget
   * prioritizes product roadmap
