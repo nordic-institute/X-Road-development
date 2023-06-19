@@ -1,11 +1,12 @@
 # X-Road Non-Functional Requirements
 
 #### VERSION CONTROL
-| version no.	 | what has been done	| date/person
-| ---- | ---- | ---- |
-| 1.2	| Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development).	| 18.3.18 / PK
-| 1.3	| Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	| 31.5.18 / PK
-| 1.4	| Minor updates.	| 23.06.21 / PK
+| version no.	 | what has been done	                                                                                    | date/person
+|--------------|--------------------------------------------------------------------------------------------------------| ---- |
+| 1.2	         | Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development). | 18.3.18 / PK
+| 1.3	         | Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	                              | 31.5.18 / PK
+| 1.4	         | Minor updates.	                                                                                      | 23.06.21 / PK
+| 1.5	         | Remove reference to Ruby and JRuby, updated supported platforms, minor updates.	                      | 16.06.23 / PK
 
 ## Table of contents
 
@@ -68,9 +69,9 @@ Central Server.
 
 3.5 Application MUST be implemented for the following platforms:
 
-- Ubuntu LTS 18.04
-  - Central Server, Configuration Proxy, Security Server
 - Ubuntu LTS 20.04
+  - Central Server, Configuration Proxy, Security Server
+- Ubuntu LTS 22.04
   - Central Server, Configuration Proxy, Security Server
 - Redhat Enterprise Linux (RHEL) 7
   - Security Server
@@ -99,9 +100,6 @@ b\) A restricted user (for example &lt;Component&gt;\_app) who has
 rights (SELECT, INSERT, UPDATE, DELETE) to execute only permitted
 operations in that database. This user is used by component for normal
 access to database.
-
-Note: Current X-Road implementation is not yet compatible with
-requirement 2.1.
 
 4.2 It is REQUIRED to use Foreign Keys for referencing data from one
 table to another.
@@ -137,17 +135,17 @@ allowed to use capital characters.
 
 ### 5.1 General
 
-5.1.1 Application MUST be equipped with the unit tests.
+5.1.1 Application MUST be equipped with unit tests.
 
-5.1.2 Source code, comments, documentation, and log messages MUST be in
+5.1.2 Application MUST be equipped with UI tests.
+
+5.1.3 Source code, comments, documentation, and log messages MUST be in
 English throughout.
 
-5.1.3 Source Code MUST be marked with licensing information according to
+5.1.4 Source Code MUST be marked with licensing information according to
 MIT license rules. Copyright MUST be clearly defined.
 
-5.1.4 New X-Road components MUST be created using Java 8 SE.
-
-5.1.5 JRuby MUST NOT be used in any new components.
+5.1.5 New X-Road components MUST be created using Java 11.
 
 ### 5.2 Java
 
@@ -174,16 +172,7 @@ library version.
 every commit. Commit messages MUST describe in human readable form
 functionality changes.
 
-### 5.4 JRuby
-
-5.4.1 Rubocop (<https://github.com/bbatsov/rubocop>) MUST NOT issue any
-errors or warnings in ruby/jruby functions with the default
-configuration (rubocop --fail-level warning).
-Rubocop (<https://github.com/bbatsov/rubocop>) MUST NOT issue any errors
-with the configuration defined in
-<https://github.com/nordic-institute/xroad-public/blob/master/src/check_ruby_source.sh>.
-
-### 5.5 JavaScript
+### 5.4 JavaScript
 
 5.5.1 JavaScript code MUST comply to Google JavaScript style guide
 (<https://google.github.io/styleguide/javascriptguide.xml>).
@@ -230,7 +219,7 @@ required for building deb and rpm packages.
 to files or external systems.
 
 7.2.2 Application building and unit testing MUST be automated with
-Gradle. Application packaging MUST me automated with a script.
+Gradle. Application packaging MUST be automated with a script.
 Components installation, update, and removal MUST be automated with
 both DEB and RPM systems.
 

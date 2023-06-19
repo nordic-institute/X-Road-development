@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2023-06-16T06:54:10.901Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.3.7 Chrome/112.0.5615.204 Electron/24.5.0 Safari/537.36" etag="VbyUCs0MYqKEzy8fkxR-" version="21.3.7" type="device">
+  <diagram name="Page-1" id="J0YytCC7q1Ec_t18rkWh">
+    <mxGraphModel dx="1114" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-1" value="&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;strokeWidth=2;arcSize=5;perimeterSpacing=0;fillColor=#EAE8EE;" parent="1" vertex="1">
+          <mxGeometry x="130" y="120" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-2" value="&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFEBFB;strokeColor=none;strokeWidth=2;arcSize=5;perimeterSpacing=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="80" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-3" value="NIIS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#663CDC;fontSize=22;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="260" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-4" value="X-Road Technical Committee" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#663CDC;fontSize=18;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="170" y="170" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-5" value="X-Road Community" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00C8E6;fontSize=22;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="160" y="250" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-6" value="Product strategy, roadmap and budget" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#663CDC;fontSize=14;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="450" y="130" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-7" value="Technical decisions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#663CDC;fontSize=14;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="450" y="170" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-8" value="X-Road Community Expert Group" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00C8E6;fontSize=18;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="150" y="207" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="CzfeoJ11z3lAc1uWFaJz-9" value="X-Road Steering Committee" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#663CDC;fontSize=18;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="170" y="130" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-uwQYzKVNNEw3hH32dhK-1" value="Technical discussion and community input" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00C8E6;fontSize=14;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="450" y="207" width="270" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
