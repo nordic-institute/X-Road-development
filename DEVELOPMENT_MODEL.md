@@ -111,7 +111,7 @@ The change management process consists of four phases:
 ### 3.1 Evaluate
 
 The NIIS members and X-Road Community may
-[submit](https://jira.niis.org/servicedesk/customer/portal/1) business feature
+[submit](https://github.com/nordic-institute/X-Road/discussions/new?category=ideas) business feature
 requests and enhancement requests that are evaluated by the Technical Committee.
 Business feature requests are about adding a new feature to X-Road core and
 enhancement requests are about improving existing functionality. New business
