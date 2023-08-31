@@ -54,11 +54,12 @@ core [source code master repository](https://github.com/nordic-institute/X-Road/
 
 The tools listed below are used in the development of the X-Road.
 
-| URL | Description                                                                |
-| --- |----------------------------------------------------------------------------|
-| https://nordic-institute.atlassian.net/browse/XRDDEV | X-Road backlog.                                                            |
-| https://nordic-institute.atlassian.net/wiki/spaces/XRDKB | X-Road Knowledge Base.                                                     |
-| https://nordic-institute.atlassian.net/servicedesk/customer/portal/4 | X-Road Service Desk for submitting enhancement requests and error reports. |
+| URL                                                                     | Description                                                                |
+| ----------------------------------------------------------------------- |----------------------------------------------------------------------------|
+| https://nordic-institute.atlassian.net/browse/XRDDEV                    | X-Road backlog.                                                            |
+| https://nordic-institute.atlassian.net/wiki/spaces/XRDKB                | X-Road Knowledge Base.                                                     |
+| https://github.com/nordic-institute/X-Road/issues                       | X-Road issues board for submitting error reports.                          |
+| https://github.com/nordic-institute/X-Road/discussions/categories/ideas | X-Road discussin board for submitting enhancement requests.                |
 
 [Sign up](https://id.atlassian.com/signup) for an account and
 get access to the tools.
