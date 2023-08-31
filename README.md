@@ -60,9 +60,9 @@ The tools listed below are used in the development of the X-Road.
 | https://nordic-institute.atlassian.net/wiki/spaces/XRDKB                | X-Road Knowledge Base.                                                     |
 | https://github.com/nordic-institute/X-Road/issues                       | X-Road issues board for submitting error reports.                          |
 | https://github.com/nordic-institute/X-Road/discussions/categories/ideas | X-Road discussin board for submitting enhancement requests.                |
+| https://nordic-institute.atlassian.net/servicedesk/customer/portal/4    | X-Road Service Desk for reporting security issues.                         |
 
-[Sign up](https://id.atlassian.com/signup) for an account and
-get access to the tools.
+[Sign up](https://id.atlassian.com/signup) for an account and get access to the X-Road Service Desk.
 
 More information about available X-Road developer resources is available
 [here](https://x-road.global/resources).
