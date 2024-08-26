@@ -213,7 +213,7 @@ external mail agent (for example, postfix).
 
 7.1.3 All distributed components of the application MUST be packaged for the 
 platforms defined in section 3.5. Source code MUST be supplemented with 
-scripts required to build the supported packages.
+scripts required to build packages for the supported platforms.
 
 ### 7.2 Installation and settings
 
@@ -221,13 +221,13 @@ scripts required to build the supported packages.
 to files or external systems.
 
 7.2.2 Application building and unit testing MUST be automated with
-Gradle. Application packaging MUST be automated with a script.
-Components installation, update, and removal MUST be automated for the
+Gradle. Application packaging MUST be automated with scripts.
+Installation, update, and removal of components MUST be automated for the
 platforms defined in section 3.5.
 
 7.2.4 Component installation MUST NOT require different database users
-than the ones described in section 4.1. However, the database root user
-MAY be required during the first installation.
+than the ones described in section 4.1. However, the database `root` user
+MAY be required during the initial installation.
 
 ### 7.3 Monitoring
 
@@ -263,7 +263,7 @@ application layers. Session length MUST NOT be infinite.
 comprehensibly to the user. The user can exit the system in two ways:
 
 * Their session's length is longer than the set values (separately definable
-limits for the session length and the period of inactivity)
+limits for the session length and the period of inactivity).
 * They terminate the session on their own initiative.
 
 8.5 Events critical from security point of view and activities that can
