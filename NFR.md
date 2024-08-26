@@ -146,7 +146,7 @@ English throughout.
 5.1.4 Source Code MUST be marked with licensing information according to
 MIT license rules. Copyright MUST be clearly defined.
 
-5.1.5 New X-Road components MUST be created using the same Java version with the X-Road core.
+5.1.5 New X-Road components MUST be created using the same Java version as the existing components.
 
 ### 5.2 Java
 
@@ -211,9 +211,11 @@ the system such as logs written by SLF4J are allowed.
 7.1.2 The component is allowed to send e-mails only through an
 external mail agent (for example, postfix).
 
-7.1.3 All distributed components of the application MUST be packaged for the 
+7.1.3 All distributed components of the application MUST have native Linux packages for the 
 platforms defined in section 3.5. Source code MUST be supplemented with 
-scripts required to build packages for the supported platforms.
+scripts required to build the native packages for the supported platforms. Instead, 
+Docker is a special case and packages included in the images MAY vary on a case-by-case
+basis.
 
 ### 7.2 Installation and settings
 
@@ -247,8 +249,8 @@ logging format.
 
 7.3.4 Logs are written in English.
 
-7.3.5 All web servers MUST produce `access.log` files in a standard
-format.
+7.3.5 All web servers MUST produce access logs in a standard format.
+The access logs MAY be stored in files (Linux) or written to the standard output (Docker).
 
 ## 8 Information Security
 
