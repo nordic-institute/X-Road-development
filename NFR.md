@@ -1,12 +1,13 @@
 # X-Road Non-Functional Requirements
 
-#### VERSION CONTROL
-| version no.	 | what has been done	                                                                                    | date/person
-|--------------|--------------------------------------------------------------------------------------------------------| ---- |
-| 1.2	         | Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development). | 18.3.18 / PK
-| 1.3	         | Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".	                              | 31.5.18 / PK
-| 1.4	         | Minor updates.	                                                                                      | 23.06.21 / PK
-| 1.5	         | Remove reference to Ruby and JRuby, updated supported platforms, minor updates.	                      | 16.06.23 / PK
+#### Version history
+| Date       | Version | Description                                                                                            | Person           |
+|------------|---------|--------------------------------------------------------------------------------------------------------|------------------|
+| 18.03.2018 | 1.2     | Copied from X-Road Joint Development [repository](https://github.com/vrk-kpa/xroad-joint-development). | Petteri Kivimäki |
+| 31.05.2018 | 1.3     | Fixed link to `checkstyle.xml`, updated chapter 5.3 to "Git commit log".                               | Petteri Kivimäki |
+| 23.06.2021 | 1.4     | Minor updates.                                                                                         | Petteri Kivimäki |
+| 16.06.2023 | 1.5     | Remove reference to Ruby and JRuby, updated supported platforms, minor updates.                        | Petteri Kivimäki |
+| 26.08.2024 | 1.6     | Restructure version history, remove version-specific details, other minor updates.                     | Petteri Kivimäki |
 
 ## Table of contents
 
@@ -69,14 +70,14 @@ Central Server.
 
 3.5 Application MUST be implemented for the following platforms:
 
-- Ubuntu LTS 20.04
+- Ubuntu
   - Central Server, Configuration Proxy, Security Server
-- Ubuntu LTS 22.04
-  - Central Server, Configuration Proxy, Security Server
-- Redhat Enterprise Linux (RHEL) 7
+- Redhat Enterprise Linux (RHEL)
   - Security Server
-- Redhat Enterprise Linux (RHEL) 8
+- Docker
   - Security Server.
+
+The supported versions of different platforms vary overtime.
 
 3.6 Application MUST be able to communicate with the network using IP v4
 protocol.
@@ -145,7 +146,7 @@ English throughout.
 5.1.4 Source Code MUST be marked with licensing information according to
 MIT license rules. Copyright MUST be clearly defined.
 
-5.1.5 New X-Road components MUST be created using Java 11.
+5.1.5 New X-Road components MUST be created using the same Java version with the X-Road core.
 
 ### 5.2 Java
 
@@ -170,7 +171,8 @@ library version.
 
 5.3.1 The developer MUST supply a human readable commit message with
 every commit. Commit messages MUST describe in human readable form
-functionality changes.
+functionality changes. Commit messages must follow the structure defined
+in the [X-Road contributing guide](https://github.com/nordic-institute/X-Road/blob/develop/CONTRIBUTING.md#commit-messages).
 
 ### 5.4 JavaScript
 
@@ -209,9 +211,9 @@ the system such as logs written by SLF4J are allowed.
 7.1.2 The component is allowed to send e-mails only through an
 external mail agent (for example, postfix).
 
-7.1.3 All distributed components of the application MUST be packaged as
-both deb and rpm files. Source code MUST be supplemented with scripts
-required for building deb and rpm packages.
+7.1.3 All distributed components of the application MUST be packaged for the 
+platforms defined in section 3.5. Source code MUST be supplemented with 
+scripts required to build the supported packages.
 
 ### 7.2 Installation and settings
 
@@ -220,11 +222,12 @@ to files or external systems.
 
 7.2.2 Application building and unit testing MUST be automated with
 Gradle. Application packaging MUST be automated with a script.
-Components installation, update, and removal MUST be automated with
-both DEB and RPM systems.
+Components installation, update, and removal MUST be automated for the
+platforms defined in section 3.5.
 
 7.2.4 Component installation MUST NOT require different database users
-then these described in section 2.1.
+than the ones described in section 4.1. However, the database root user
+MAY be required during the first installation.
 
 ### 7.3 Monitoring
 
@@ -244,7 +247,7 @@ logging format.
 
 7.3.4 Logs are written in English.
 
-7.3.5 All web servers MUST produce access.log files in a standard
+7.3.5 All web servers MUST produce `access.log` files in a standard
 format.
 
 ## 8 Information Security
@@ -258,9 +261,10 @@ application layers. Session length MUST NOT be infinite.
 
 8.4 Exiting the system MUST be made in a secure manner, explicitly and
 comprehensibly to the user. The user can exit the system in two ways:
-his session's length is longer than the set values (separately definable
-limits for the session length and the period of inactivity) or user
-terminates the session on his own initiative.
+
+* Their session's length is longer than the set values (separately definable
+limits for the session length and the period of inactivity)
+* They terminate the session on their own initiative.
 
 8.5 Events critical from security point of view and activities that can
 lead to financial or legal consequences MUST be logged in the separately
@@ -270,12 +274,12 @@ audit log events document \[[SPEC-AL](#Ref_SPEC-AL)\].
 8.6 All user outputs MUST be sanitized not to include system operation information
 such as full names of files, stack traces, etc.
 
-8.7 In web interfaces session management MUST be based on session cookies.
+8.7 In web interfaces (web UI) session management MUST be based on session cookies.
 
 8.8 All private network communications (excluding localhost) MUST be protected
 with TLS. All public network communications MUST be protected with either TLS
-or data signing (like for example signed global configuration). TLS parameters
-MUST be configurable by administrator, not developer.
+or signing data (e.g., signed global configuration). TLS parameters
+MUST be configurable by system administrator.
 
 8.9 User MUST receive a proper informative message about termination of his
 session.
