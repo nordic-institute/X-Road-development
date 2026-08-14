@@ -1,5 +1,8 @@
 # X-Road Development
 
+> [!IMPORTANT]
+> This repository is no longer maintained as of 14 August 2026. The X-Road Development Model is now maintained and published at: https://x-road.global/development-model
+
 [![Go to X-Road Community Slack](https://img.shields.io/badge/Go%20to%20Community%20Slack-grey.svg)](https://jointxroad.slack.com/)
 [![Get invited](https://img.shields.io/badge/No%20Slack-Get%20invited-green.svg)](https://x-road.global/community)
 
