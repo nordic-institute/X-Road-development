@@ -1,5 +1,9 @@
 # X-Road Development Model
 
+> [!IMPORTANT]
+> This repository is no longer maintained as of 14 August 2026. The X-Road Development Model is now maintained and published at: https://x-road.global/development-model
+
+
 #### VERSION CONTROL
 | version no.	 | what has been done	| date/person
 | -- | ---- | ---- |
